@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="num_seconds_ago">
+        <item quantity="other">%d secondi fa</item>
+        <item quantity="zero">%d secondi fa</item>
+        <item quantity="one">1 secondo fa</item>
+        <item quantity="two">%d secondi fa</item>
+        <item quantity="few">%d secondi fa</item>
+        <item quantity="many">%d secondi fa</item>
+    </plurals>
+    <plurals name="num_minutes_ago">
+        <item quantity="other">%d minuti fa</item>
+        <item quantity="zero">%d minuti fa</item>
+        <item quantity="one">1 minuto fa</item>
+        <item quantity="two">%d minuti fa</item>
+        <item quantity="few">%d minuti fa</item>
+        <item quantity="many">%d minuti fa</item>
+    </plurals>
+    <plurals name="num_hours_ago">
+        <item quantity="other">%d ore fa</item>
+        <item quantity="zero">%d ore fa</item>
+        <item quantity="one">1 ora fa</item>
+        <item quantity="two">%d ore fa</item>
+        <item quantity="few">%d ore fa</item>
+        <item quantity="many">%d ore fa</item>
+    </plurals>
+    <plurals name="last_num_days">
+        <item quantity="other">Ultimi %d giorni</item>
+        <item quantity="zero">Ultimi %d giorni</item>
+        <item quantity="one">Ultimo %d giorno</item>
+        <item quantity="two">Ultimi %d giorni</item>
+        <item quantity="few">Ultimi %d giorni</item>
+        <item quantity="many">Ultimi %d giorni</item>
+    </plurals>
+    <plurals name="num_days_ago">
+        <item quantity="other">%d giorni fa</item>
+        <item quantity="zero">%d giorni fa</item>
+        <item quantity="one">ieri</item>
+        <item quantity="two">%d giorni fa</item>
+        <item quantity="few">%d giorni fa</item>
+        <item quantity="many">%d giorni fa</item>
+    </plurals>
+    <plurals name="in_num_seconds">
+        <item quantity="other">tra %d secondi</item>
+        <item quantity="zero">tra %d secondi</item>
+        <item quantity="one">tra 1 secondo</item>
+        <item quantity="two">tra %d secondi</item>
+        <item quantity="few">tra %d secondi</item>
+        <item quantity="many">tra %d secondi</item>
+    </plurals>
+    <plurals name="in_num_minutes">
+        <item quantity="other">tra %d minuti</item>
+        <item quantity="zero">tra %d minuti</item>
+        <item quantity="one">tra 1 minuto</item>
+        <item quantity="two">tra %d minuti</item>
+        <item quantity="few">tra %d minuti</item>
+        <item quantity="many">tra %d minuti</item>
+    </plurals>
+    <plurals name="in_num_hours">
+        <item quantity="other">tra %d ore</item>
+        <item quantity="zero">tra %d ore</item>
+        <item quantity="one">tra 1 ora</item>
+        <item quantity="two">tra %d ore</item>
+        <item quantity="few">tra %d ore</item>
+        <item quantity="many">tra %d ore</item>
+    </plurals>
+    <plurals name="in_num_days">
+        <item quantity="other">tra %d giorni</item>
+        <item quantity="zero">tra %d giorni</item>
+        <item quantity="one">domani</item>
+        <item quantity="two">tra %d giorni</item>
+        <item quantity="few">tra %d giorni</item>
+        <item quantity="many">tra %d giorni</item>
+    </plurals>
+    <plurals name="abbrev_num_seconds_ago">
+        <item quantity="other">%d secondi fa</item>
+        <item quantity="zero">%d secondi fa</item>
+        <item quantity="one">1 secondo fa</item>
+        <item quantity="two">%d secondi fa</item>
+        <item quantity="few">%d secondi fa</item>
+        <item quantity="many">%d secondi fa</item>
+    </plurals>
+    <plurals name="abbrev_num_minutes_ago">
+        <item quantity="other">%d minuti fa</item>
+        <item quantity="zero">%d minuti fa</item>
+        <item quantity="one">1 minuto fa</item>
+        <item quantity="two">%d minuti fa</item>
+        <item quantity="few">%d minuti fa</item>
+        <item quantity="many">%d minuti fa</item>
+    </plurals>
+    <plurals name="abbrev_num_hours_ago">
+        <item quantity="other">%d ore fa</item>
+        <item quantity="zero">%d ore fa</item>
+        <item quantity="one">1 ora fa</item>
+        <item quantity="two">%d ore fa</item>
+        <item quantity="few">%d ore fa</item>
+        <item quantity="many">%d ore fa</item>
+    </plurals>
+    <plurals name="abbrev_num_days_ago">
+        <item quantity="other">%d giorni fa</item>
+        <item quantity="zero">%d giorni fa</item>
+        <item quantity="one">ieri</item>
+        <item quantity="two">%d giorni fa</item>
+        <item quantity="few">%d giorni fa</item>
+        <item quantity="many">%d giorni fa</item>
+    </plurals>
+    <plurals name="abbrev_in_num_seconds">
+        <item quantity="other">tra %d secondi</item>
+        <item quantity="zero">tra %d secondi</item>
+        <item quantity="one">tra 1 secondo</item>
+        <item quantity="two">tra %d secondi</item>
+        <item quantity="few">tra %d secondi</item>
+        <item quantity="many">tra %d secondi</item>
+    </plurals>
+    <plurals name="abbrev_in_num_minutes">
+        <item quantity="other">tra %d minuti</item>
+        <item quantity="zero">tra %d minuti</item>
+        <item quantity="one">tra 1 minuto</item>
+        <item quantity="two">tra %d minuti</item>
+        <item quantity="few">tra %d minuti</item>
+        <item quantity="many">tra %d minuti</item>
+    </plurals>
+    <plurals name="abbrev_in_num_hours">
+        <item quantity="other">tra %d ore</item>
+        <item quantity="zero">tra %d ore</item>
+        <item quantity="one">tra 1 ora</item>
+        <item quantity="two">tra %d ore</item>
+        <item quantity="few">tra %d ore</item>
+        <item quantity="many">tra %d ore</item>
+    </plurals>
+    <plurals name="abbrev_in_num_days">
+        <item quantity="other">tra %d giorni</item>
+        <item quantity="zero">tra %d giorni</item>
+        <item quantity="one">domani</item>
+        <item quantity="two">tra %d giorni</item>
+        <item quantity="few">tra %d giorni</item>
+        <item quantity="many">tra %d giorni</item>
+    </plurals>
+    <plurals name="wifi_available">
+        <item quantity="other">Reti Wi-Fi disponibili</item>
+        <item quantity="zero">Reti Wi-Fi disponibili</item>
+        <item quantity="one">Rete Wi-Fi disponibile</item>
+        <item quantity="two">Reti Wi-Fi disponibili</item>
+        <item quantity="few">Reti Wi-Fi disponibili</item>
+        <item quantity="many">Reti Wi-Fi disponibili</item>
+    </plurals>
+    <plurals name="wifi_available_detailed">
+        <item quantity="other">Reti Wi-Fi aperte disponibili</item>
+        <item quantity="zero">Reti Wi-Fi aperte disponibili</item>
+        <item quantity="one">Rete Wi-Fi aperta disponibile</item>
+        <item quantity="two">Reti Wi-Fi aperte disponibili</item>
+        <item quantity="few">Reti Wi-Fi aperte disponibili</item>
+        <item quantity="many">Reti Wi-Fi aperte disponibili</item>
+    </plurals>
+    <plurals name="matches_found">
+        <item quantity="other">%1$d di %2$d</item>
+        <item quantity="zero">%1$d di %2$d</item>
+        <item quantity="one">1 corrispondenza</item>
+        <item quantity="two">%1$d di %2$d</item>
+        <item quantity="few">%1$d di %2$d</item>
+        <item quantity="many">%1$d di %2$d</item>
+    </plurals>
+    <plurals name="duration_seconds">
+        <item quantity="other">%d secondi</item>
+        <item quantity="one">1 secondo</item>
+    </plurals>
+    <plurals name="duration_minutes">
+        <item quantity="other">%d minuti</item>
+        <item quantity="one">1 minuto</item>
+    </plurals>
+    <plurals name="duration_hours">
+        <item quantity="other">%d ore</item>
+        <item quantity="one">1 ora</item>
+    </plurals>
+</resources>

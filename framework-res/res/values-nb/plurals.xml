@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="num_seconds_ago">
+        <item quantity="other">For %d sekunder siden</item>
+        <item quantity="zero">For %d sekunder siden</item>
+        <item quantity="one">For 1 sekund siden</item>
+        <item quantity="two">For %d sekunder siden</item>
+        <item quantity="few">For %d sekunder siden</item>
+        <item quantity="many">For %d sekunder siden</item>
+    </plurals>
+    <plurals name="num_minutes_ago">
+        <item quantity="other">For %d minutter siden</item>
+        <item quantity="zero">For %d minutter siden</item>
+        <item quantity="one">1 minutt siden</item>
+        <item quantity="two">For %d minutter siden</item>
+        <item quantity="few">For %d minutter siden</item>
+        <item quantity="many">For %d minutter siden</item>
+    </plurals>
+    <plurals name="num_hours_ago">
+        <item quantity="other">For %d timer siden</item>
+        <item quantity="zero">For %d timer siden</item>
+        <item quantity="one">1 time siden</item>
+        <item quantity="two">For %d timer siden</item>
+        <item quantity="few">For %d timer siden</item>
+        <item quantity="many">For %d timer siden</item>
+    </plurals>
+    <plurals name="last_num_days">
+        <item quantity="other">De siste %d dagene</item>
+        <item quantity="zero">De siste %d dagene</item>
+        <item quantity="one">Den siste %d dagen</item>
+        <item quantity="two">De siste %d dagene</item>
+        <item quantity="few">De siste %d dagene</item>
+        <item quantity="many">De siste %d dagene</item>
+    </plurals>
+    <plurals name="num_days_ago">
+        <item quantity="other">For %d dager siden</item>
+        <item quantity="zero">For %d dager siden</item>
+        <item quantity="one">i går</item>
+        <item quantity="two">For %d dager siden</item>
+        <item quantity="few">For %d dager siden</item>
+        <item quantity="many">For %d dager siden</item>
+    </plurals>
+    <plurals name="in_num_seconds">
+        <item quantity="other">om %d sekunder</item>
+        <item quantity="zero">om %d sekunder</item>
+        <item quantity="one">om 1 sekund</item>
+        <item quantity="two">om %d sekunder</item>
+        <item quantity="few">om %d sekunder</item>
+        <item quantity="many">om %d sekunder</item>
+    </plurals>
+    <plurals name="in_num_minutes">
+        <item quantity="other">om %d minutter</item>
+        <item quantity="zero">om %d minutter</item>
+        <item quantity="one">om 1 minutt</item>
+        <item quantity="two">om %d minutter</item>
+        <item quantity="few">om %d minutter</item>
+        <item quantity="many">om %d minutter</item>
+    </plurals>
+    <plurals name="in_num_hours">
+        <item quantity="other">om %d timer</item>
+        <item quantity="zero">om %d timer</item>
+        <item quantity="one">om 1 time</item>
+        <item quantity="two">om %d timer</item>
+        <item quantity="few">om %d timer</item>
+        <item quantity="many">om %d timer</item>
+    </plurals>
+    <plurals name="in_num_days">
+        <item quantity="other">om %d dager</item>
+        <item quantity="zero">om %d dager</item>
+        <item quantity="one">i morgen</item>
+        <item quantity="two">om %d dager</item>
+        <item quantity="few">om %d dager</item>
+        <item quantity="many">om %d dager</item>
+    </plurals>
+    <plurals name="abbrev_num_seconds_ago">
+        <item quantity="other">for %d sekunder siden</item>
+        <item quantity="zero">for %d sekunder siden</item>
+        <item quantity="one">For 1 sekund siden</item>
+        <item quantity="two">for %d sekunder siden</item>
+        <item quantity="few">for %d sekunder siden</item>
+        <item quantity="many">for %d sekunder siden</item>
+    </plurals>
+    <plurals name="abbrev_num_minutes_ago">
+        <item quantity="other">for %d minutter siden</item>
+        <item quantity="zero">for %d minutter siden</item>
+        <item quantity="one">1 minutt siden</item>
+        <item quantity="two">for %d minutter siden</item>
+        <item quantity="few">for %d minutter siden</item>
+        <item quantity="many">for %d minutter siden</item>
+    </plurals>
+    <plurals name="abbrev_num_hours_ago">
+        <item quantity="other">For %d timer siden</item>
+        <item quantity="zero">For %d timer siden</item>
+        <item quantity="one">1 time siden</item>
+        <item quantity="two">For %d timer siden</item>
+        <item quantity="few">For %d timer siden</item>
+        <item quantity="many">For %d timer siden</item>
+    </plurals>
+    <plurals name="abbrev_num_days_ago">
+        <item quantity="other">For %d dager siden</item>
+        <item quantity="zero">For %d dager siden</item>
+        <item quantity="one">i går</item>
+        <item quantity="two">For %d dager siden</item>
+        <item quantity="few">For %d dager siden</item>
+        <item quantity="many">For %d dager siden</item>
+    </plurals>
+    <plurals name="abbrev_in_num_seconds">
+        <item quantity="other">om %d sekunder</item>
+        <item quantity="zero">om %d sekunder</item>
+        <item quantity="one">om 1 sekund</item>
+        <item quantity="two">om %d sekunder</item>
+        <item quantity="few">om %d sekunder</item>
+        <item quantity="many">om %d sekunder</item>
+    </plurals>
+    <plurals name="abbrev_in_num_minutes">
+        <item quantity="other">om %d minutter</item>
+        <item quantity="zero">om %d minutter</item>
+        <item quantity="one">om 1 minutt</item>
+        <item quantity="two">om %d minutter</item>
+        <item quantity="few">om %d minutter</item>
+        <item quantity="many">om %d minutter</item>
+    </plurals>
+    <plurals name="abbrev_in_num_hours">
+        <item quantity="other">om %d timer</item>
+        <item quantity="zero">om %d timer</item>
+        <item quantity="one">om 1 time</item>
+        <item quantity="two">om %d timer</item>
+        <item quantity="few">om %d timer</item>
+        <item quantity="many">om %d timer</item>
+    </plurals>
+    <plurals name="abbrev_in_num_days">
+        <item quantity="other">om %d dager</item>
+        <item quantity="zero">om %d dager</item>
+        <item quantity="one">i morgen</item>
+        <item quantity="two">om %d dager</item>
+        <item quantity="few">om %d dager</item>
+        <item quantity="many">om %d dager</item>
+    </plurals>
+    <plurals name="wifi_available">
+        <item quantity="other">Trådløsnett i nærheten</item>
+        <item quantity="zero">Trådløsnett i nærheten</item>
+        <item quantity="one">Trådløsnett i nærheten</item>
+        <item quantity="two">Trådløsnett i nærheten</item>
+        <item quantity="few">Trådløsnett i nærheten</item>
+        <item quantity="many">Trådløsnett i nærheten</item>
+    </plurals>
+    <plurals name="wifi_available_detailed">
+        <item quantity="other">Åpne trådløsnett i nærheten</item>
+        <item quantity="zero">Åpne trådløsnett i nærheten</item>
+        <item quantity="one">Åpent trådløsnett i nærheten</item>
+        <item quantity="two">Åpne trådløsnett i nærheten</item>
+        <item quantity="few">Åpne trådløsnett i nærheten</item>
+        <item quantity="many">Åpne trådløsnett i nærheten</item>
+    </plurals>
+    <plurals name="matches_found">
+        <item quantity="other">%1$d av %2$d</item>
+        <item quantity="zero">%1$d av %2$d</item>
+        <item quantity="one">1 treff</item>
+        <item quantity="two">%1$d av %2$d</item>
+        <item quantity="few">%1$d av %2$d</item>
+        <item quantity="many">%1$d av %2$d</item>
+    </plurals>
+    <plurals name="duration_seconds">
+        <item quantity="other">%d sekunder</item>
+        <item quantity="one">Ett sekund</item>
+    </plurals>
+    <plurals name="duration_minutes">
+        <item quantity="other">%d minutter</item>
+        <item quantity="one">Ett minutt</item>
+    </plurals>
+    <plurals name="duration_hours">
+        <item quantity="other">%d timer</item>
+        <item quantity="one">Én time</item>
+    </plurals>
+</resources>

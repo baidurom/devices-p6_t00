@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="num_seconds_ago">
+        <item quantity="other">%d с назад</item>
+        <item quantity="zero">%d с назад</item>
+        <item quantity="one">1 с назад</item>
+        <item quantity="two">%d с назад</item>
+        <item quantity="few">%d с назад</item>
+        <item quantity="many">%d с назад</item>
+    </plurals>
+    <plurals name="num_minutes_ago">
+        <item quantity="other">%d мин назад</item>
+        <item quantity="zero">%d мин назад</item>
+        <item quantity="one">1 мин назад</item>
+        <item quantity="two">%d мин назад</item>
+        <item quantity="few">%d мин назад</item>
+        <item quantity="many">%d мин назад</item>
+    </plurals>
+    <plurals name="num_hours_ago">
+        <item quantity="other">%d ч назад</item>
+        <item quantity="zero">%d ч назад</item>
+        <item quantity="one">1 ч назад</item>
+        <item quantity="two">%d ч назад</item>
+        <item quantity="few">%d ч назад</item>
+        <item quantity="many">%d ч назад</item>
+    </plurals>
+    <plurals name="last_num_days">
+        <item quantity="other">Последние %d дня</item>
+        <item quantity="zero">Последние %d дней</item>
+        <item quantity="one">Последний %d дней</item>
+        <item quantity="two">Последние %d дня</item>
+        <item quantity="few">Последние %d дня</item>
+        <item quantity="many">Последние %d дней</item>
+    </plurals>
+    <plurals name="num_days_ago">
+        <item quantity="other">%d дн. назад</item>
+        <item quantity="zero">%d дн. назад</item>
+        <item quantity="one">вчера</item>
+        <item quantity="two">%d дн. назад</item>
+        <item quantity="few">%d дн. назад</item>
+        <item quantity="many">%d дн. назад</item>
+    </plurals>
+    <plurals name="in_num_seconds">
+        <item quantity="other">через %d с</item>
+        <item quantity="zero">через %d с</item>
+        <item quantity="one">через 1 с</item>
+        <item quantity="two">через %d с</item>
+        <item quantity="few">через %d с</item>
+        <item quantity="many">через %d с</item>
+    </plurals>
+    <plurals name="in_num_minutes">
+        <item quantity="other">через %d мин</item>
+        <item quantity="zero">через %d мин</item>
+        <item quantity="one">через 1 мин</item>
+        <item quantity="two">через %d мин</item>
+        <item quantity="few">через %d мин</item>
+        <item quantity="many">через %d мин</item>
+    </plurals>
+    <plurals name="in_num_hours">
+        <item quantity="other">через %d ч</item>
+        <item quantity="zero">через %d ч</item>
+        <item quantity="one">через 1 ч</item>
+        <item quantity="two">через %d ч</item>
+        <item quantity="few">через %d ч</item>
+        <item quantity="many">через %d ч</item>
+    </plurals>
+    <plurals name="in_num_days">
+        <item quantity="other">через %d дн.</item>
+        <item quantity="zero">через %d дн.</item>
+        <item quantity="one">завтра</item>
+        <item quantity="two">через %d дн.</item>
+        <item quantity="few">через %d дн.</item>
+        <item quantity="many">через %d дн.</item>
+    </plurals>
+    <plurals name="abbrev_num_seconds_ago">
+        <item quantity="other">%d с назад</item>
+        <item quantity="zero">%d с назад</item>
+        <item quantity="one">1 с назад</item>
+        <item quantity="two">%d с назад</item>
+        <item quantity="few">%d с назад</item>
+        <item quantity="many">%d с назад</item>
+    </plurals>
+    <plurals name="abbrev_num_minutes_ago">
+        <item quantity="other">%d мин назад</item>
+        <item quantity="zero">%d мин назад</item>
+        <item quantity="one">1 мин назад</item>
+        <item quantity="two">%d мин назад</item>
+        <item quantity="few">%d мин назад</item>
+        <item quantity="many">%d мин назад</item>
+    </plurals>
+    <plurals name="abbrev_num_hours_ago">
+        <item quantity="other">%d ч назад</item>
+        <item quantity="zero">%d ч назад</item>
+        <item quantity="one">1 ч назад</item>
+        <item quantity="two">%d ч назад</item>
+        <item quantity="few">%d ч назад</item>
+        <item quantity="many">%d ч назад</item>
+    </plurals>
+    <plurals name="abbrev_num_days_ago">
+        <item quantity="other">%d дн. назад</item>
+        <item quantity="zero">%d дн. назад</item>
+        <item quantity="one">вчера</item>
+        <item quantity="two">%d дн. назад</item>
+        <item quantity="few">%d дн. назад</item>
+        <item quantity="many">%d дн. назад</item>
+    </plurals>
+    <plurals name="abbrev_in_num_seconds">
+        <item quantity="other">через %d с</item>
+        <item quantity="zero">через %d с</item>
+        <item quantity="one">через 1 с</item>
+        <item quantity="two">через %d с</item>
+        <item quantity="few">через %d с</item>
+        <item quantity="many">через %d с</item>
+    </plurals>
+    <plurals name="abbrev_in_num_minutes">
+        <item quantity="other">через %d мин</item>
+        <item quantity="zero">через %d мин</item>
+        <item quantity="one">через 1 мин</item>
+        <item quantity="two">через %d мин</item>
+        <item quantity="few">через %d мин</item>
+        <item quantity="many">через %d мин</item>
+    </plurals>
+    <plurals name="abbrev_in_num_hours">
+        <item quantity="other">через %d ч</item>
+        <item quantity="zero">через %d ч</item>
+        <item quantity="one">через 1 ч</item>
+        <item quantity="two">через %d ч</item>
+        <item quantity="few">через %d ч</item>
+        <item quantity="many">через %d ч</item>
+    </plurals>
+    <plurals name="abbrev_in_num_days">
+        <item quantity="other">через %d дн.</item>
+        <item quantity="zero">через %d дн.</item>
+        <item quantity="one">завтра</item>
+        <item quantity="two">через %d дн.</item>
+        <item quantity="few">через %d дн.</item>
+        <item quantity="many">через %d дн.</item>
+    </plurals>
+    <plurals name="wifi_available">
+        <item quantity="other">Доступна сеть Wi-Fi</item>
+        <item quantity="zero">Доступна сеть Wi-Fi</item>
+        <item quantity="one">Доступна сеть Wi-Fi</item>
+        <item quantity="two">Доступна сеть Wi-Fi</item>
+        <item quantity="few">Доступна сеть Wi-Fi</item>
+        <item quantity="many">Доступна сеть Wi-Fi</item>
+    </plurals>
+    <plurals name="wifi_available_detailed">
+        <item quantity="other">Найдены доступные сети Wi-Fi</item>
+        <item quantity="zero">Найдены доступные сети Wi-Fi</item>
+        <item quantity="one">Найдена доступная сеть Wi-Fi</item>
+        <item quantity="two">Найдены доступные сети Wi-Fi</item>
+        <item quantity="few">Найдены доступные сети Wi-Fi</item>
+        <item quantity="many">Найдены доступные сети Wi-Fi</item>
+    </plurals>
+    <plurals name="matches_found">
+        <item quantity="other">%1$d из %2$d</item>
+        <item quantity="zero">%1$d из %2$d</item>
+        <item quantity="one">1 совпадение</item>
+        <item quantity="two">%1$d из %2$d</item>
+        <item quantity="few">%1$d из %2$d</item>
+        <item quantity="many">%1$d из %2$d</item>
+    </plurals>
+    <plurals name="duration_seconds">
+        <item quantity="other">%d сек.</item>
+        <item quantity="one">1 сек.</item>
+    </plurals>
+    <plurals name="duration_minutes">
+        <item quantity="other">%d мин.</item>
+        <item quantity="one">1 мин.</item>
+    </plurals>
+    <plurals name="duration_hours">
+        <item quantity="other">%d ч.</item>
+        <item quantity="one">1 ч.</item>
+    </plurals>
+</resources>

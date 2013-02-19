@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="num_seconds_ago">
+        <item quantity="other">%d sekundy temu</item>
+        <item quantity="zero">%d sekund temu</item>
+        <item quantity="one">1 sekundę temu</item>
+        <item quantity="two">%d sekundy temu</item>
+        <item quantity="few">%d sekundy temu</item>
+        <item quantity="many">%d sekund temu</item>
+    </plurals>
+    <plurals name="num_minutes_ago">
+        <item quantity="other">%d minuty temu</item>
+        <item quantity="zero">%d minut temu</item>
+        <item quantity="one">1 minutę temu</item>
+        <item quantity="two">%d minuty temu</item>
+        <item quantity="few">%d minuty temu</item>
+        <item quantity="many">%d minut temu</item>
+    </plurals>
+    <plurals name="num_hours_ago">
+        <item quantity="other">%d godziny temu</item>
+        <item quantity="zero">%d godzin temu</item>
+        <item quantity="one">1 godzinę temu</item>
+        <item quantity="two">%d godziny temu</item>
+        <item quantity="few">%d godziny temu</item>
+        <item quantity="many">%d godzin temu</item>
+    </plurals>
+    <plurals name="last_num_days">
+        <item quantity="other">%d ostatniego dnia</item>
+        <item quantity="zero">%d ostatnich dni</item>
+        <item quantity="one">%d ostatni dzień</item>
+        <item quantity="two">%d ostatnie dni</item>
+        <item quantity="few">%d ostatnie dni</item>
+        <item quantity="many">%d ostatnich dni</item>
+    </plurals>
+    <plurals name="num_days_ago">
+        <item quantity="other">%d dnia temu</item>
+        <item quantity="zero">%d dni temu</item>
+        <item quantity="one">wczoraj</item>
+        <item quantity="two">%d dni temu</item>
+        <item quantity="few">%d dni temu</item>
+        <item quantity="many">%d dni temu</item>
+    </plurals>
+    <plurals name="in_num_seconds">
+        <item quantity="other">za %d sekundy</item>
+        <item quantity="zero">za %d sekund</item>
+        <item quantity="one">za 1 sekundę</item>
+        <item quantity="two">za %d sekundy</item>
+        <item quantity="few">za %d sekundy</item>
+        <item quantity="many">za %d sekund</item>
+    </plurals>
+    <plurals name="in_num_minutes">
+        <item quantity="other">za %d minuty</item>
+        <item quantity="zero">za %d minut</item>
+        <item quantity="one">za 1 minutę</item>
+        <item quantity="two">za %d minuty</item>
+        <item quantity="few">za %d minuty</item>
+        <item quantity="many">za %d minut</item>
+    </plurals>
+    <plurals name="in_num_hours">
+        <item quantity="other">za %d godziny</item>
+        <item quantity="zero">za %d godzin</item>
+        <item quantity="one">za 1 godzinę</item>
+        <item quantity="two">za %d godziny</item>
+        <item quantity="few">za %d godziny</item>
+        <item quantity="many">za %d godzin</item>
+    </plurals>
+    <plurals name="in_num_days">
+        <item quantity="other">za %d dnia</item>
+        <item quantity="zero">za %d dni</item>
+        <item quantity="one">jutro</item>
+        <item quantity="two">za %d dni</item>
+        <item quantity="few">za %d dni</item>
+        <item quantity="many">za %d dni</item>
+    </plurals>
+    <plurals name="abbrev_num_seconds_ago">
+        <item quantity="other">%d sekundy temu</item>
+        <item quantity="zero">%d sekund temu</item>
+        <item quantity="one">1 sekundę temu</item>
+        <item quantity="two">%d sekundy temu</item>
+        <item quantity="few">%d sekundy temu</item>
+        <item quantity="many">%d sekund temu</item>
+    </plurals>
+    <plurals name="abbrev_num_minutes_ago">
+        <item quantity="other">%d minuty temu</item>
+        <item quantity="zero">%d minut temu</item>
+        <item quantity="one">1 minutę temu</item>
+        <item quantity="two">%d minuty temu</item>
+        <item quantity="few">%d minuty temu</item>
+        <item quantity="many">%d minut temu</item>
+    </plurals>
+    <plurals name="abbrev_num_hours_ago">
+        <item quantity="other">%d godziny temu</item>
+        <item quantity="zero">%d godzin temu</item>
+        <item quantity="one">1 godzinę temu</item>
+        <item quantity="two">%d godziny temu</item>
+        <item quantity="few">%d godziny temu</item>
+        <item quantity="many">%d godzin temu</item>
+    </plurals>
+    <plurals name="abbrev_num_days_ago">
+        <item quantity="other">%d dnia temu</item>
+        <item quantity="zero">%d dni temu</item>
+        <item quantity="one">wczoraj</item>
+        <item quantity="two">%d dni temu</item>
+        <item quantity="few">%d dni temu</item>
+        <item quantity="many">%d dni temu</item>
+    </plurals>
+    <plurals name="abbrev_in_num_seconds">
+        <item quantity="other">za %d sekundy</item>
+        <item quantity="zero">za %d sekund</item>
+        <item quantity="one">za 1 sekundę</item>
+        <item quantity="two">za %d sekundy</item>
+        <item quantity="few">za %d sekundy</item>
+        <item quantity="many">za %d sekund</item>
+    </plurals>
+    <plurals name="abbrev_in_num_minutes">
+        <item quantity="other">za %d minuty</item>
+        <item quantity="zero">za %d minut</item>
+        <item quantity="one">za 1 minutę</item>
+        <item quantity="two">za %d minuty</item>
+        <item quantity="few">za %d minuty</item>
+        <item quantity="many">za %d minut</item>
+    </plurals>
+    <plurals name="abbrev_in_num_hours">
+        <item quantity="other">za %d godziny</item>
+        <item quantity="zero">za %d godzin</item>
+        <item quantity="one">za 1 godzinę</item>
+        <item quantity="two">za %d godziny</item>
+        <item quantity="few">za %d godziny</item>
+        <item quantity="many">za %d godzin</item>
+    </plurals>
+    <plurals name="abbrev_in_num_days">
+        <item quantity="other">za %d dnia</item>
+        <item quantity="zero">za %d dni</item>
+        <item quantity="one">jutro</item>
+        <item quantity="two">za %d dni</item>
+        <item quantity="few">za %d dni</item>
+        <item quantity="many">za %d dni</item>
+    </plurals>
+    <plurals name="wifi_available">
+        <item quantity="other">Dostępne sieci Wi-Fi</item>
+        <item quantity="zero">Dostępne sieci Wi-Fi</item>
+        <item quantity="one">Sieć Wi-Fi jest dostępna</item>
+        <item quantity="two">Dostępne sieci Wi-Fi</item>
+        <item quantity="few">Dostępne sieci Wi-Fi</item>
+        <item quantity="many">Dostępne sieci Wi-Fi</item>
+    </plurals>
+    <plurals name="wifi_available_detailed">
+        <item quantity="other">Otwórz dostępne sieci Wi-Fi</item>
+        <item quantity="zero">Otwórz dostępne sieci Wi-Fi</item>
+        <item quantity="one">Otwórz dostępne sieci Wi-Fi</item>
+        <item quantity="two">Otwórz dostępne sieci Wi-Fi</item>
+        <item quantity="few">Otwórz dostępne sieci Wi-Fi</item>
+        <item quantity="many">Otwórz dostępne sieci Wi-Fi</item>
+    </plurals>
+    <plurals name="matches_found">
+        <item quantity="other">%1$d z %2$d</item>
+        <item quantity="zero">%1$d z %2$d</item>
+        <item quantity="one">1 wynik</item>
+        <item quantity="two">%1$d z %2$d</item>
+        <item quantity="few">%1$d z %2$d</item>
+        <item quantity="many">%1$d z %2$d</item>
+    </plurals>
+    <plurals name="duration_seconds">
+        <item quantity="other">%d s</item>
+        <item quantity="one">1 sekunda</item>
+    </plurals>
+    <plurals name="duration_minutes">
+        <item quantity="other">%d min</item>
+        <item quantity="one">1 minuta</item>
+    </plurals>
+    <plurals name="duration_hours">
+        <item quantity="other">%d godz.</item>
+        <item quantity="one">1 godzina</item>
+    </plurals>
+</resources>

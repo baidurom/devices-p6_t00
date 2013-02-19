@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="action_bar_title_text_size">14.0dip</dimen>
+    <dimen name="action_bar_subtitle_text_size">11.0dip</dimen>
+    <dimen name="action_bar_subtitle_top_margin">-2.0dip</dimen>
+    <dimen name="action_bar_subtitle_bottom_margin">3.0dip</dimen>
+</resources>

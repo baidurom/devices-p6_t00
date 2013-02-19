@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="num_seconds_ago">
+        <item quantity="other">prije %d sekundi</item>
+        <item quantity="zero">prije %d sekundi</item>
+        <item quantity="one">prije 1 sekundu</item>
+        <item quantity="two">prije %d sekunde</item>
+        <item quantity="few">prije %d sekunde</item>
+        <item quantity="many">prije %d sekundi</item>
+    </plurals>
+    <plurals name="num_minutes_ago">
+        <item quantity="other">prije %d minuta</item>
+        <item quantity="zero">prije %d minuta</item>
+        <item quantity="one">prije 1 minut</item>
+        <item quantity="two">prije %d minute</item>
+        <item quantity="few">prije %d minute</item>
+        <item quantity="many">prije %d minuta</item>
+    </plurals>
+    <plurals name="num_hours_ago">
+        <item quantity="other">prije %d sati</item>
+        <item quantity="zero">prije %d sati</item>
+        <item quantity="one">prije 1 sat</item>
+        <item quantity="two">prije %d sata</item>
+        <item quantity="few">prije %d sata</item>
+        <item quantity="many">prije %d sati</item>
+    </plurals>
+    <plurals name="last_num_days">
+        <item quantity="other">Zadnjih %d dana</item>
+        <item quantity="zero">Zadnjih %d dana</item>
+        <item quantity="one">Zadnjih %d dan</item>
+        <item quantity="two">Zadnja %d dana</item>
+        <item quantity="few">Zadnja %d dana</item>
+        <item quantity="many">Zadnjih %d dana</item>
+    </plurals>
+    <plurals name="num_days_ago">
+        <item quantity="other">prije %d dana</item>
+        <item quantity="zero">prije %d dana</item>
+        <item quantity="one">jučer</item>
+        <item quantity="two">prije %d dana</item>
+        <item quantity="few">prije %d dana</item>
+        <item quantity="many">prije %d dana</item>
+    </plurals>
+    <plurals name="in_num_seconds">
+        <item quantity="other">za %d sekundi</item>
+        <item quantity="zero">za %d sekundi</item>
+        <item quantity="one">za 1 sekundu</item>
+        <item quantity="two">za %d sekunde</item>
+        <item quantity="few">za %d sekunde</item>
+        <item quantity="many">za %d sekundi</item>
+    </plurals>
+    <plurals name="in_num_minutes">
+        <item quantity="other">za %d minuta</item>
+        <item quantity="zero">za %d minuta</item>
+        <item quantity="one">za 1 minutu</item>
+        <item quantity="two">za %d minute</item>
+        <item quantity="few">za %d minute</item>
+        <item quantity="many">za %d minuta</item>
+    </plurals>
+    <plurals name="in_num_hours">
+        <item quantity="other">za %d sati</item>
+        <item quantity="zero">za %d sati</item>
+        <item quantity="one">za 1 sat</item>
+        <item quantity="two">za %d sata</item>
+        <item quantity="few">za %d sata</item>
+        <item quantity="many">za %d sati</item>
+    </plurals>
+    <plurals name="in_num_days">
+        <item quantity="other">za %d dana</item>
+        <item quantity="zero">za %d dana</item>
+        <item quantity="one">sutra</item>
+        <item quantity="two">za %d dana</item>
+        <item quantity="few">za %d dana</item>
+        <item quantity="many">za %d dana</item>
+    </plurals>
+    <plurals name="abbrev_num_seconds_ago">
+        <item quantity="other">prije %d sekundi</item>
+        <item quantity="zero">prije %d sekundi</item>
+        <item quantity="one">prije 1 sekundu</item>
+        <item quantity="two">prije %d sekunde</item>
+        <item quantity="few">prije %d sekunde</item>
+        <item quantity="many">prije %d sekundi</item>
+    </plurals>
+    <plurals name="abbrev_num_minutes_ago">
+        <item quantity="other">prije %d minuta</item>
+        <item quantity="zero">prije %d minuta</item>
+        <item quantity="one">1 minute ago</item>
+        <item quantity="two">prije %d minute</item>
+        <item quantity="few">prije %d minute</item>
+        <item quantity="many">prije %d minuta</item>
+    </plurals>
+    <plurals name="abbrev_num_hours_ago">
+        <item quantity="other">prije %d sati</item>
+        <item quantity="zero">prije %d sati</item>
+        <item quantity="one">prije 1 sat</item>
+        <item quantity="two">prije %d sata</item>
+        <item quantity="few">prije %d sata</item>
+        <item quantity="many">prije %d sati</item>
+    </plurals>
+    <plurals name="abbrev_num_days_ago">
+        <item quantity="other">prije %d dana</item>
+        <item quantity="zero">prije %d dana</item>
+        <item quantity="one">jučer</item>
+        <item quantity="two">prije %d dana</item>
+        <item quantity="few">prije %d dana</item>
+        <item quantity="many">prije %d dana</item>
+    </plurals>
+    <plurals name="abbrev_in_num_seconds">
+        <item quantity="other">za %d sekundi</item>
+        <item quantity="zero">za %d sekundi</item>
+        <item quantity="one">za 1 sekundu</item>
+        <item quantity="two">za %d sekunde</item>
+        <item quantity="few">za %d sekunde</item>
+        <item quantity="many">za %d sekundi</item>
+    </plurals>
+    <plurals name="abbrev_in_num_minutes">
+        <item quantity="other">za %d minuta</item>
+        <item quantity="zero">za %d minuta</item>
+        <item quantity="one">za 1 minutu</item>
+        <item quantity="two">za %d minute</item>
+        <item quantity="few">za %d minute</item>
+        <item quantity="many">za %d minuta</item>
+    </plurals>
+    <plurals name="abbrev_in_num_hours">
+        <item quantity="other">za %d sati</item>
+        <item quantity="zero">za %d sati</item>
+        <item quantity="one">za 1 sat</item>
+        <item quantity="two">za %d sata</item>
+        <item quantity="few">za %d sata</item>
+        <item quantity="many">za %d sati</item>
+    </plurals>
+    <plurals name="abbrev_in_num_days">
+        <item quantity="other">za %d dana</item>
+        <item quantity="zero">za %d dana</item>
+        <item quantity="one">sutra</item>
+        <item quantity="two">za %d dana</item>
+        <item quantity="few">za %d dana</item>
+        <item quantity="many">za %d dana</item>
+    </plurals>
+    <plurals name="wifi_available">
+        <item quantity="other">Dostupne Wi-Fi mreže</item>
+        <item quantity="zero">Dostupne Wi-Fi mreže</item>
+        <item quantity="one">Dostupna Wi-Fi mreža</item>
+        <item quantity="two">Dostupne Wi-Fi mreže</item>
+        <item quantity="few">Dostupne Wi-Fi mreže</item>
+        <item quantity="many">Dostupne Wi-Fi mreže</item>
+    </plurals>
+    <plurals name="wifi_available_detailed">
+        <item quantity="other">Otvori dostupne Wi-Fi mreže</item>
+        <item quantity="zero">Otvori dostupne Wi-Fi mreže</item>
+        <item quantity="one">Otvori dostupnu Wi-Fi mrežu</item>
+        <item quantity="two">Otvori dostupne Wi-Fi mreže</item>
+        <item quantity="few">Otvori dostupne Wi-Fi mreže</item>
+        <item quantity="many">Otvori dostupne Wi-Fi mreže</item>
+    </plurals>
+    <plurals name="matches_found">
+        <item quantity="other">%1$dod%2$d</item>
+        <item quantity="zero">%1$dod%2$d</item>
+        <item quantity="one">1 podudarnost</item>
+        <item quantity="two">%1$dod%2$d</item>
+        <item quantity="few">%1$dod%2$d</item>
+        <item quantity="many">%1$dod%2$d</item>
+    </plurals>
+    <plurals name="duration_seconds">
+        <item quantity="other">%d sek.</item>
+        <item quantity="one">1 sekunda</item>
+    </plurals>
+    <plurals name="duration_minutes">
+        <item quantity="other">%d minuta</item>
+        <item quantity="one">1 minuta</item>
+    </plurals>
+    <plurals name="duration_hours">
+        <item quantity="other">%d sati</item>
+        <item quantity="one">1 sat</item>
+    </plurals>
+</resources>

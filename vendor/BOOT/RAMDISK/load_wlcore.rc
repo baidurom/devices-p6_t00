@@ -1,0 +1,40 @@
+
+on boot
+    # modify by z00175632 begin #
+    # added by z00186406 **** wl18xx ****  start #
+    insmod /system/lib/modules/compat.ko
+    insmod /system/lib/modules/cfg80211.ko
+    insmod /system/lib/modules/mac80211.ko disable_scan_while_active=0
+    insmod /system/lib/modules/wlcore.ko fwlog="dbgpins"
+    insmod /system/lib/modules/wl18xx.ko
+    
+    mkdir /data/misc/wifi 0770 wifi wifi
+    #chown wifi wifi /data/misc/wifi
+    mkdir /data/misc/wifi/sockets 0770 wifi wifi
+    #chown wifi wifi /data/misc/wifi/p2p_supplicant.conf
+    mkdir /data/misc/wifi/wpa_supplicant 0770 wifi wifi
+    chown wifi wifi /data/misc/wifi
+    chmod 0660 /data/misc/wifi/hostapd.conf
+    chmod 0660 /data/misc/wifi/wpa_supplicant.conf
+    chmod 0660 /data/misc/wifi/p2p_supplicant.conf
+    chown wifi wifi /data/misc/wifi/wpa_supplicant.conf
+    chown wifi wifi /data/misc/wifi/p2p_supplicant.conf
+    chown wifi wifi /data/misc/wifi/hostapd.conf
+    mkdir /data/misc/dhcp 0770 dhcp dhcp
+    mkdir /var
+    mkdir /var/run/
+    
+    chown wifi wifi /data/misc/wifi
+    chmod 0660 /data/misc/wifi/wpa_supplicant.conf
+    chmod 0660 /data/misc/wifi/hostapd.conf
+    chmod 0660 /data/misc/wifi/p2p_supplicant.conf
+    chown wifi wifi /data/misc/wifi/wpa_supplicant.conf
+    chown wifi wifi /data/misc/wifi/p2p_supplicant.conf
+    chown wifi wifi /data/misc/wifi/hostapd.conf
+    chown dhcp dhcp /data/misc/dhcp
+    mkdir /var
+    mkdir /var/run/
+    chown dhcp dhcp /var/run/
+    setprop wifi.interface wlan0
+    setprop ap.interface wlan1
+    # add by z00186406 *****18xx***** end

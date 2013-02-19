@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="num_seconds_ago">
+        <item quantity="other">för %d sekunder sedan</item>
+        <item quantity="zero">för %d sekunder sedan</item>
+        <item quantity="one">för 1 sekund sedan</item>
+        <item quantity="two">för %d sekunder sedan</item>
+        <item quantity="few">för %d sekunder sedan</item>
+        <item quantity="many">för %d sekunder sedan</item>
+    </plurals>
+    <plurals name="num_minutes_ago">
+        <item quantity="other">för %d minuter sedan</item>
+        <item quantity="zero">för %d minuter sedan</item>
+        <item quantity="one">1 minut sedan</item>
+        <item quantity="two">för %d minuter sedan</item>
+        <item quantity="few">för %d minuter sedan</item>
+        <item quantity="many">för %d minuter sedan</item>
+    </plurals>
+    <plurals name="num_hours_ago">
+        <item quantity="other">för %d timmar sedan</item>
+        <item quantity="zero">för %d timmar sedan</item>
+        <item quantity="one">1 timme sedan</item>
+        <item quantity="two">för %d timmar sedan</item>
+        <item quantity="few">för %d timmar sedan</item>
+        <item quantity="many">för %d timmar sedan</item>
+    </plurals>
+    <plurals name="last_num_days">
+        <item quantity="other">De senaste %d dagarna</item>
+        <item quantity="zero">De senaste %d dagarna</item>
+        <item quantity="one">Senaste %d dagen</item>
+        <item quantity="two">De senaste %d dagarna</item>
+        <item quantity="few">De senaste %d dagarna</item>
+        <item quantity="many">De senaste %d dagarna</item>
+    </plurals>
+    <plurals name="num_days_ago">
+        <item quantity="other">för %d dagar sedan</item>
+        <item quantity="zero">för %d dagar sedan</item>
+        <item quantity="one">igår</item>
+        <item quantity="two">för %d dagar sedan</item>
+        <item quantity="few">för %d dagar sedan</item>
+        <item quantity="many">för %d dagar sedan</item>
+    </plurals>
+    <plurals name="in_num_seconds">
+        <item quantity="other">om %d sekunder</item>
+        <item quantity="zero">om %d sekunder</item>
+        <item quantity="one">om 1 sekund</item>
+        <item quantity="two">om %d sekunder</item>
+        <item quantity="few">om %d sekunder</item>
+        <item quantity="many">om %d sekunder</item>
+    </plurals>
+    <plurals name="in_num_minutes">
+        <item quantity="other">om %d minuter</item>
+        <item quantity="zero">om %d minuter</item>
+        <item quantity="one">om 1 minut</item>
+        <item quantity="two">om %d minuter</item>
+        <item quantity="few">om %d minuter</item>
+        <item quantity="many">om %d minuter</item>
+    </plurals>
+    <plurals name="in_num_hours">
+        <item quantity="other">om %d timmar</item>
+        <item quantity="zero">om %d timmar</item>
+        <item quantity="one">om 1 timme</item>
+        <item quantity="two">om %d timmar</item>
+        <item quantity="few">om %d timmar</item>
+        <item quantity="many">om %d timmar</item>
+    </plurals>
+    <plurals name="in_num_days">
+        <item quantity="other">om %d dagar</item>
+        <item quantity="zero">om %d dagar</item>
+        <item quantity="one">i morgon</item>
+        <item quantity="two">om %d dagar</item>
+        <item quantity="few">om %d dagar</item>
+        <item quantity="many">om %d dagar</item>
+    </plurals>
+    <plurals name="abbrev_num_seconds_ago">
+        <item quantity="other">%d sekunder sedan</item>
+        <item quantity="zero">%d sekunder sedan</item>
+        <item quantity="one">1 sekund sedan</item>
+        <item quantity="two">%d sekunder sedan</item>
+        <item quantity="few">%d sekunder sedan</item>
+        <item quantity="many">%d sekunder sedan</item>
+    </plurals>
+    <plurals name="abbrev_num_minutes_ago">
+        <item quantity="other">%d minuter sedan</item>
+        <item quantity="zero">%d minuter sedan</item>
+        <item quantity="one">1 minut sedan</item>
+        <item quantity="two">%d minuter sedan</item>
+        <item quantity="few">%d minuter sedan</item>
+        <item quantity="many">%d minuter sedan</item>
+    </plurals>
+    <plurals name="abbrev_num_hours_ago">
+        <item quantity="other">för %d timmar sedan</item>
+        <item quantity="zero">för %d timmar sedan</item>
+        <item quantity="one">1 timme sedan</item>
+        <item quantity="two">för %d timmar sedan</item>
+        <item quantity="few">för %d timmar sedan</item>
+        <item quantity="many">för %d timmar sedan</item>
+    </plurals>
+    <plurals name="abbrev_num_days_ago">
+        <item quantity="other">för %d dagar sedan</item>
+        <item quantity="zero">för %d dagar sedan</item>
+        <item quantity="one">igår</item>
+        <item quantity="two">för %d dagar sedan</item>
+        <item quantity="few">för %d dagar sedan</item>
+        <item quantity="many">för %d dagar sedan</item>
+    </plurals>
+    <plurals name="abbrev_in_num_seconds">
+        <item quantity="other">om %d sekunder</item>
+        <item quantity="zero">om %d sekunder</item>
+        <item quantity="one">om 1 sekund</item>
+        <item quantity="two">om %d sekunder</item>
+        <item quantity="few">om %d sekunder</item>
+        <item quantity="many">om %d sekunder</item>
+    </plurals>
+    <plurals name="abbrev_in_num_minutes">
+        <item quantity="other">om %d minuter</item>
+        <item quantity="zero">om %d minuter</item>
+        <item quantity="one">om 1 minut</item>
+        <item quantity="two">om %d minuter</item>
+        <item quantity="few">om %d minuter</item>
+        <item quantity="many">om %d minuter</item>
+    </plurals>
+    <plurals name="abbrev_in_num_hours">
+        <item quantity="other">om %d timmar</item>
+        <item quantity="zero">om %d timmar</item>
+        <item quantity="one">om 1 timme</item>
+        <item quantity="two">om %d timmar</item>
+        <item quantity="few">om %d timmar</item>
+        <item quantity="many">om %d timmar</item>
+    </plurals>
+    <plurals name="abbrev_in_num_days">
+        <item quantity="other">om %d dagar</item>
+        <item quantity="zero">om %d dagar</item>
+        <item quantity="one">i morgon</item>
+        <item quantity="two">om %d dagar</item>
+        <item quantity="few">om %d dagar</item>
+        <item quantity="many">om %d dagar</item>
+    </plurals>
+    <plurals name="wifi_available">
+        <item quantity="other">Wi-Fi-nätverk är tillgängliga</item>
+        <item quantity="zero">Wi-Fi-nätverk är tillgängliga</item>
+        <item quantity="one">Wi-Fi-nätverk är tillgängliga</item>
+        <item quantity="two">Wi-Fi-nätverk är tillgängliga</item>
+        <item quantity="few">Wi-Fi-nätverk är tillgängliga</item>
+        <item quantity="many">Wi-Fi-nätverk är tillgängliga</item>
+    </plurals>
+    <plurals name="wifi_available_detailed">
+        <item quantity="other">Öppna Wi-Fi-nätverk är tillgängliga</item>
+        <item quantity="zero">Öppna Wi-Fi-nätverk är tillgängliga</item>
+        <item quantity="one">Öppna Wi-Fi-nätverk är tillgängliga</item>
+        <item quantity="two">Öppna Wi-Fi-nätverk är tillgängliga</item>
+        <item quantity="few">Öppna Wi-Fi-nätverk är tillgängliga</item>
+        <item quantity="many">Öppna Wi-Fi-nätverk är tillgängliga</item>
+    </plurals>
+    <plurals name="matches_found">
+        <item quantity="other">%1$d av %2$d</item>
+        <item quantity="zero">%1$d av %2$d</item>
+        <item quantity="one">1 träff</item>
+        <item quantity="two">%1$d av %2$d</item>
+        <item quantity="few">%1$d av %2$d</item>
+        <item quantity="many">%1$d av %2$d</item>
+    </plurals>
+    <plurals name="duration_seconds">
+        <item quantity="other">%d sekunder</item>
+        <item quantity="one">1 sekund</item>
+    </plurals>
+    <plurals name="duration_minutes">
+        <item quantity="other">%d minuter</item>
+        <item quantity="one">1 minut</item>
+    </plurals>
+    <plurals name="duration_hours">
+        <item quantity="other">%d timmar</item>
+        <item quantity="one">1 timme</item>
+    </plurals>
+</resources>

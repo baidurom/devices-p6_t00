@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="num_seconds_ago">
+        <item quantity="other">%d saniye önce</item>
+        <item quantity="zero">%d saniye önce</item>
+        <item quantity="one">1 saniye önce</item>
+        <item quantity="two">%d saniye önce</item>
+        <item quantity="few">%d saniye önce</item>
+        <item quantity="many">%d saniye önce</item>
+    </plurals>
+    <plurals name="num_minutes_ago">
+        <item quantity="other">%d dakika önce</item>
+        <item quantity="zero">%d dakika önce</item>
+        <item quantity="one">1 dakika önce</item>
+        <item quantity="two">%d dakika önce</item>
+        <item quantity="few">%d dakika önce</item>
+        <item quantity="many">%d dakika önce</item>
+    </plurals>
+    <plurals name="num_hours_ago">
+        <item quantity="other">%d saat önce</item>
+        <item quantity="zero">%d saat önce</item>
+        <item quantity="one">1 saat önce</item>
+        <item quantity="two">%d saat önce</item>
+        <item quantity="few">%d saat önce</item>
+        <item quantity="many">%d saat önce</item>
+    </plurals>
+    <plurals name="last_num_days">
+        <item quantity="other">Son %d gün</item>
+        <item quantity="zero">Son %d gün</item>
+        <item quantity="one">Son %d gün</item>
+        <item quantity="two">Son %d gün</item>
+        <item quantity="few">Son %d gün</item>
+        <item quantity="many">Son %d gün</item>
+    </plurals>
+    <plurals name="num_days_ago">
+        <item quantity="other">%d gün önce</item>
+        <item quantity="zero">%d gün önce</item>
+        <item quantity="one">dün</item>
+        <item quantity="two">%d gün önce</item>
+        <item quantity="few">%d gün önce</item>
+        <item quantity="many">%d gün önce</item>
+    </plurals>
+    <plurals name="in_num_seconds">
+        <item quantity="other">%d saniyede</item>
+        <item quantity="zero">%d saniyede</item>
+        <item quantity="one">1 saniye içinde</item>
+        <item quantity="two">%d saniyede</item>
+        <item quantity="few">%d saniyede</item>
+        <item quantity="many">%d saniyede</item>
+    </plurals>
+    <plurals name="in_num_minutes">
+        <item quantity="other">%d dakikada</item>
+        <item quantity="zero">%d dakikada</item>
+        <item quantity="one">1 dakika içinde</item>
+        <item quantity="two">%d dakikada</item>
+        <item quantity="few">%d dakikada</item>
+        <item quantity="many">%d dakikada</item>
+    </plurals>
+    <plurals name="in_num_hours">
+        <item quantity="other">%d saatte</item>
+        <item quantity="zero">%d saatte</item>
+        <item quantity="one">1 saat içinde</item>
+        <item quantity="two">%d saatte</item>
+        <item quantity="few">%d saatte</item>
+        <item quantity="many">%d saatte</item>
+    </plurals>
+    <plurals name="in_num_days">
+        <item quantity="other">%d günde</item>
+        <item quantity="zero">%d günde</item>
+        <item quantity="one">yarın</item>
+        <item quantity="two">%d günde</item>
+        <item quantity="few">%d günde</item>
+        <item quantity="many">%d günde</item>
+    </plurals>
+    <plurals name="abbrev_num_seconds_ago">
+        <item quantity="other">%d saniye önce</item>
+        <item quantity="zero">%d saniye önce</item>
+        <item quantity="one">1 saniye önce</item>
+        <item quantity="two">%d saniye önce</item>
+        <item quantity="few">%d saniye önce</item>
+        <item quantity="many">%d saniye önce</item>
+    </plurals>
+    <plurals name="abbrev_num_minutes_ago">
+        <item quantity="other">%d dakika önce</item>
+        <item quantity="zero">%d dakika önce</item>
+        <item quantity="one">1 dakika önce</item>
+        <item quantity="two">%d dakika önce</item>
+        <item quantity="few">%d dakika önce</item>
+        <item quantity="many">%d dakika önce</item>
+    </plurals>
+    <plurals name="abbrev_num_hours_ago">
+        <item quantity="other">%d saat önce</item>
+        <item quantity="zero">%d saat önce</item>
+        <item quantity="one">1 saat önce</item>
+        <item quantity="two">%d saat önce</item>
+        <item quantity="few">%d saat önce</item>
+        <item quantity="many">%d saat önce</item>
+    </plurals>
+    <plurals name="abbrev_num_days_ago">
+        <item quantity="other">%d gün önce</item>
+        <item quantity="zero">%d gün önce</item>
+        <item quantity="one">dün</item>
+        <item quantity="two">%d gün önce</item>
+        <item quantity="few">%d gün önce</item>
+        <item quantity="many">%d gün önce</item>
+    </plurals>
+    <plurals name="abbrev_in_num_seconds">
+        <item quantity="other">%d saniyede</item>
+        <item quantity="zero">%d saniyede</item>
+        <item quantity="one">1 saniye içinde</item>
+        <item quantity="two">%d saniyede</item>
+        <item quantity="few">%d saniyede</item>
+        <item quantity="many">%d saniyede</item>
+    </plurals>
+    <plurals name="abbrev_in_num_minutes">
+        <item quantity="other">%d dakikada</item>
+        <item quantity="zero">%d dakikada</item>
+        <item quantity="one">1 dakika içinde</item>
+        <item quantity="two">%d dakikada</item>
+        <item quantity="few">%d dakikada</item>
+        <item quantity="many">%d dakikada</item>
+    </plurals>
+    <plurals name="abbrev_in_num_hours">
+        <item quantity="other">%d saatte</item>
+        <item quantity="zero">%d saatte</item>
+        <item quantity="one">1 saat içinde</item>
+        <item quantity="two">%d saatte</item>
+        <item quantity="few">%d saatte</item>
+        <item quantity="many">%d saatte</item>
+    </plurals>
+    <plurals name="abbrev_in_num_days">
+        <item quantity="other">%d günde</item>
+        <item quantity="zero">%d günde</item>
+        <item quantity="one">yarın</item>
+        <item quantity="two">%d günde</item>
+        <item quantity="few">%d günde</item>
+        <item quantity="many">%d günde</item>
+    </plurals>
+    <plurals name="wifi_available">
+        <item quantity="other">Kablosuz ağlar var</item>
+        <item quantity="zero">Kablosuz ağlar var</item>
+        <item quantity="one">Kablosuz ağ var</item>
+        <item quantity="two">Kablosuz ağlar var</item>
+        <item quantity="few">Kablosuz ağlar var</item>
+        <item quantity="many">Kablosuz ağlar var</item>
+    </plurals>
+    <plurals name="wifi_available_detailed">
+        <item quantity="other">Kullanılabilir kablosuz ağları aç</item>
+        <item quantity="zero">Kullanılabilir kablosuz ağları aç</item>
+        <item quantity="one">Kullanılabilir kablosuz ağı aç</item>
+        <item quantity="two">Kullanılabilir kablosuz ağları aç</item>
+        <item quantity="few">Kullanılabilir kablosuz ağları aç</item>
+        <item quantity="many">Kullanılabilir kablosuz ağları aç</item>
+    </plurals>
+    <plurals name="matches_found">
+        <item quantity="other">%1$d / %2$d</item>
+        <item quantity="zero">%1$d / %2$d</item>
+        <item quantity="one">1 eşleşme</item>
+        <item quantity="two">%1$d / %2$d</item>
+        <item quantity="few">%1$d / %2$d</item>
+        <item quantity="many">%1$d / %2$d</item>
+    </plurals>
+    <plurals name="duration_seconds">
+        <item quantity="other">%d saniye</item>
+        <item quantity="one">1 saniye</item>
+    </plurals>
+    <plurals name="duration_minutes">
+        <item quantity="other">%d dakika</item>
+        <item quantity="one">1 dakika</item>
+    </plurals>
+    <plurals name="duration_hours">
+        <item quantity="other">%d saat</item>
+        <item quantity="one">1 saat</item>
+    </plurals>
+</resources>

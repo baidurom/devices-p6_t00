@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="num_seconds_ago">
+        <item quantity="other">%d seconds ago</item>
+        <item quantity="zero">%d seconds ago</item>
+        <item quantity="one">1 second ago</item>
+        <item quantity="two">%d seconds ago</item>
+        <item quantity="few">%d seconds ago</item>
+        <item quantity="many">%d seconds ago</item>
+    </plurals>
+    <plurals name="num_minutes_ago">
+        <item quantity="other">%d minutes ago</item>
+        <item quantity="zero">%d minutes ago</item>
+        <item quantity="one">1 minute ago</item>
+        <item quantity="two">%d minutes ago</item>
+        <item quantity="few">%d minutes ago</item>
+        <item quantity="many">%d minutes ago</item>
+    </plurals>
+    <plurals name="num_hours_ago">
+        <item quantity="other">%d hours ago</item>
+        <item quantity="zero">%d hours ago</item>
+        <item quantity="one">1 hour ago</item>
+        <item quantity="two">%d hours ago</item>
+        <item quantity="few">%d hours ago</item>
+        <item quantity="many">%d hours ago</item>
+    </plurals>
+    <plurals name="last_num_days">
+        <item quantity="other">Last %d days</item>
+        <item quantity="zero">Last %d days</item>
+        <item quantity="one">Last %d day</item>
+        <item quantity="two">Last %d days</item>
+        <item quantity="few">Last %d days</item>
+        <item quantity="many">Last %d days</item>
+    </plurals>
+    <plurals name="num_days_ago">
+        <item quantity="other">%d days ago</item>
+        <item quantity="zero">%d days ago</item>
+        <item quantity="one">yesterday</item>
+        <item quantity="two">%d days ago</item>
+        <item quantity="few">%d days ago</item>
+        <item quantity="many">%d days ago</item>
+    </plurals>
+    <plurals name="in_num_seconds">
+        <item quantity="other">in %d seconds</item>
+        <item quantity="zero">in %d seconds</item>
+        <item quantity="one">in 1 second</item>
+        <item quantity="two">in %d seconds</item>
+        <item quantity="few">in %d seconds</item>
+        <item quantity="many">in %d seconds</item>
+    </plurals>
+    <plurals name="in_num_minutes">
+        <item quantity="other">in %d minutes</item>
+        <item quantity="zero">in %d minutes</item>
+        <item quantity="one">in 1 minute</item>
+        <item quantity="two">in %d minutes</item>
+        <item quantity="few">in %d minutes</item>
+        <item quantity="many">in %d minutes</item>
+    </plurals>
+    <plurals name="in_num_hours">
+        <item quantity="other">in %d hours</item>
+        <item quantity="zero">in %d hours</item>
+        <item quantity="one">in 1 hour</item>
+        <item quantity="two">in %d hours</item>
+        <item quantity="few">in %d hours</item>
+        <item quantity="many">in %d hours</item>
+    </plurals>
+    <plurals name="in_num_days">
+        <item quantity="other">in %d days</item>
+        <item quantity="zero">in %d days</item>
+        <item quantity="one">tomorrow</item>
+        <item quantity="two">in %d days</item>
+        <item quantity="few">in %d days</item>
+        <item quantity="many">in %d days</item>
+    </plurals>
+    <plurals name="abbrev_num_seconds_ago">
+        <item quantity="other">%d seconds ago</item>
+        <item quantity="zero">%d seconds ago</item>
+        <item quantity="one">1 second ago</item>
+        <item quantity="two">%d seconds ago</item>
+        <item quantity="few">%d seconds ago</item>
+        <item quantity="many">%d seconds ago</item>
+    </plurals>
+    <plurals name="abbrev_num_minutes_ago">
+        <item quantity="other">%d mins ago</item>
+        <item quantity="zero">%d mins ago</item>
+        <item quantity="one">1 min ago</item>
+        <item quantity="two">%d mins ago</item>
+        <item quantity="few">%d mins ago</item>
+        <item quantity="many">%d mins ago</item>
+    </plurals>
+    <plurals name="abbrev_num_hours_ago">
+        <item quantity="other">%d hours ago</item>
+        <item quantity="zero">%d hours ago</item>
+        <item quantity="one">1 hour ago</item>
+        <item quantity="two">%d hours ago</item>
+        <item quantity="few">%d hours ago</item>
+        <item quantity="many">%d hours ago</item>
+    </plurals>
+    <plurals name="abbrev_num_days_ago">
+        <item quantity="other">%d days ago</item>
+        <item quantity="zero">%d days ago</item>
+        <item quantity="one">yesterday</item>
+        <item quantity="two">%d days ago</item>
+        <item quantity="few">%d days ago</item>
+        <item quantity="many">%d days ago</item>
+    </plurals>
+    <plurals name="abbrev_in_num_seconds">
+        <item quantity="other">in %d seconds</item>
+        <item quantity="zero">in %d seconds</item>
+        <item quantity="one">in 1 second</item>
+        <item quantity="two">in %d seconds</item>
+        <item quantity="few">in %d seconds</item>
+        <item quantity="many">in %d seconds</item>
+    </plurals>
+    <plurals name="abbrev_in_num_minutes">
+        <item quantity="other">in %d mins</item>
+        <item quantity="zero">in %d mins</item>
+        <item quantity="one">in 1 min</item>
+        <item quantity="two">in %d mins</item>
+        <item quantity="few">in %d mins</item>
+        <item quantity="many">in %d mins</item>
+    </plurals>
+    <plurals name="abbrev_in_num_hours">
+        <item quantity="other">in %d hours</item>
+        <item quantity="zero">in %d hours</item>
+        <item quantity="one">in 1 hour</item>
+        <item quantity="two">in %d hours</item>
+        <item quantity="few">in %d hours</item>
+        <item quantity="many">in %d hours</item>
+    </plurals>
+    <plurals name="abbrev_in_num_days">
+        <item quantity="other">in %d days</item>
+        <item quantity="zero">in %d days</item>
+        <item quantity="one">tomorrow</item>
+        <item quantity="two">in %d days</item>
+        <item quantity="few">in %d days</item>
+        <item quantity="many">in %d days</item>
+    </plurals>
+    <plurals name="wifi_available">
+        <item quantity="other">Wi-Fi networks available</item>
+        <item quantity="zero">Wi-Fi networks available</item>
+        <item quantity="one">Wi-Fi network available</item>
+        <item quantity="two">Wi-Fi networks available</item>
+        <item quantity="few">Wi-Fi networks available</item>
+        <item quantity="many">Wi-Fi networks available</item>
+    </plurals>
+    <plurals name="wifi_available_detailed">
+        <item quantity="other">Open Wi-Fi networks available</item>
+        <item quantity="zero">Open Wi-Fi networks available</item>
+        <item quantity="one">Open Wi-Fi network available</item>
+        <item quantity="two">Open Wi-Fi networks available</item>
+        <item quantity="few">Open Wi-Fi networks available</item>
+        <item quantity="many">Open Wi-Fi networks available</item>
+    </plurals>
+    <plurals name="matches_found">
+        <item quantity="other">%1$d of %2$d</item>
+        <item quantity="zero">%1$d of %2$d</item>
+        <item quantity="one">1 match</item>
+        <item quantity="two">%1$d of %2$d</item>
+        <item quantity="few">%1$d of %2$d</item>
+        <item quantity="many">%1$d of %2$d</item>
+    </plurals>
+    <plurals name="duration_seconds">
+        <item quantity="other">%d seconds</item>
+        <item quantity="one">1 second</item>
+    </plurals>
+    <plurals name="duration_minutes">
+        <item quantity="other">%d minutes</item>
+        <item quantity="one">1 minute</item>
+    </plurals>
+    <plurals name="duration_hours">
+        <item quantity="other">%d hours</item>
+        <item quantity="one">1 hour</item>
+    </plurals>
+</resources>

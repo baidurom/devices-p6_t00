@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="num_seconds_ago">
+        <item quantity="other">Pirms %d sekundēm</item>
+        <item quantity="zero">Pirms %d sekundēm</item>
+        <item quantity="one">Pirms 1 sekundes</item>
+        <item quantity="two">Pirms %d sekundēm</item>
+        <item quantity="few">Pirms %d sekundēm</item>
+        <item quantity="many">Pirms %d sekundēm</item>
+    </plurals>
+    <plurals name="num_minutes_ago">
+        <item quantity="other">Pirms %d minūtēm</item>
+        <item quantity="zero">Pirms %d minūtēm</item>
+        <item quantity="one">Pirms 1 minūtes</item>
+        <item quantity="two">Pirms %d minūtēm</item>
+        <item quantity="few">Pirms %d minūtēm</item>
+        <item quantity="many">Pirms %d minūtēm</item>
+    </plurals>
+    <plurals name="num_hours_ago">
+        <item quantity="other">Pirms %d stundām</item>
+        <item quantity="zero">Pirms %d stundām</item>
+        <item quantity="one">Pirms 1 stundas</item>
+        <item quantity="two">Pirms %d stundām</item>
+        <item quantity="few">Pirms %d stundām</item>
+        <item quantity="many">Pirms %d stundām</item>
+    </plurals>
+    <plurals name="last_num_days">
+        <item quantity="other">Pēdējo %d dienu laikā</item>
+        <item quantity="zero">Pēdējo %d dienu laikā</item>
+        <item quantity="one">Pēdējās %d dienas laikā</item>
+        <item quantity="two">Pēdējo %d dienu laikā</item>
+        <item quantity="few">Pēdējo %d dienu laikā</item>
+        <item quantity="many">Pēdējo %d dienu laikā</item>
+    </plurals>
+    <plurals name="num_days_ago">
+        <item quantity="other">Pirms %d dienām</item>
+        <item quantity="zero">Pirms %d dienām</item>
+        <item quantity="one">vakar</item>
+        <item quantity="two">Pirms %d dienām</item>
+        <item quantity="few">Pirms %d dienām</item>
+        <item quantity="many">Pirms %d dienām</item>
+    </plurals>
+    <plurals name="in_num_seconds">
+        <item quantity="other">Pēc %d sekundēm</item>
+        <item quantity="zero">Pēc %d sekundēm</item>
+        <item quantity="one">Pēc 1 sekundes</item>
+        <item quantity="two">Pēc %d sekundēm</item>
+        <item quantity="few">Pēc %d sekundēm</item>
+        <item quantity="many">Pēc %d sekundēm</item>
+    </plurals>
+    <plurals name="in_num_minutes">
+        <item quantity="other">Pēc %d minūtēm</item>
+        <item quantity="zero">Pēc %d minūtēm</item>
+        <item quantity="one">Pēc 1 minūtes</item>
+        <item quantity="two">Pēc %d minūtēm</item>
+        <item quantity="few">Pēc %d minūtēm</item>
+        <item quantity="many">Pēc %d minūtēm</item>
+    </plurals>
+    <plurals name="in_num_hours">
+        <item quantity="other">Pēc %d stundām</item>
+        <item quantity="zero">Pēc %d stundām</item>
+        <item quantity="one">Pēc 1 stundas</item>
+        <item quantity="two">Pēc %d stundām</item>
+        <item quantity="few">Pēc %d stundām</item>
+        <item quantity="many">Pēc %d stundām</item>
+    </plurals>
+    <plurals name="in_num_days">
+        <item quantity="other">Pēc %d dienām</item>
+        <item quantity="zero">Pēc %d dienām</item>
+        <item quantity="one">rītdien</item>
+        <item quantity="two">Pēc %d dienām</item>
+        <item quantity="few">Pēc %d dienām</item>
+        <item quantity="many">Pēc %d dienām</item>
+    </plurals>
+    <plurals name="abbrev_num_seconds_ago">
+        <item quantity="other">pirms %d sekundēm</item>
+        <item quantity="zero">pirms %d sekundēm</item>
+        <item quantity="one">pirms 1 sekundes</item>
+        <item quantity="two">pirms %d sekundēm</item>
+        <item quantity="few">pirms %d sekundēm</item>
+        <item quantity="many">pirms %d sekundēm</item>
+    </plurals>
+    <plurals name="abbrev_num_minutes_ago">
+        <item quantity="other">pirms %d minūtēm</item>
+        <item quantity="zero">pirms %d minūtēm</item>
+        <item quantity="one">pirms 1 minūtes</item>
+        <item quantity="two">pirms %d minūtēm</item>
+        <item quantity="few">pirms %d minūtēm</item>
+        <item quantity="many">pirms %d minūtēm</item>
+    </plurals>
+    <plurals name="abbrev_num_hours_ago">
+        <item quantity="other">Pirms %d stundām</item>
+        <item quantity="zero">Pirms %d stundām</item>
+        <item quantity="one">Pirms 1 stundas</item>
+        <item quantity="two">Pirms %d stundām</item>
+        <item quantity="few">Pirms %d stundām</item>
+        <item quantity="many">Pirms %d stundām</item>
+    </plurals>
+    <plurals name="abbrev_num_days_ago">
+        <item quantity="other">Pirms %d dienām</item>
+        <item quantity="zero">Pirms %d dienām</item>
+        <item quantity="one">vakar</item>
+        <item quantity="two">Pirms %d dienām</item>
+        <item quantity="few">Pirms %d dienām</item>
+        <item quantity="many">Pirms %d dienām</item>
+    </plurals>
+    <plurals name="abbrev_in_num_seconds">
+        <item quantity="other">pēc %d sekundēm</item>
+        <item quantity="zero">pēc %d sekundēm</item>
+        <item quantity="one">pēc 1 sekundes</item>
+        <item quantity="two">pēc %d sekundēm</item>
+        <item quantity="few">pēc %d sekundēm</item>
+        <item quantity="many">pēc %d sekundēm</item>
+    </plurals>
+    <plurals name="abbrev_in_num_minutes">
+        <item quantity="other">pēc %d minūtēm</item>
+        <item quantity="zero">pēc %d minūtēm</item>
+        <item quantity="one">pēc 1 minūtes</item>
+        <item quantity="two">pēc %d minūtēm</item>
+        <item quantity="few">pēc %d minūtēm</item>
+        <item quantity="many">pēc %d minūtēm</item>
+    </plurals>
+    <plurals name="abbrev_in_num_hours">
+        <item quantity="other">Pēc %d stundām</item>
+        <item quantity="zero">Pēc %d stundām</item>
+        <item quantity="one">Pēc 1 stundas</item>
+        <item quantity="two">Pēc %d stundām</item>
+        <item quantity="few">Pēc %d stundām</item>
+        <item quantity="many">Pēc %d stundām</item>
+    </plurals>
+    <plurals name="abbrev_in_num_days">
+        <item quantity="other">Pēc %d dienām</item>
+        <item quantity="zero">Pēc %d dienām</item>
+        <item quantity="one">rītdien</item>
+        <item quantity="two">Pēc %d dienām</item>
+        <item quantity="few">Pēc %d dienām</item>
+        <item quantity="many">Pēc %d dienām</item>
+    </plurals>
+    <plurals name="wifi_available">
+        <item quantity="other">Wi-Fi tīkli ir pieejami</item>
+        <item quantity="zero">Wi-Fi tīkli ir pieejami</item>
+        <item quantity="one">Wi-Fi tīkls ir pieejams.</item>
+        <item quantity="two">Wi-Fi tīkli ir pieejami</item>
+        <item quantity="few">Wi-Fi tīkli ir pieejami</item>
+        <item quantity="many">Wi-Fi tīkli ir pieejami</item>
+    </plurals>
+    <plurals name="wifi_available_detailed">
+        <item quantity="other">Ir pieejami atvērti Wi-Fi tīkli.</item>
+        <item quantity="zero">Ir pieejami atvērti Wi-Fi tīkli.</item>
+        <item quantity="one">Ir pieejams atvērts Wi-Fi tīkls</item>
+        <item quantity="two">Ir pieejami atvērti Wi-Fi tīkli.</item>
+        <item quantity="few">Ir pieejami atvērti Wi-Fi tīkli.</item>
+        <item quantity="many">Ir pieejami atvērti Wi-Fi tīkli.</item>
+    </plurals>
+    <plurals name="matches_found">
+        <item quantity="other">%1$d no %2$d</item>
+        <item quantity="zero">%1$d no %2$d</item>
+        <item quantity="one">1 atbilstība</item>
+        <item quantity="two">%1$d no %2$d</item>
+        <item quantity="few">%1$d no %2$d</item>
+        <item quantity="many">%1$d no %2$d</item>
+    </plurals>
+    <plurals name="duration_seconds">
+        <item quantity="other">%d s</item>
+        <item quantity="one">1 s</item>
+    </plurals>
+    <plurals name="duration_minutes">
+        <item quantity="other">%d min</item>
+        <item quantity="one">1 min</item>
+    </plurals>
+    <plurals name="duration_hours">
+        <item quantity="other">%d h</item>
+        <item quantity="one">1 h</item>
+    </plurals>
+</resources>

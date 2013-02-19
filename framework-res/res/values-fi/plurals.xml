@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="num_seconds_ago">
+        <item quantity="other">%d sekuntia sitten</item>
+        <item quantity="zero">%d sekuntia sitten</item>
+        <item quantity="one">1 sekunti sitten</item>
+        <item quantity="two">%d sekuntia sitten</item>
+        <item quantity="few">%d sekuntia sitten</item>
+        <item quantity="many">%d sekuntia sitten</item>
+    </plurals>
+    <plurals name="num_minutes_ago">
+        <item quantity="other">%d minuuttia sitten</item>
+        <item quantity="zero">%d minuuttia sitten</item>
+        <item quantity="one">1 minuutti sitten</item>
+        <item quantity="two">%d minuuttia sitten</item>
+        <item quantity="few">%d minuuttia sitten</item>
+        <item quantity="many">%d minuuttia sitten</item>
+    </plurals>
+    <plurals name="num_hours_ago">
+        <item quantity="other">%d tuntia sitten</item>
+        <item quantity="zero">%d tuntia sitten</item>
+        <item quantity="one">1 tunti sitten</item>
+        <item quantity="two">%d tuntia sitten</item>
+        <item quantity="few">%d tuntia sitten</item>
+        <item quantity="many">%d tuntia sitten</item>
+    </plurals>
+    <plurals name="last_num_days">
+        <item quantity="other">Viimeiset %d päivää</item>
+        <item quantity="zero">Viimeiset %d päivää</item>
+        <item quantity="one">Viimeinen %d päivä</item>
+        <item quantity="two">Viimeiset %d päivää</item>
+        <item quantity="few">Viimeiset %d päivää</item>
+        <item quantity="many">Viimeiset %d päivää</item>
+    </plurals>
+    <plurals name="num_days_ago">
+        <item quantity="other">%d päivää sitten</item>
+        <item quantity="zero">%d päivää sitten</item>
+        <item quantity="one">eilen</item>
+        <item quantity="two">%d päivää sitten</item>
+        <item quantity="few">%d päivää sitten</item>
+        <item quantity="many">%d päivää sitten</item>
+    </plurals>
+    <plurals name="in_num_seconds">
+        <item quantity="other">%d sekunnin kuluttua</item>
+        <item quantity="zero">%d sekunnin kuluttua</item>
+        <item quantity="one">1 sekunnin kuluttua</item>
+        <item quantity="two">%d sekunnin kuluttua</item>
+        <item quantity="few">%d sekunnin kuluttua</item>
+        <item quantity="many">%d sekunnin kuluttua</item>
+    </plurals>
+    <plurals name="in_num_minutes">
+        <item quantity="other">%d minuutin kuluttua</item>
+        <item quantity="zero">%d minuutin kuluttua</item>
+        <item quantity="one">1 minuutin kuluttua</item>
+        <item quantity="two">%d minuutin kuluttua</item>
+        <item quantity="few">%d minuutin kuluttua</item>
+        <item quantity="many">%d minuutin kuluttua</item>
+    </plurals>
+    <plurals name="in_num_hours">
+        <item quantity="other">%d tunnin kuluttua</item>
+        <item quantity="zero">%d tunnin kuluttua</item>
+        <item quantity="one">1 tunnin kuluttua</item>
+        <item quantity="two">%d tunnin kuluttua</item>
+        <item quantity="few">%d tunnin kuluttua</item>
+        <item quantity="many">%d tunnin kuluttua</item>
+    </plurals>
+    <plurals name="in_num_days">
+        <item quantity="other">%d päivän kuluttua</item>
+        <item quantity="zero">%d päivän kuluttua</item>
+        <item quantity="one">huomenna</item>
+        <item quantity="two">%d päivän kuluttua</item>
+        <item quantity="few">%d päivän kuluttua</item>
+        <item quantity="many">%d päivän kuluttua</item>
+    </plurals>
+    <plurals name="abbrev_num_seconds_ago">
+        <item quantity="other">%d sekuntia sitten</item>
+        <item quantity="zero">%d sekuntia sitten</item>
+        <item quantity="one">1 sekunti sitten</item>
+        <item quantity="two">%d sekuntia sitten</item>
+        <item quantity="few">%d sekuntia sitten</item>
+        <item quantity="many">%d sekuntia sitten</item>
+    </plurals>
+    <plurals name="abbrev_num_minutes_ago">
+        <item quantity="other">%d minuuttia sitten</item>
+        <item quantity="zero">%d minuuttia sitten</item>
+        <item quantity="one">1 minuutti sitten</item>
+        <item quantity="two">%d minuuttia sitten</item>
+        <item quantity="few">%d minuuttia sitten</item>
+        <item quantity="many">%d minuuttia sitten</item>
+    </plurals>
+    <plurals name="abbrev_num_hours_ago">
+        <item quantity="other">%d tuntia sitten</item>
+        <item quantity="zero">%d tuntia sitten</item>
+        <item quantity="one">1 tunti sitten</item>
+        <item quantity="two">%d tuntia sitten</item>
+        <item quantity="few">%d tuntia sitten</item>
+        <item quantity="many">%d tuntia sitten</item>
+    </plurals>
+    <plurals name="abbrev_num_days_ago">
+        <item quantity="other">%d päivää sitten</item>
+        <item quantity="zero">%d päivää sitten</item>
+        <item quantity="one">eilen</item>
+        <item quantity="two">%d päivää sitten</item>
+        <item quantity="few">%d päivää sitten</item>
+        <item quantity="many">%d päivää sitten</item>
+    </plurals>
+    <plurals name="abbrev_in_num_seconds">
+        <item quantity="other">%d sekunnin kuluttua</item>
+        <item quantity="zero">%d sekunnin kuluttua</item>
+        <item quantity="one">1 sekunnin kuluttua</item>
+        <item quantity="two">%d sekunnin kuluttua</item>
+        <item quantity="few">%d sekunnin kuluttua</item>
+        <item quantity="many">%d sekunnin kuluttua</item>
+    </plurals>
+    <plurals name="abbrev_in_num_minutes">
+        <item quantity="other">%d minuutin kuluttua</item>
+        <item quantity="zero">%d minuutin kuluttua</item>
+        <item quantity="one">1 minuutin kuluttua</item>
+        <item quantity="two">%d minuutin kuluttua</item>
+        <item quantity="few">%d minuutin kuluttua</item>
+        <item quantity="many">%d minuutin kuluttua</item>
+    </plurals>
+    <plurals name="abbrev_in_num_hours">
+        <item quantity="other">%d tunnin kuluttua</item>
+        <item quantity="zero">%d tunnin kuluttua</item>
+        <item quantity="one">1 tunnin kuluttua</item>
+        <item quantity="two">%d tunnin kuluttua</item>
+        <item quantity="few">%d tunnin kuluttua</item>
+        <item quantity="many">%d tunnin kuluttua</item>
+    </plurals>
+    <plurals name="abbrev_in_num_days">
+        <item quantity="other">%d päivän kuluttua</item>
+        <item quantity="zero">%d päivän kuluttua</item>
+        <item quantity="one">huomenna</item>
+        <item quantity="two">%d päivän kuluttua</item>
+        <item quantity="few">%d päivän kuluttua</item>
+        <item quantity="many">%d päivän kuluttua</item>
+    </plurals>
+    <plurals name="wifi_available">
+        <item quantity="other">Wifi-verkkoja käytettävissä</item>
+        <item quantity="zero">Wifi-verkkoja käytettävissä</item>
+        <item quantity="one">Wifi-verkko käytettävissä</item>
+        <item quantity="two">Wifi-verkkoja käytettävissä</item>
+        <item quantity="few">Wifi-verkkoja käytettävissä</item>
+        <item quantity="many">Wifi-verkkoja käytettävissä</item>
+    </plurals>
+    <plurals name="wifi_available_detailed">
+        <item quantity="other">Avoimia wifi-verkkoja käytettävissä</item>
+        <item quantity="zero">Avoimia wifi-verkkoja käytettävissä</item>
+        <item quantity="one">Avoin wifi-verkko käytettävissä</item>
+        <item quantity="two">Avoimia wifi-verkkoja käytettävissä</item>
+        <item quantity="few">Avoimia wifi-verkkoja käytettävissä</item>
+        <item quantity="many">Avoimia wifi-verkkoja käytettävissä</item>
+    </plurals>
+    <plurals name="matches_found">
+        <item quantity="other">%1$d/%2$d</item>
+        <item quantity="zero">%1$d/%2$d</item>
+        <item quantity="one">1 tulos</item>
+        <item quantity="two">%1$d/%2$d</item>
+        <item quantity="few">%1$d/%2$d</item>
+        <item quantity="many">%1$d/%2$d</item>
+    </plurals>
+    <plurals name="duration_seconds">
+        <item quantity="other">%d sekuntia</item>
+        <item quantity="one">1 sekunti</item>
+    </plurals>
+    <plurals name="duration_minutes">
+        <item quantity="other">%d minuuttia</item>
+        <item quantity="one">1 minuutti</item>
+    </plurals>
+    <plurals name="duration_hours">
+        <item quantity="other">%d tuntia</item>
+        <item quantity="one">1 tunti</item>
+    </plurals>
+</resources>

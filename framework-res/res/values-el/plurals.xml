@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="num_seconds_ago">
+        <item quantity="other">πριν από %d δευτερόλεπτα</item>
+        <item quantity="zero">πριν από %d δευτερόλεπτα</item>
+        <item quantity="one">πριν από 1 δευτερόλεπτο</item>
+        <item quantity="two">πριν από %d δευτερόλεπτα</item>
+        <item quantity="few">πριν από %d δευτερόλεπτα</item>
+        <item quantity="many">πριν από %d δευτερόλεπτα</item>
+    </plurals>
+    <plurals name="num_minutes_ago">
+        <item quantity="other">πριν από %d λεπτά</item>
+        <item quantity="zero">πριν από %d λεπτά</item>
+        <item quantity="one">πριν από 1 λεπτό</item>
+        <item quantity="two">πριν από %d λεπτά</item>
+        <item quantity="few">πριν από %d λεπτά</item>
+        <item quantity="many">πριν από %d λεπτά</item>
+    </plurals>
+    <plurals name="num_hours_ago">
+        <item quantity="other">πριν από %d ώρες</item>
+        <item quantity="zero">πριν από %d ώρες</item>
+        <item quantity="one">πριν από 1 ώρα</item>
+        <item quantity="two">πριν από %d ώρες</item>
+        <item quantity="few">πριν από %d ώρες</item>
+        <item quantity="many">πριν από %d ώρες</item>
+    </plurals>
+    <plurals name="last_num_days">
+        <item quantity="other">Τελευταίες %d ημέρες</item>
+        <item quantity="zero">Τελευταίες %d ημέρες</item>
+        <item quantity="one">Τελευταία %d ημέρα</item>
+        <item quantity="two">Τελευταίες %d ημέρες</item>
+        <item quantity="few">Τελευταίες %d ημέρες</item>
+        <item quantity="many">Τελευταίες %d ημέρες</item>
+    </plurals>
+    <plurals name="num_days_ago">
+        <item quantity="other">πριν από %d ημέρες</item>
+        <item quantity="zero">πριν από %d ημέρες</item>
+        <item quantity="one">χθες</item>
+        <item quantity="two">πριν από %d ημέρες</item>
+        <item quantity="few">πριν από %d ημέρες</item>
+        <item quantity="many">πριν από %d ημέρες</item>
+    </plurals>
+    <plurals name="in_num_seconds">
+        <item quantity="other">σε %d δευτερόλεπτα</item>
+        <item quantity="zero">σε %d δευτερόλεπτα</item>
+        <item quantity="one">σε 1 δευτερόλεπτο</item>
+        <item quantity="two">σε %d δευτερόλεπτα</item>
+        <item quantity="few">σε %d δευτερόλεπτα</item>
+        <item quantity="many">σε %d δευτερόλεπτα</item>
+    </plurals>
+    <plurals name="in_num_minutes">
+        <item quantity="other">σε %d λεπτά</item>
+        <item quantity="zero">σε %d λεπτά</item>
+        <item quantity="one">σε 1 λεπτό</item>
+        <item quantity="two">σε %d λεπτά</item>
+        <item quantity="few">σε %d λεπτά</item>
+        <item quantity="many">σε %d λεπτά</item>
+    </plurals>
+    <plurals name="in_num_hours">
+        <item quantity="other">σε %d ώρες</item>
+        <item quantity="zero">σε %d ώρες</item>
+        <item quantity="one">σε 1 ώρα</item>
+        <item quantity="two">σε %d ώρες</item>
+        <item quantity="few">σε %d ώρες</item>
+        <item quantity="many">σε %d ώρες</item>
+    </plurals>
+    <plurals name="in_num_days">
+        <item quantity="other">σε %d ημέρες</item>
+        <item quantity="zero">σε %d ημέρες</item>
+        <item quantity="one">αύριο</item>
+        <item quantity="two">σε %d ημέρες</item>
+        <item quantity="few">σε %d ημέρες</item>
+        <item quantity="many">σε %d ημέρες</item>
+    </plurals>
+    <plurals name="abbrev_num_seconds_ago">
+        <item quantity="other">πριν από %d δευτ.</item>
+        <item quantity="zero">πριν από %d δευτ.</item>
+        <item quantity="one">πριν από 1 δευτ.</item>
+        <item quantity="two">πριν από %d δευτ.</item>
+        <item quantity="few">πριν από %d δευτ.</item>
+        <item quantity="many">πριν από %d δευτ.</item>
+    </plurals>
+    <plurals name="abbrev_num_minutes_ago">
+        <item quantity="other">πριν από %d λεπτά</item>
+        <item quantity="zero">πριν από %d λεπτά</item>
+        <item quantity="one">πριν από 1 λεπτό</item>
+        <item quantity="two">πριν από %d λεπτά</item>
+        <item quantity="few">πριν από %d λεπτά</item>
+        <item quantity="many">πριν από %d λεπτά</item>
+    </plurals>
+    <plurals name="abbrev_num_hours_ago">
+        <item quantity="other">πριν από %d ώρες</item>
+        <item quantity="zero">πριν από %d ώρες</item>
+        <item quantity="one">πριν από 1 ώρα</item>
+        <item quantity="two">πριν από %d ώρες</item>
+        <item quantity="few">πριν από %d ώρες</item>
+        <item quantity="many">πριν από %d ώρες</item>
+    </plurals>
+    <plurals name="abbrev_num_days_ago">
+        <item quantity="other">πριν από %d ημέρες</item>
+        <item quantity="zero">πριν από %d ημέρες</item>
+        <item quantity="one">χθες</item>
+        <item quantity="two">πριν από %d ημέρες</item>
+        <item quantity="few">πριν από %d ημέρες</item>
+        <item quantity="many">πριν από %d ημέρες</item>
+    </plurals>
+    <plurals name="abbrev_in_num_seconds">
+        <item quantity="other">σε %d δευτ.</item>
+        <item quantity="zero">σε %d δευτ.</item>
+        <item quantity="one">σε 1 δευτ.</item>
+        <item quantity="two">σε %d δευτ.</item>
+        <item quantity="few">σε %d δευτ.</item>
+        <item quantity="many">σε %d δευτ.</item>
+    </plurals>
+    <plurals name="abbrev_in_num_minutes">
+        <item quantity="other">σε %d λεπτά</item>
+        <item quantity="zero">σε %d λεπτά</item>
+        <item quantity="one">σε 1 λεπτό</item>
+        <item quantity="two">σε %d λεπτά</item>
+        <item quantity="few">σε %d λεπτά</item>
+        <item quantity="many">σε %d λεπτά</item>
+    </plurals>
+    <plurals name="abbrev_in_num_hours">
+        <item quantity="other">σε %d ώρες</item>
+        <item quantity="zero">σε %d ώρες</item>
+        <item quantity="one">σε 1 ώρα</item>
+        <item quantity="two">σε %d ώρες</item>
+        <item quantity="few">σε %d ώρες</item>
+        <item quantity="many">σε %d ώρες</item>
+    </plurals>
+    <plurals name="abbrev_in_num_days">
+        <item quantity="other">σε %d ημέρες</item>
+        <item quantity="zero">σε %d ημέρες</item>
+        <item quantity="one">αύριο</item>
+        <item quantity="two">σε %d ημέρες</item>
+        <item quantity="few">σε %d ημέρες</item>
+        <item quantity="many">σε %d ημέρες</item>
+    </plurals>
+    <plurals name="wifi_available">
+        <item quantity="other">Υπάρχουν διαθέσιμα δίκτυα Wi-Fi</item>
+        <item quantity="zero">Υπάρχουν διαθέσιμα δίκτυα Wi-Fi</item>
+        <item quantity="one">Υπάρχει διαθέσιμο δίκτυο Wi-Fi</item>
+        <item quantity="two">Υπάρχουν διαθέσιμα δίκτυα Wi-Fi</item>
+        <item quantity="few">Υπάρχουν διαθέσιμα δίκτυα Wi-Fi</item>
+        <item quantity="many">Υπάρχουν διαθέσιμα δίκτυα Wi-Fi</item>
+    </plurals>
+    <plurals name="wifi_available_detailed">
+        <item quantity="other">Υπάρχουν διαθέσιμα ανοικτά δίκτυα Wi-Fi</item>
+        <item quantity="zero">Υπάρχουν διαθέσιμα ανοικτά δίκτυα Wi-Fi</item>
+        <item quantity="one">Υπάρχει διαθέσιμο ανοικτό δίκτυο Wi-Fi</item>
+        <item quantity="two">Υπάρχουν διαθέσιμα ανοικτά δίκτυα Wi-Fi</item>
+        <item quantity="few">Υπάρχουν διαθέσιμα ανοικτά δίκτυα Wi-Fi</item>
+        <item quantity="many">Υπάρχουν διαθέσιμα ανοικτά δίκτυα Wi-Fi</item>
+    </plurals>
+    <plurals name="matches_found">
+        <item quantity="other">%1$d από %2$d</item>
+        <item quantity="zero">%1$d από %2$d</item>
+        <item quantity="one">1 αποτέλεσμα</item>
+        <item quantity="two">%1$d από %2$d</item>
+        <item quantity="few">%1$d από %2$d</item>
+        <item quantity="many">%1$d από %2$d</item>
+    </plurals>
+    <plurals name="duration_seconds">
+        <item quantity="other">%d δευτερόλεπτα</item>
+        <item quantity="one">1 δευτερόλεπτο</item>
+    </plurals>
+    <plurals name="duration_minutes">
+        <item quantity="other">%d λεπτά</item>
+        <item quantity="one">1 λεπτό</item>
+    </plurals>
+    <plurals name="duration_hours">
+        <item quantity="other">%d ώρες</item>
+        <item quantity="one">1 ώρα</item>
+    </plurals>
+</resources>

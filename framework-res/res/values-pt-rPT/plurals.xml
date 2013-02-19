@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="num_seconds_ago">
+        <item quantity="other">Há %d segundos</item>
+        <item quantity="zero">Há %d segundos</item>
+        <item quantity="one">Há 1 segundo</item>
+        <item quantity="two">Há %d segundos</item>
+        <item quantity="few">Há %d segundos</item>
+        <item quantity="many">Há %d segundos</item>
+    </plurals>
+    <plurals name="num_minutes_ago">
+        <item quantity="other">Há %d minutos</item>
+        <item quantity="zero">Há %d minutos</item>
+        <item quantity="one">Há 1 minuto</item>
+        <item quantity="two">Há %d minutos</item>
+        <item quantity="few">Há %d minutos</item>
+        <item quantity="many">Há %d minutos</item>
+    </plurals>
+    <plurals name="num_hours_ago">
+        <item quantity="other">Há %d horas</item>
+        <item quantity="zero">Há %d horas</item>
+        <item quantity="one">Há 1 hora</item>
+        <item quantity="two">Há %d horas</item>
+        <item quantity="few">Há %d horas</item>
+        <item quantity="many">Há %d horas</item>
+    </plurals>
+    <plurals name="last_num_days">
+        <item quantity="other">Últimos %d dias</item>
+        <item quantity="zero">Últimos %d dias</item>
+        <item quantity="one">Último %d dia</item>
+        <item quantity="two">Últimos %d dias</item>
+        <item quantity="few">Últimos %d dias</item>
+        <item quantity="many">Últimos %d dias</item>
+    </plurals>
+    <plurals name="num_days_ago">
+        <item quantity="other">Há %d dias</item>
+        <item quantity="zero">Há %d dias</item>
+        <item quantity="one">ontem</item>
+        <item quantity="two">Há %d dias</item>
+        <item quantity="few">Há %d dias</item>
+        <item quantity="many">Há %d dias</item>
+    </plurals>
+    <plurals name="in_num_seconds">
+        <item quantity="other">dentro de %d segundos</item>
+        <item quantity="zero">dentro de %d segundos</item>
+        <item quantity="one">dentro de 1 segundo</item>
+        <item quantity="two">dentro de %d segundos</item>
+        <item quantity="few">dentro de %d segundos</item>
+        <item quantity="many">dentro de %d segundos</item>
+    </plurals>
+    <plurals name="in_num_minutes">
+        <item quantity="other">dentro de %d minutos</item>
+        <item quantity="zero">dentro de %d minutos</item>
+        <item quantity="one">dentro de 1 minuto</item>
+        <item quantity="two">dentro de %d minutos</item>
+        <item quantity="few">dentro de %d minutos</item>
+        <item quantity="many">dentro de %d minutos</item>
+    </plurals>
+    <plurals name="in_num_hours">
+        <item quantity="other">dentro de %d horas.</item>
+        <item quantity="zero">dentro de %d horas.</item>
+        <item quantity="one">dentro de 1 hora</item>
+        <item quantity="two">dentro de %d horas.</item>
+        <item quantity="few">dentro de %d horas.</item>
+        <item quantity="many">dentro de %d horas.</item>
+    </plurals>
+    <plurals name="in_num_days">
+        <item quantity="other">dentro de %d dias</item>
+        <item quantity="zero">dentro de %d dias</item>
+        <item quantity="one">amanhã</item>
+        <item quantity="two">dentro de %d dias</item>
+        <item quantity="few">dentro de %d dias</item>
+        <item quantity="many">dentro de %d dias</item>
+    </plurals>
+    <plurals name="abbrev_num_seconds_ago">
+        <item quantity="other">Há %d segundos</item>
+        <item quantity="zero">Há %d segundos</item>
+        <item quantity="one">Há 1 segundo</item>
+        <item quantity="two">Há %d segundos</item>
+        <item quantity="few">Há %d segundos</item>
+        <item quantity="many">Há %d segundos</item>
+    </plurals>
+    <plurals name="abbrev_num_minutes_ago">
+        <item quantity="other">Há %d minutos</item>
+        <item quantity="zero">Há %d minutos</item>
+        <item quantity="one">Há 1 minuto</item>
+        <item quantity="two">Há %d minutos</item>
+        <item quantity="few">Há %d minutos</item>
+        <item quantity="many">Há %d minutos</item>
+    </plurals>
+    <plurals name="abbrev_num_hours_ago">
+        <item quantity="other">Há %d horas</item>
+        <item quantity="zero">Há %d horas</item>
+        <item quantity="one">Há 1 hora</item>
+        <item quantity="two">Há %d horas</item>
+        <item quantity="few">Há %d horas</item>
+        <item quantity="many">Há %d horas</item>
+    </plurals>
+    <plurals name="abbrev_num_days_ago">
+        <item quantity="other">Há %d dias</item>
+        <item quantity="zero">Há %d dias</item>
+        <item quantity="one">ontem</item>
+        <item quantity="two">Há %d dias</item>
+        <item quantity="few">Há %d dias</item>
+        <item quantity="many">Há %d dias</item>
+    </plurals>
+    <plurals name="abbrev_in_num_seconds">
+        <item quantity="other">dentro de %d segundos</item>
+        <item quantity="zero">dentro de %d segundos</item>
+        <item quantity="one">dentro de 1 segundo</item>
+        <item quantity="two">dentro de %d segundos</item>
+        <item quantity="few">dentro de %d segundos</item>
+        <item quantity="many">dentro de %d segundos</item>
+    </plurals>
+    <plurals name="abbrev_in_num_minutes">
+        <item quantity="other">dentro de %d minutos</item>
+        <item quantity="zero">dentro de %d minutos</item>
+        <item quantity="one">dentro de 1 minuto</item>
+        <item quantity="two">dentro de %d minutos</item>
+        <item quantity="few">dentro de %d minutos</item>
+        <item quantity="many">dentro de %d minutos</item>
+    </plurals>
+    <plurals name="abbrev_in_num_hours">
+        <item quantity="other">dentro de %d horas.</item>
+        <item quantity="zero">dentro de %d horas.</item>
+        <item quantity="one">dentro de 1 hora</item>
+        <item quantity="two">dentro de %d horas.</item>
+        <item quantity="few">dentro de %d horas.</item>
+        <item quantity="many">dentro de %d horas.</item>
+    </plurals>
+    <plurals name="abbrev_in_num_days">
+        <item quantity="other">dentro de %d dias</item>
+        <item quantity="zero">dentro de %d dias</item>
+        <item quantity="one">amanhã</item>
+        <item quantity="two">dentro de %d dias</item>
+        <item quantity="few">dentro de %d dias</item>
+        <item quantity="many">dentro de %d dias</item>
+    </plurals>
+    <plurals name="wifi_available">
+        <item quantity="other">Redes Wi-Fi disponíveis</item>
+        <item quantity="zero">Redes Wi-Fi disponíveis</item>
+        <item quantity="one">Rede Wi-Fi disponível</item>
+        <item quantity="two">Redes Wi-Fi disponíveis</item>
+        <item quantity="few">Redes Wi-Fi disponíveis</item>
+        <item quantity="many">Redes Wi-Fi disponíveis</item>
+    </plurals>
+    <plurals name="wifi_available_detailed">
+        <item quantity="other">Abrir redes Wi-Fi disponíveis</item>
+        <item quantity="zero">Abrir redes Wi-Fi disponíveis</item>
+        <item quantity="one">Rede Wi-Fi aberta disponível</item>
+        <item quantity="two">Abrir redes Wi-Fi disponíveis</item>
+        <item quantity="few">Abrir redes Wi-Fi disponíveis</item>
+        <item quantity="many">Abrir redes Wi-Fi disponíveis</item>
+    </plurals>
+    <plurals name="matches_found">
+        <item quantity="other">%1$d de %2$d</item>
+        <item quantity="zero">%1$d de %2$d</item>
+        <item quantity="one">1 correspondência</item>
+        <item quantity="two">%1$d de %2$d</item>
+        <item quantity="few">%1$d de %2$d</item>
+        <item quantity="many">%1$d de %2$d</item>
+    </plurals>
+    <plurals name="duration_seconds">
+        <item quantity="other">%d segundos</item>
+        <item quantity="one">1 segundo</item>
+    </plurals>
+    <plurals name="duration_minutes">
+        <item quantity="other">%d minutos</item>
+        <item quantity="one">1 minuto</item>
+    </plurals>
+    <plurals name="duration_hours">
+        <item quantity="other">%d horas</item>
+        <item quantity="one">1 hora</item>
+    </plurals>
+</resources>

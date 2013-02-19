@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="num_seconds_ago">
+        <item quantity="other">Hace %d segundos</item>
+        <item quantity="zero">Hace %d segundos</item>
+        <item quantity="one">Hace 1 segundo</item>
+        <item quantity="two">Hace %d segundos</item>
+        <item quantity="few">Hace %d segundos</item>
+        <item quantity="many">Hace %d segundos</item>
+    </plurals>
+    <plurals name="num_minutes_ago">
+        <item quantity="other">Hace %d minutos</item>
+        <item quantity="zero">Hace %d minutos</item>
+        <item quantity="one">Hace 1 minuto</item>
+        <item quantity="two">Hace %d minutos</item>
+        <item quantity="few">Hace %d minutos</item>
+        <item quantity="many">Hace %d minutos</item>
+    </plurals>
+    <plurals name="num_hours_ago">
+        <item quantity="other">Hace %d horas</item>
+        <item quantity="zero">Hace %d horas</item>
+        <item quantity="one">Hace 1 hora</item>
+        <item quantity="two">Hace %d horas</item>
+        <item quantity="few">Hace %d horas</item>
+        <item quantity="many">Hace %d horas</item>
+    </plurals>
+    <plurals name="last_num_days">
+        <item quantity="other">Últimos %d días</item>
+        <item quantity="zero">Últimos %d días</item>
+        <item quantity="one">Último %d día</item>
+        <item quantity="two">Últimos %d días</item>
+        <item quantity="few">Últimos %d días</item>
+        <item quantity="many">Últimos %d días</item>
+    </plurals>
+    <plurals name="num_days_ago">
+        <item quantity="other">Hace %d días</item>
+        <item quantity="zero">Hace %d días</item>
+        <item quantity="one">ayer</item>
+        <item quantity="two">Hace %d días</item>
+        <item quantity="few">Hace %d días</item>
+        <item quantity="many">Hace %d días</item>
+    </plurals>
+    <plurals name="in_num_seconds">
+        <item quantity="other">dentro de %d segundos</item>
+        <item quantity="zero">dentro de %d segundos</item>
+        <item quantity="one">dentro de 1 segundo</item>
+        <item quantity="two">dentro de %d segundos</item>
+        <item quantity="few">dentro de %d segundos</item>
+        <item quantity="many">dentro de %d segundos</item>
+    </plurals>
+    <plurals name="in_num_minutes">
+        <item quantity="other">dentro de %d minutos</item>
+        <item quantity="zero">dentro de %d minutos</item>
+        <item quantity="one">dentro de 1 minuto</item>
+        <item quantity="two">dentro de %d minutos</item>
+        <item quantity="few">dentro de %d minutos</item>
+        <item quantity="many">dentro de %d minutos</item>
+    </plurals>
+    <plurals name="in_num_hours">
+        <item quantity="other">dentro de %d horas</item>
+        <item quantity="zero">dentro de %d horas</item>
+        <item quantity="one">dentro de 1 hora</item>
+        <item quantity="two">dentro de %d horas</item>
+        <item quantity="few">dentro de %d horas</item>
+        <item quantity="many">dentro de %d horas</item>
+    </plurals>
+    <plurals name="in_num_days">
+        <item quantity="other">dentro de %d días</item>
+        <item quantity="zero">dentro de %d días</item>
+        <item quantity="one">mañana</item>
+        <item quantity="two">dentro de %d días</item>
+        <item quantity="few">dentro de %d días</item>
+        <item quantity="many">dentro de %d días</item>
+    </plurals>
+    <plurals name="abbrev_num_seconds_ago">
+        <item quantity="other">hace %d segundos</item>
+        <item quantity="zero">hace %d segundos</item>
+        <item quantity="one">hace 1 segundo</item>
+        <item quantity="two">hace %d segundos</item>
+        <item quantity="few">hace %d segundos</item>
+        <item quantity="many">hace %d segundos</item>
+    </plurals>
+    <plurals name="abbrev_num_minutes_ago">
+        <item quantity="other">hace %d minutos</item>
+        <item quantity="zero">hace %d minutos</item>
+        <item quantity="one">hace 1 minuto</item>
+        <item quantity="two">hace %d minutos</item>
+        <item quantity="few">hace %d minutos</item>
+        <item quantity="many">hace %d minutos</item>
+    </plurals>
+    <plurals name="abbrev_num_hours_ago">
+        <item quantity="other">Hace %d horas</item>
+        <item quantity="zero">Hace %d horas</item>
+        <item quantity="one">Hace 1 hora</item>
+        <item quantity="two">Hace %d horas</item>
+        <item quantity="few">Hace %d horas</item>
+        <item quantity="many">Hace %d horas</item>
+    </plurals>
+    <plurals name="abbrev_num_days_ago">
+        <item quantity="other">Hace %d días</item>
+        <item quantity="zero">Hace %d días</item>
+        <item quantity="one">ayer</item>
+        <item quantity="two">Hace %d días</item>
+        <item quantity="few">Hace %d días</item>
+        <item quantity="many">Hace %d días</item>
+    </plurals>
+    <plurals name="abbrev_in_num_seconds">
+        <item quantity="other">dentro de %d segundos</item>
+        <item quantity="zero">dentro de %d segundos</item>
+        <item quantity="one">dentro de 1 segundo</item>
+        <item quantity="two">dentro de %d segundos</item>
+        <item quantity="few">dentro de %d segundos</item>
+        <item quantity="many">dentro de %d segundos</item>
+    </plurals>
+    <plurals name="abbrev_in_num_minutes">
+        <item quantity="other">dentro de %d minutos</item>
+        <item quantity="zero">dentro de %d minutos</item>
+        <item quantity="one">dentro de 1 minuto</item>
+        <item quantity="two">dentro de %d minutos</item>
+        <item quantity="few">dentro de %d minutos</item>
+        <item quantity="many">dentro de %d minutos</item>
+    </plurals>
+    <plurals name="abbrev_in_num_hours">
+        <item quantity="other">dentro de %d horas</item>
+        <item quantity="zero">dentro de %d horas</item>
+        <item quantity="one">dentro de 1 hora</item>
+        <item quantity="two">dentro de %d horas</item>
+        <item quantity="few">dentro de %d horas</item>
+        <item quantity="many">dentro de %d horas</item>
+    </plurals>
+    <plurals name="abbrev_in_num_days">
+        <item quantity="other">dentro de %d días</item>
+        <item quantity="zero">dentro de %d días</item>
+        <item quantity="one">mañana</item>
+        <item quantity="two">dentro de %d días</item>
+        <item quantity="few">dentro de %d días</item>
+        <item quantity="many">dentro de %d días</item>
+    </plurals>
+    <plurals name="wifi_available">
+        <item quantity="other">redes disponibles de Wi-Fi</item>
+        <item quantity="zero">redes disponibles de Wi-Fi</item>
+        <item quantity="one">Red disponible de Wi-Fi</item>
+        <item quantity="two">redes disponibles de Wi-Fi</item>
+        <item quantity="few">redes disponibles de Wi-Fi</item>
+        <item quantity="many">redes disponibles de Wi-Fi</item>
+    </plurals>
+    <plurals name="wifi_available_detailed">
+        <item quantity="other">Abrir redes disponibles de Wi-Fi</item>
+        <item quantity="zero">Abrir redes disponibles de Wi-Fi</item>
+        <item quantity="one">Abrir red disponible de Wi-Fi</item>
+        <item quantity="two">Abrir redes disponibles de Wi-Fi</item>
+        <item quantity="few">Abrir redes disponibles de Wi-Fi</item>
+        <item quantity="many">Abrir redes disponibles de Wi-Fi</item>
+    </plurals>
+    <plurals name="matches_found">
+        <item quantity="other">%1$d de %2$d</item>
+        <item quantity="zero">%1$d de %2$d</item>
+        <item quantity="one">1 coincidencia</item>
+        <item quantity="two">%1$d de %2$d</item>
+        <item quantity="few">%1$d de %2$d</item>
+        <item quantity="many">%1$d de %2$d</item>
+    </plurals>
+    <plurals name="duration_minutes">
+        <item quantity="other">%d minutos</item>
+        <item quantity="one">1 minuto</item>
+    </plurals>
+    <plurals name="duration_hours">
+        <item quantity="other">%d horas</item>
+        <item quantity="one">1 hora</item>
+    </plurals>
+</resources>

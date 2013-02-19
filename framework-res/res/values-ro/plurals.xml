@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="num_seconds_ago">
+        <item quantity="other">cu %d de secunde în urmă</item>
+        <item quantity="zero">cu %d secunde în urmă</item>
+        <item quantity="one">cu 1 secundă în urmă</item>
+        <item quantity="two">cu %d secunde în urmă</item>
+        <item quantity="few">cu %d secunde în urmă</item>
+        <item quantity="many">cu %d secunde în urmă</item>
+    </plurals>
+    <plurals name="num_minutes_ago">
+        <item quantity="other">cu %d de minute în urmă</item>
+        <item quantity="zero">cu %d minute în urmă</item>
+        <item quantity="one">cu 1 minut în urmă</item>
+        <item quantity="two">cu %d minute în urmă</item>
+        <item quantity="few">cu %d minute în urmă</item>
+        <item quantity="many">cu %d minute în urmă</item>
+    </plurals>
+    <plurals name="num_hours_ago">
+        <item quantity="other">cu %d de ore în urmă</item>
+        <item quantity="zero">cu %d ore în urmă</item>
+        <item quantity="one">cu 1 oră în urmă</item>
+        <item quantity="two">cu %d ore în urmă</item>
+        <item quantity="few">cu %d ore în urmă</item>
+        <item quantity="many">cu %d ore în urmă</item>
+    </plurals>
+    <plurals name="last_num_days">
+        <item quantity="other">În ultimele %d de zile</item>
+        <item quantity="zero">În ultimele %d zile</item>
+        <item quantity="one">În ultima zi</item>
+        <item quantity="two">În ultimele %d zile</item>
+        <item quantity="few">În ultimele %d zile</item>
+        <item quantity="many">În ultimele %d zile</item>
+    </plurals>
+    <plurals name="num_days_ago">
+        <item quantity="other">cu %d de zile în urmă</item>
+        <item quantity="zero">cu %d zile în urmă</item>
+        <item quantity="one">ieri</item>
+        <item quantity="two">cu %d zile în urmă</item>
+        <item quantity="few">cu %d zile în urmă</item>
+        <item quantity="many">cu %d zile în urmă</item>
+    </plurals>
+    <plurals name="in_num_seconds">
+        <item quantity="other">în %d de secunde</item>
+        <item quantity="zero">în %d secunde</item>
+        <item quantity="one">în 1 secundă</item>
+        <item quantity="two">în %d secunde</item>
+        <item quantity="few">în %d secunde</item>
+        <item quantity="many">în %d secunde</item>
+    </plurals>
+    <plurals name="in_num_minutes">
+        <item quantity="other">în %d de minute</item>
+        <item quantity="zero">în %d minute</item>
+        <item quantity="one">în 1 minut</item>
+        <item quantity="two">în %d minute</item>
+        <item quantity="few">în %d minute</item>
+        <item quantity="many">în %d minute</item>
+    </plurals>
+    <plurals name="in_num_hours">
+        <item quantity="other">în %d de ore</item>
+        <item quantity="zero">în %d ore</item>
+        <item quantity="one">în 1 oră</item>
+        <item quantity="two">în %d ore</item>
+        <item quantity="few">în %d ore</item>
+        <item quantity="many">în %d ore</item>
+    </plurals>
+    <plurals name="in_num_days">
+        <item quantity="other">în %d de zile</item>
+        <item quantity="zero">în %d zile</item>
+        <item quantity="one">mâine</item>
+        <item quantity="two">în %d zile</item>
+        <item quantity="few">în %d zile</item>
+        <item quantity="many">în %d zile</item>
+    </plurals>
+    <plurals name="abbrev_num_seconds_ago">
+        <item quantity="other">cu %d de secunde în urmă</item>
+        <item quantity="zero">cu %d (de) secunde în urmă</item>
+        <item quantity="one">cu 1 secundă în urmă</item>
+        <item quantity="two">cu %d (de) secunde în urmă</item>
+        <item quantity="few">cu %d secunde în urmă</item>
+        <item quantity="many">cu %d (de) secunde în urmă</item>
+    </plurals>
+    <plurals name="abbrev_num_minutes_ago">
+        <item quantity="other">cu %d de minute în urmă</item>
+        <item quantity="zero">cu %d (de) minute în urmă</item>
+        <item quantity="one">cu 1 minut în urmă</item>
+        <item quantity="two">cu %d (de) minute în urmă</item>
+        <item quantity="few">cu %d minute în urmă</item>
+        <item quantity="many">cu %d (de) minute în urmă</item>
+    </plurals>
+    <plurals name="abbrev_num_hours_ago">
+        <item quantity="other">cu %d de ore în urmă</item>
+        <item quantity="zero">cu %d ore în urmă</item>
+        <item quantity="one">cu 1 oră în urmă</item>
+        <item quantity="two">cu %d ore în urmă</item>
+        <item quantity="few">cu %d ore în urmă</item>
+        <item quantity="many">cu %d ore în urmă</item>
+    </plurals>
+    <plurals name="abbrev_num_days_ago">
+        <item quantity="other">cu %d de zile în urmă</item>
+        <item quantity="zero">cu %d zile în urmă</item>
+        <item quantity="one">ieri</item>
+        <item quantity="two">cu %d zile în urmă</item>
+        <item quantity="few">cu %d zile în urmă</item>
+        <item quantity="many">cu %d zile în urmă</item>
+    </plurals>
+    <plurals name="abbrev_in_num_seconds">
+        <item quantity="other">în %d de secunde</item>
+        <item quantity="zero">în %d (de) secunde</item>
+        <item quantity="one">în 1 secundă</item>
+        <item quantity="two">în %d (de) secunde</item>
+        <item quantity="few">în %d secunde</item>
+        <item quantity="many">în %d (de) secunde</item>
+    </plurals>
+    <plurals name="abbrev_in_num_minutes">
+        <item quantity="other">în %d de minute</item>
+        <item quantity="zero">în %d (de) minute</item>
+        <item quantity="one">în 1 minut</item>
+        <item quantity="two">în %d (de) minute</item>
+        <item quantity="few">în %d minute</item>
+        <item quantity="many">în %d (de) minute</item>
+    </plurals>
+    <plurals name="abbrev_in_num_hours">
+        <item quantity="other">în %d de ore</item>
+        <item quantity="zero">în %d ore</item>
+        <item quantity="one">în 1 oră</item>
+        <item quantity="two">în %d ore</item>
+        <item quantity="few">în %d ore</item>
+        <item quantity="many">în %d ore</item>
+    </plurals>
+    <plurals name="abbrev_in_num_days">
+        <item quantity="other">în %d de zile</item>
+        <item quantity="zero">în %d zile</item>
+        <item quantity="one">mâine</item>
+        <item quantity="two">în %d zile</item>
+        <item quantity="few">în %d zile</item>
+        <item quantity="many">în %d zile</item>
+    </plurals>
+    <plurals name="wifi_available">
+        <item quantity="other">Reţele Wi-Fi disponibile</item>
+        <item quantity="zero">Reţele Wi-Fi disponibile</item>
+        <item quantity="one">Reţea Wi-Fi disponibilă</item>
+        <item quantity="two">Reţele Wi-Fi disponibile</item>
+        <item quantity="few">Reţele Wi-Fi disponibile</item>
+        <item quantity="many">Reţele Wi-Fi disponibile</item>
+    </plurals>
+    <plurals name="wifi_available_detailed">
+        <item quantity="other">Reţele Wi-Fi deschise disponibile</item>
+        <item quantity="zero">Reţele Wi-Fi deschise disponibile</item>
+        <item quantity="one">Reţea Wi-Fi deschisă disponibilă</item>
+        <item quantity="two">Reţele Wi-Fi deschise disponibile</item>
+        <item quantity="few">Reţele Wi-Fi deschise disponibile</item>
+        <item quantity="many">Reţele Wi-Fi deschise disponibile</item>
+    </plurals>
+    <plurals name="matches_found">
+        <item quantity="other">%1$d din %2$d</item>
+        <item quantity="zero">%1$d din %2$d</item>
+        <item quantity="one">1 potrivire</item>
+        <item quantity="two">%1$d din %2$d</item>
+        <item quantity="few">%1$d din %2$d</item>
+        <item quantity="many">%1$d din %2$d</item>
+    </plurals>
+    <plurals name="duration_seconds">
+        <item quantity="other">%d (de) secunde</item>
+        <item quantity="one">O secundă</item>
+    </plurals>
+    <plurals name="duration_minutes">
+        <item quantity="other">%d (de) minute</item>
+        <item quantity="one">Un minut</item>
+    </plurals>
+    <plurals name="duration_hours">
+        <item quantity="other">%d (de) ore</item>
+        <item quantity="one">O oră</item>
+    </plurals>
+</resources>

@@ -1,0 +1,3 @@
+on boot
+    chmod 0666 /dev/ttyAMA3
+    chown root root /dev/ttyAMA3

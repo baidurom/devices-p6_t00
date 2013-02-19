@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="num_seconds_ago">
+        <item quantity="other">%d saat yang lalu</item>
+        <item quantity="zero">%d saat yang lalu</item>
+        <item quantity="one">1 saat yang lalu</item>
+        <item quantity="two">%d saat yang lalu</item>
+        <item quantity="few">%d saat yang lalu</item>
+        <item quantity="many">%d saat yang lalu</item>
+    </plurals>
+    <plurals name="num_minutes_ago">
+        <item quantity="other">%d minit yang lalu</item>
+        <item quantity="zero">%d minit yang lalu</item>
+        <item quantity="one">1 minit yang lalu</item>
+        <item quantity="two">%d minit yang lalu</item>
+        <item quantity="few">%d minit yang lalu</item>
+        <item quantity="many">%d minit yang lalu</item>
+    </plurals>
+    <plurals name="num_hours_ago">
+        <item quantity="other">%d jam yang lalu</item>
+        <item quantity="zero">%d jam yang lalu</item>
+        <item quantity="one">1 jam yang lalu</item>
+        <item quantity="two">%d jam yang lalu</item>
+        <item quantity="few">%d jam yang lalu</item>
+        <item quantity="many">%d jam yang lalu</item>
+    </plurals>
+    <plurals name="last_num_days">
+        <item quantity="other">Tahan selama %d hari</item>
+        <item quantity="zero">Tahan selama %d hari</item>
+        <item quantity="one">Tahan selama %d hari</item>
+        <item quantity="two">Tahan selama %d hari</item>
+        <item quantity="few">Tahan selama %d hari</item>
+        <item quantity="many">Tahan selama %d hari</item>
+    </plurals>
+    <plurals name="num_days_ago">
+        <item quantity="other">%d hari yang lalu</item>
+        <item quantity="zero">%d hari yang lalu</item>
+        <item quantity="one">semalam</item>
+        <item quantity="two">%d hari yang lalu</item>
+        <item quantity="few">%d hari yang lalu</item>
+        <item quantity="many">%d hari yang lalu</item>
+    </plurals>
+    <plurals name="in_num_seconds">
+        <item quantity="other">dalam masa %d saat</item>
+        <item quantity="zero">dalam %d saat</item>
+        <item quantity="one">dalam 1 saat</item>
+        <item quantity="two">dalam %d saat</item>
+        <item quantity="few">dalam %d saat</item>
+        <item quantity="many">dalam %d saat</item>
+    </plurals>
+    <plurals name="in_num_minutes">
+        <item quantity="other">dalam masa %d minit</item>
+        <item quantity="zero">dalam %d minit</item>
+        <item quantity="one">dalam 1 minit</item>
+        <item quantity="two">dalam %d minit</item>
+        <item quantity="few">dalam %d minit</item>
+        <item quantity="many">dalam %d minit</item>
+    </plurals>
+    <plurals name="in_num_hours">
+        <item quantity="other">dalam masa %d jam</item>
+        <item quantity="zero">dalam %d jam</item>
+        <item quantity="one">dalam 1 jam</item>
+        <item quantity="two">dalam %d jam</item>
+        <item quantity="few">dalam %d jam</item>
+        <item quantity="many">dalam %d jam</item>
+    </plurals>
+    <plurals name="in_num_days">
+        <item quantity="other">dalam masa %d hari</item>
+        <item quantity="zero">dalam %d hari</item>
+        <item quantity="one">esok</item>
+        <item quantity="two">dalam %d hari</item>
+        <item quantity="few">dalam %d hari</item>
+        <item quantity="many">dalam %d hari</item>
+    </plurals>
+    <plurals name="abbrev_num_seconds_ago">
+        <item quantity="other">%d saat yang lalu</item>
+        <item quantity="zero">%d saat yang lalu</item>
+        <item quantity="one">1 saat yang lalu</item>
+        <item quantity="two">%d saat yang lalu</item>
+        <item quantity="few">%d saat yang lalu</item>
+        <item quantity="many">%d saat yang lalu</item>
+    </plurals>
+    <plurals name="abbrev_num_minutes_ago">
+        <item quantity="other">%d minit yang lalu</item>
+        <item quantity="zero">%d minit yang lalu</item>
+        <item quantity="one">1 minit yang lalu</item>
+        <item quantity="two">%d minit yang lalu</item>
+        <item quantity="few">%d minit yang lalu</item>
+        <item quantity="many">%d minit yang lalu</item>
+    </plurals>
+    <plurals name="abbrev_num_hours_ago">
+        <item quantity="other">%d jam yang lalu</item>
+        <item quantity="zero">%d jam yang lalu</item>
+        <item quantity="one">1 jam yang lalu</item>
+        <item quantity="two">%d jam yang lalu</item>
+        <item quantity="few">%d jam yang lalu</item>
+        <item quantity="many">%d jam yang lalu</item>
+    </plurals>
+    <plurals name="abbrev_num_days_ago">
+        <item quantity="other">%d hari yang lalu</item>
+        <item quantity="zero">%d hari yang lalu</item>
+        <item quantity="one">semalam</item>
+        <item quantity="two">%d hari yang lalu</item>
+        <item quantity="few">%d hari yang lalu</item>
+        <item quantity="many">%d hari yang lalu</item>
+    </plurals>
+    <plurals name="abbrev_in_num_seconds">
+        <item quantity="other">dalam masa %d saat</item>
+        <item quantity="zero">dalam %d saat</item>
+        <item quantity="one">dalam 1 saat</item>
+        <item quantity="two">dalam %d saat</item>
+        <item quantity="few">dalam %d saat</item>
+        <item quantity="many">dalam %d saat</item>
+    </plurals>
+    <plurals name="abbrev_in_num_minutes">
+        <item quantity="other">dalam masa %d minit</item>
+        <item quantity="zero">dalam %d minit</item>
+        <item quantity="one">dalam 1 minit</item>
+        <item quantity="two">dalam %d minit</item>
+        <item quantity="few">dalam %d minit</item>
+        <item quantity="many">dalam %d minit</item>
+    </plurals>
+    <plurals name="abbrev_in_num_hours">
+        <item quantity="other">dalam masa %d jam</item>
+        <item quantity="zero">dalam %d jam</item>
+        <item quantity="one">dalam 1 jam</item>
+        <item quantity="two">dalam %d jam</item>
+        <item quantity="few">dalam %d jam</item>
+        <item quantity="many">dalam %d jam</item>
+    </plurals>
+    <plurals name="abbrev_in_num_days">
+        <item quantity="other">dalam masa %d hari</item>
+        <item quantity="zero">dalam %d hari</item>
+        <item quantity="one">esok</item>
+        <item quantity="two">dalam %d hari</item>
+        <item quantity="few">dalam %d hari</item>
+        <item quantity="many">dalam %d hari</item>
+    </plurals>
+    <plurals name="wifi_available">
+        <item quantity="other">Rangkaian Wi-Fi tersedia</item>
+        <item quantity="zero">Rangkaian Wi-Fi tersedia</item>
+        <item quantity="one">Rangkaian Wi-Fi tersedia</item>
+        <item quantity="two">Rangkaian Wi-Fi tersedia</item>
+        <item quantity="few">Rangkaian Wi-Fi tersedia</item>
+        <item quantity="many">Rangkaian Wi-Fi tersedia</item>
+    </plurals>
+    <plurals name="wifi_available_detailed">
+        <item quantity="other">Rangkaian Wi-Fi terbuka tersedia</item>
+        <item quantity="zero">Rangkaian Wi-Fi terbuka tersedia</item>
+        <item quantity="one">Rangkaian Wi-Fi terbuka tersedia</item>
+        <item quantity="two">Rangkaian Wi-Fi terbuka tersedia</item>
+        <item quantity="few">Rangkaian Wi-Fi terbuka tersedia</item>
+        <item quantity="many">Rangkaian Wi-Fi terbuka tersedia</item>
+    </plurals>
+    <plurals name="matches_found">
+        <item quantity="other">%1$d daripada %2$d</item>
+        <item quantity="zero">%1$d daripada %2$d</item>
+        <item quantity="one">1 padanan</item>
+        <item quantity="two">%1$d daripada %2$d</item>
+        <item quantity="few">%1$d daripada %2$d</item>
+        <item quantity="many">%1$d daripada %2$d</item>
+    </plurals>
+    <plurals name="duration_seconds">
+        <item quantity="other">%d saat</item>
+        <item quantity="one">1 saat</item>
+    </plurals>
+    <plurals name="duration_minutes">
+        <item quantity="other">%d minit</item>
+        <item quantity="one">1 minit</item>
+    </plurals>
+    <plurals name="duration_hours">
+        <item quantity="other">%d jam</item>
+        <item quantity="one">1 jam</item>
+    </plurals>
+</resources>
