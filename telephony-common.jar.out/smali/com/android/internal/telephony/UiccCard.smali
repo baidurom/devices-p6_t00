@@ -491,7 +491,7 @@
 
     iget-object v9, p0, Lcom/android/internal/telephony/UiccCard;->mContext:Landroid/content/Context;
 
-    const v10, 0x206005c
+    const v10, 0x103030f
 
     invoke-direct {v7, v9, v10}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;I)V
 
