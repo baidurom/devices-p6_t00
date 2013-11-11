@@ -1,0 +1,38 @@
+.field private mInputMethodWindowVisible:Z
+
+.method public isLockScreenDisabled()Z
+    .locals 1
+
+    .prologue
+    .line 4467
+    iget-object v0, p0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mKeyguardMediator:Lcom/android/internal/policy/impl/keyguard/KeyguardViewMediator;
+
+    if-nez v0, :cond_0
+
+    const/4 v0, 0x0
+
+    .line 4468
+    :goto_0
+    return v0
+
+    :cond_0
+    iget-object v0, p0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mKeyguardMediator:Lcom/android/internal/policy/impl/keyguard/KeyguardViewMediator;
+
+    invoke-virtual {v0}, Lcom/android/internal/policy/impl/keyguard/KeyguardViewMediator;->isLockScreenDisabled()Z
+
+    move-result v0
+
+    goto :goto_0
+.end method
+
+.method public setInputMethodWindowVisible(Z)V
+    .locals 0
+    .parameter "visible"
+
+    .prologue
+    .line 5572
+    iput-boolean p1, p0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mInputMethodWindowVisible:Z
+
+    .line 5573
+    return-void
+.end method

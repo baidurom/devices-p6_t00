@@ -1,0 +1,13 @@
+.method public isLockScreenDisabled()Z
+    .locals 1
+
+    .prologue
+    .line 1513
+    iget-object v0, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardViewMediator;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
+
+    invoke-virtual {v0}, Lcom/android/internal/widget/LockPatternUtils;->isLockScreenDisabled()Z
+
+    move-result v0
+
+    return v0
+.end method
