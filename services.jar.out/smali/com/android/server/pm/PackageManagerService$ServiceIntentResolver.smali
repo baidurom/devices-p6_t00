@@ -363,7 +363,7 @@
 .end method
 
 .method protected isFilterStopped(Landroid/content/pm/PackageParser$ServiceIntentInfo;I)Z
-    .locals 5
+    .locals 6
     .parameter "filter"
     .parameter "userId"
 
@@ -394,7 +394,7 @@
 
     .line 5508
     .local v0, p:Landroid/content/pm/PackageParser$Package;
-    if-eqz v0, :cond_3
+    if-eqz v0, :cond_4
 
     .line 5509
     iget-object v1, v0, Landroid/content/pm/PackageParser$Package;->mExtras:Ljava/lang/Object;
@@ -403,14 +403,33 @@
 
     .line 5510
     .local v1, ps:Lcom/android/server/pm/PackageSetting;
-    if-eqz v1, :cond_3
+    if-eqz v1, :cond_4
 
     .line 5514
-    iget v4, v1, Lcom/android/server/pm/PackageSetting;->pkgFlags:I
+    iget-object v4, p0, Lcom/android/server/pm/PackageManagerService$ServiceIntentResolver;->this$0:Lcom/android/server/pm/PackageManagerService;
+    
+    iget-object v4, v4, Lcom/android/server/pm/PackageManagerService;->mSettings:Lcom/android/server/pm/Settings;
+    
+    iget-object v5, v0, Landroid/content/pm/PackageParser$Package;->packageName:Ljava/lang/String;
+    
+    invoke-virtual {v4, v5}, Lcom/android/server/pm/Settings;->isThirdBaiduApps(Ljava/lang/String;)Z
+    
+    move-result v4
+    
+    if-eqz v4, :cond_2
+    
+    invoke-virtual {v1, p2}, Lcom/android/server/pm/PackageSetting;->getStopped(I)Z
+    
+    move-result v2
+    
+    goto :goto_0
+    
+    :cond_2
+    iget v4, v1, Lcom/android/server/pm/GrantedPermissions;->pkgFlags:I
 
     and-int/lit8 v4, v4, 0x1
 
-    if-nez v4, :cond_2
+    if-nez v4, :cond_3
 
     invoke-virtual {v1, p2}, Lcom/android/server/pm/PackageSetting;->getStopped(I)Z
 
@@ -418,13 +437,13 @@
 
     if-nez v4, :cond_0
 
-    :cond_2
+    :cond_3
     move v2, v3
 
     goto :goto_0
 
     .end local v1           #ps:Lcom/android/server/pm/PackageSetting;
-    :cond_3
+    :cond_4
     move v2, v3
 
     .line 5518

@@ -64,6 +64,17 @@
     return-void
 .end method
 
+.method static synthetic access$100(Landroid/content/res/AssetManager$AssetInputStream;)J
+    .locals 2
+    .parameter "x0"
+
+    .prologue
+    .line 749
+    iget-wide v0, p0, Landroid/content/res/AssetManager$AssetInputStream;->mLength:J
+
+    return-wide v0
+.end method
+
 
 # virtual methods
 .method public final available()I

@@ -2258,13 +2258,6 @@
 
     invoke-direct/range {v2 .. v7}, Lcom/android/server/pm/PackageManagerService;->scanDirLI(Ljava/io/File;IIJ)V
 
-    .line 1218
-    move-object/from16 v0, p0
-
-    move/from16 v1, v34
-
-    invoke-direct {v0, v1}, Lcom/android/server/pm/PackageManagerService;->scanCustDir(I)V
-
     .line 1221
     new-instance v2, Ljava/io/File;
 
@@ -2384,20 +2377,7 @@
     .line 1237
     move-object/from16 v0, p0
 
-    move/from16 v1, v34
-
-    invoke-direct {v0, v1}, Lcom/android/server/pm/PackageManagerService;->scanDataDir(I)V
-
     .line 1240
-    move-object/from16 v0, p0
-
-    move/from16 v1, v34
-
-    invoke-direct {v0, v1}, Lcom/android/server/pm/PackageManagerService;->scanRemovableAppDir(I)V
-
-    .line 1243
-    move-object/from16 v0, p0
-
     iget-object v2, v0, Lcom/android/server/pm/PackageManagerService;->mInstaller:Lcom/android/server/pm/Installer;
 
     invoke-virtual {v2}, Lcom/android/server/pm/Installer;->moveFiles()I
@@ -18289,7 +18269,7 @@
 
     iget-object v3, v0, Lcom/android/server/pm/PackageManagerService;->mResolveActivity:Landroid/content/pm/ActivityInfo;
 
-    const v10, 0x1030302
+    const v10, 0x103030f
 
     iput v10, v3, Landroid/content/pm/ActivityInfo;->theme:I
 
@@ -20121,6 +20101,9 @@
 
     .line 4191
     .local v21, dataPathString:Ljava/lang/String;
+    goto :cond_37
+    
+
     invoke-static/range {p1 .. p1}, Lcom/android/server/pm/PackageManagerService;->isSystemApp(Landroid/content/pm/PackageParser$Package;)Z
 
     move-result v3
