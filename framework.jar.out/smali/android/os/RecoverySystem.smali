@@ -165,7 +165,7 @@
 
     .line 417
     .local v1, pm:Landroid/os/PowerManager;
-    const-string/jumbo v2, "recovery"
+    const-string/jumbo v2, ""
 
     invoke-virtual {v1, v2}, Landroid/os/PowerManager;->reboot(Ljava/lang/String;)V
 
@@ -507,7 +507,7 @@
 
     .prologue
     .line 328
-    invoke-virtual {p1}, Ljava/io/File;->getCanonicalPath()Ljava/lang/String;
+    invoke-virtual {p1}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
     move-result-object v1
 

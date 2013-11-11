@@ -59,7 +59,7 @@
     iget-object v2, p0, Lcom/android/server/BackupManagerService$3;->val$targets:Ljava/util/HashSet;
 
     #calls: Lcom/android/server/BackupManagerService;->dataChangedImpl(Ljava/lang/String;Ljava/util/HashSet;)V
-    invoke-static {v0, v1, v2}, Lcom/android/server/BackupManagerService;->access$1800(Lcom/android/server/BackupManagerService;Ljava/lang/String;Ljava/util/HashSet;)V
+    invoke-static {v0, v1, v2}, Lcom/android/server/BackupManagerService;->access$1900(Lcom/android/server/BackupManagerService;Ljava/lang/String;Ljava/util/HashSet;)V
 
     .line 4922
     return-void

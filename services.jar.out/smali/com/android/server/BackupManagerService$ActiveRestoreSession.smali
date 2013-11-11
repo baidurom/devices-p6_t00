@@ -77,7 +77,7 @@
     return-void
 .end method
 
-.method static synthetic access$2000(Lcom/android/server/BackupManagerService$ActiveRestoreSession;)Lcom/android/internal/backup/IBackupTransport;
+.method static synthetic access$2100(Lcom/android/server/BackupManagerService$ActiveRestoreSession;)Lcom/android/internal/backup/IBackupTransport;
     .locals 1
     .parameter "x0"
 
@@ -88,7 +88,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$2002(Lcom/android/server/BackupManagerService$ActiveRestoreSession;Lcom/android/internal/backup/IBackupTransport;)Lcom/android/internal/backup/IBackupTransport;
+.method static synthetic access$2102(Lcom/android/server/BackupManagerService$ActiveRestoreSession;Lcom/android/internal/backup/IBackupTransport;)Lcom/android/internal/backup/IBackupTransport;
     .locals 0
     .parameter "x0"
     .parameter "x1"
@@ -170,7 +170,7 @@
     iget-object v5, p0, Lcom/android/server/BackupManagerService$ActiveRestoreSession;->this$0:Lcom/android/server/BackupManagerService;
 
     #getter for: Lcom/android/server/BackupManagerService;->mContext:Landroid/content/Context;
-    invoke-static {v5}, Lcom/android/server/BackupManagerService;->access$1900(Lcom/android/server/BackupManagerService;)Landroid/content/Context;
+    invoke-static {v5}, Lcom/android/server/BackupManagerService;->access$2000(Lcom/android/server/BackupManagerService;)Landroid/content/Context;
 
     move-result-object v5
 
@@ -353,7 +353,7 @@
     iget-object v1, p0, Lcom/android/server/BackupManagerService$ActiveRestoreSession;->this$0:Lcom/android/server/BackupManagerService;
 
     #getter for: Lcom/android/server/BackupManagerService;->mContext:Landroid/content/Context;
-    invoke-static {v1}, Lcom/android/server/BackupManagerService;->access$1900(Lcom/android/server/BackupManagerService;)Landroid/content/Context;
+    invoke-static {v1}, Lcom/android/server/BackupManagerService;->access$2000(Lcom/android/server/BackupManagerService;)Landroid/content/Context;
 
     move-result-object v1
 
@@ -694,7 +694,7 @@
     iget-object v0, p0, Lcom/android/server/BackupManagerService$ActiveRestoreSession;->this$0:Lcom/android/server/BackupManagerService;
 
     #getter for: Lcom/android/server/BackupManagerService;->mPackageManager:Landroid/content/pm/PackageManager;
-    invoke-static {v0}, Lcom/android/server/BackupManagerService;->access$600(Lcom/android/server/BackupManagerService;)Landroid/content/pm/PackageManager;
+    invoke-static {v0}, Lcom/android/server/BackupManagerService;->access$700(Lcom/android/server/BackupManagerService;)Landroid/content/pm/PackageManager;
 
     move-result-object v0
 
@@ -712,7 +712,7 @@
     iget-object v0, p0, Lcom/android/server/BackupManagerService$ActiveRestoreSession;->this$0:Lcom/android/server/BackupManagerService;
 
     #getter for: Lcom/android/server/BackupManagerService;->mContext:Landroid/content/Context;
-    invoke-static {v0}, Lcom/android/server/BackupManagerService;->access$1900(Lcom/android/server/BackupManagerService;)Landroid/content/Context;
+    invoke-static {v0}, Lcom/android/server/BackupManagerService;->access$2000(Lcom/android/server/BackupManagerService;)Landroid/content/Context;
 
     move-result-object v0
 
@@ -966,7 +966,7 @@
     iget-object v0, p0, Lcom/android/server/BackupManagerService$ActiveRestoreSession;->this$0:Lcom/android/server/BackupManagerService;
 
     #getter for: Lcom/android/server/BackupManagerService;->mContext:Landroid/content/Context;
-    invoke-static {v0}, Lcom/android/server/BackupManagerService;->access$1900(Lcom/android/server/BackupManagerService;)Landroid/content/Context;
+    invoke-static {v0}, Lcom/android/server/BackupManagerService;->access$2000(Lcom/android/server/BackupManagerService;)Landroid/content/Context;
 
     move-result-object v0
 

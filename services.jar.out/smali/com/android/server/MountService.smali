@@ -21,6 +21,7 @@
         Lcom/android/server/MountService$UnmountCallBack;,
         Lcom/android/server/MountService$DefaultContainerConnection;,
         Lcom/android/server/MountService$ObbState;,
+        Lcom/android/server/MountService$SdType;,
         Lcom/android/server/MountService$VoldResponseCode;,
         Lcom/android/server/MountService$VolumeState;
     }
@@ -71,6 +72,8 @@
 .field private static final TAG:Ljava/lang/String; = "MountService"
 
 .field private static final TAG_STORAGE:Ljava/lang/String; = "storage"
+
+.field private static final TAG_STORAGE_AUTO:Ljava/lang/String; = "storage_auto"
 
 .field private static final TAG_STORAGE_LIST:Ljava/lang/String; = "StorageList"
 
@@ -234,7 +237,7 @@
 .end method
 
 .method public constructor <init>(Landroid/content/Context;)V
-    .locals 10
+    .locals 13
     .parameter "context"
 
     .prologue
@@ -375,6 +378,68 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 1378
+    const/4 v7, 0x1
+    
+    .local v7, i:I
+    :goto_0
+    iget-object v0, p0, Lcom/android/server/MountService;->mVolumes:Ljava/util/ArrayList;
+    
+    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
+    
+    move-result v0
+    
+    if-ge v7, v0, :cond_1
+    
+    iget-object v0, p0, Lcom/android/server/MountService;->mVolumes:Ljava/util/ArrayList;
+    
+    invoke-virtual {v0, v7}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+    
+    move-result-object v12
+    
+    check-cast v12, Landroid/os/storage/StorageVolume;
+    
+    .local v12, volume:Landroid/os/storage/StorageVolume;
+    invoke-virtual {v12}, Landroid/os/storage/StorageVolume;->getPath()Ljava/lang/String;
+    
+    move-result-object v8
+    
+    .local v8, path:Ljava/lang/String;
+    invoke-virtual {v12}, Landroid/os/storage/StorageVolume;->isEmulated()Z
+    
+    move-result v6
+    
+    .local v6, emulate:Z
+    if-eqz v6, :cond_0
+    
+    const-string v0, "MountService"
+    
+    const-string v1, "using emulated external storage"
+    
+    invoke-static {v0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+    
+    iget-object v0, p0, Lcom/android/server/MountService;->mVolumeStates:Ljava/util/HashMap;
+    
+    const-string v1, "mounted"
+    
+    invoke-virtual {v0, v8, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    
+    :cond_0
+    add-int/lit8 v7, v7, 0x1
+    
+    goto :goto_0
+    .end local v6           #emulate:Z
+    .end local v7           #i:I
+    .end local v8           #path:Ljava/lang/String;
+    .end local v12           #volume:Landroid/os/storage/StorageVolume;
+    :try_start_2
+    monitor-exit v1
+    :try_end_2
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+    
+    throw v0
+    
+    .restart local v7       #i:I
+    :cond_1
     const-string v0, "package"
 
     invoke-static {v0}, Landroid/os/ServiceManager;->getService(Ljava/lang/String;)Landroid/os/IBinder;
@@ -467,13 +532,13 @@
 
     .line 1399
     .local v7, primary:Landroid/os/storage/StorageVolume;
-    if-eqz v7, :cond_0
+    if-eqz v7, :cond_2
 
     invoke-virtual {v7}, Landroid/os/storage/StorageVolume;->allowMassStorage()Z
 
     move-result v0
 
-    if-eqz v0, :cond_0
+    if-eqz v0, :cond_2
 
     .line 1400
     iget-object v0, p0, Lcom/android/server/MountService;->mContext:Landroid/content/Context;
@@ -491,7 +556,7 @@
     invoke-virtual {v0, v1, v2, v4, v3}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;Ljava/lang/String;Landroid/os/Handler;)Landroid/content/Intent;
 
     .line 1405
-    :cond_0
+    :cond_2
     new-instance v0, Lcom/android/server/MountService$ObbActionHandler;
 
     iget-object v1, p0, Lcom/android/server/MountService;->mHandlerThread:Landroid/os/HandlerThread;
@@ -2894,24 +2959,24 @@
 .end method
 
 .method private readStorageListLocked()V
-    .locals 31
+    .locals 32
 
     .prologue
-    .line 1225
+    .line 1170
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lcom/android/server/MountService;->mVolumes:Ljava/util/ArrayList;
 
     invoke-virtual {v3}, Ljava/util/ArrayList;->clear()V
 
-    .line 1226
+    .line 1171
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lcom/android/server/MountService;->mVolumeStates:Ljava/util/HashMap;
 
     invoke-virtual {v3}, Ljava/util/HashMap;->clear()V
 
-    .line 1228
+    .line 1173
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lcom/android/server/MountService;->mContext:Landroid/content/Context;
@@ -2920,12 +2985,27 @@
 
     move-result-object v24
 
-    .line 1230
+    .line 1175
     .local v24, resources:Landroid/content/res/Resources;
     const v19, 0x10f000e
 
-    .line 1231
+    .line 1177
     .local v19, id:I
+    sget-object v3, Lcom/android/server/MountService$SdType;->TYPE:Ljava/lang/String;
+
+    const-string v12, "4"
+
+    invoke-virtual {v3, v12}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v3
+
+    if-eqz v3, :cond_2
+
+    const-string v25, "storage_auto"
+
+    .line 1179
+    .local v25, storage:Ljava/lang/String;
+    :goto_0
     move-object/from16 v0, v24
 
     move/from16 v1, v19
@@ -2934,13 +3014,13 @@
 
     move-result-object v22
 
-    .line 1232
+    .line 1180
     .local v22, parser:Landroid/content/res/XmlResourceParser;
     invoke-static/range {v22 .. v22}, Landroid/util/Xml;->asAttributeSet(Lorg/xmlpull/v1/XmlPullParser;)Landroid/util/AttributeSet;
 
     move-result-object v14
 
-    .line 1235
+    .line 1183
     .local v14, attrs:Landroid/util/AttributeSet;
     :try_start_0
     const-string v3, "StorageList"
@@ -2949,12 +3029,12 @@
 
     invoke-static {v0, v3}, Lcom/android/internal/util/XmlUtils;->beginDocument(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;)V
 
-    .line 1237
+    .line 1185
     :cond_0
-    :goto_0
+    :goto_1
     invoke-static/range {v22 .. v22}, Lcom/android/internal/util/XmlUtils;->nextElement(Lorg/xmlpull/v1/XmlPullParser;)V
 
-    .line 1239
+    .line 1187
     invoke-interface/range {v22 .. v22}, Landroid/content/res/XmlResourceParser;->getName()Ljava/lang/String;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -2963,22 +3043,22 @@
 
     move-result-object v17
 
-    .line 1240
+    .line 1188
     .local v17, element:Ljava/lang/String;
-    if-nez v17, :cond_2
+    if-nez v17, :cond_3
 
-    .line 1304
+    .line 1252
     invoke-virtual/range {p0 .. p0}, Lcom/android/server/MountService;->isExternalStorageEmulated()Z
 
     move-result v3
 
-    if-eqz v3, :cond_b
+    if-eqz v3, :cond_c
 
     const/16 v20, 0x1
 
-    .line 1305
+    .line 1253
     .local v20, index:I
-    :goto_1
+    :goto_2
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lcom/android/server/MountService;->mVolumes:Ljava/util/ArrayList;
@@ -2989,12 +3069,12 @@
 
     .local v18, i$:Ljava/util/Iterator;
     :cond_1
-    :goto_2
+    :goto_3
     invoke-interface/range {v18 .. v18}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v3
 
-    if-eqz v3, :cond_9
+    if-eqz v3, :cond_a
 
     invoke-interface/range {v18 .. v18}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
@@ -3002,7 +3082,7 @@
 
     check-cast v2, Landroid/os/storage/StorageVolume;
 
-    .line 1306
+    .line 1254
     .local v2, volume:Landroid/os/storage/StorageVolume;
     invoke-virtual {v2}, Landroid/os/storage/StorageVolume;->isEmulated()Z
 
@@ -3010,7 +3090,7 @@
 
     if-nez v3, :cond_1
 
-    .line 1307
+    .line 1255
     add-int/lit8 v21, v20, 0x1
 
     .end local v20           #index:I
@@ -3023,25 +3103,39 @@
 
     .end local v21           #index:I
     .restart local v20       #index:I
-    goto :goto_2
+    goto :goto_3
 
-    .line 1242
+    .line 1177
     .end local v2           #volume:Landroid/os/storage/StorageVolume;
+    .end local v14           #attrs:Landroid/util/AttributeSet;
+    .end local v17           #element:Ljava/lang/String;
     .end local v18           #i$:Ljava/util/Iterator;
     .end local v20           #index:I
+    .end local v22           #parser:Landroid/content/res/XmlResourceParser;
+    .end local v25           #storage:Ljava/lang/String;
     :cond_2
+    const-string v25, "storage"
+
+    goto :goto_0
+
+    .line 1190
+    .restart local v14       #attrs:Landroid/util/AttributeSet;
+    .restart local v17       #element:Ljava/lang/String;
+    .restart local v22       #parser:Landroid/content/res/XmlResourceParser;
+    .restart local v25       #storage:Ljava/lang/String;
+    :cond_3
     :try_start_1
-    const-string v3, "storage"
+    move-object/from16 v0, v25
 
-    move-object/from16 v0, v17
+    move-object/from16 v1, v17
 
-    invoke-virtual {v3, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v3
 
     if-eqz v3, :cond_0
 
-    .line 1243
+    .line 1191
     sget-object v3, Lcom/android/internal/R$styleable;->Storage:[I
 
     move-object/from16 v0, v24
@@ -3050,7 +3144,7 @@
 
     move-result-object v13
 
-    .line 1246
+    .line 1194
     .local v13, a:Landroid/content/res/TypedArray;
     const/4 v3, 0x0
 
@@ -3058,7 +3152,7 @@
 
     move-result-object v23
 
-    .line 1248
+    .line 1196
     .local v23, path:Ljava/lang/String;
     const/4 v3, 0x1
 
@@ -3068,7 +3162,7 @@
 
     move-result v4
 
-    .line 1250
+    .line 1198
     .local v4, descriptionId:I
     const/4 v3, 0x1
 
@@ -3076,7 +3170,7 @@
 
     move-result-object v15
 
-    .line 1252
+    .line 1200
     .local v15, description:Ljava/lang/CharSequence;
     const/4 v3, 0x2
 
@@ -3086,7 +3180,7 @@
 
     move-result v5
 
-    .line 1254
+    .line 1202
     .local v5, primary:Z
     const/4 v3, 0x3
 
@@ -3096,7 +3190,7 @@
 
     move-result v6
 
-    .line 1256
+    .line 1204
     .local v6, removable:Z
     const/4 v3, 0x4
 
@@ -3106,7 +3200,7 @@
 
     move-result v7
 
-    .line 1258
+    .line 1206
     .local v7, emulated:Z
     const/4 v3, 0x5
 
@@ -3116,7 +3210,7 @@
 
     move-result v8
 
-    .line 1260
+    .line 1208
     .local v8, mtpReserve:I
     const/4 v3, 0x6
 
@@ -3126,7 +3220,7 @@
 
     move-result v9
 
-    .line 1263
+    .line 1211
     .local v9, allowMassStorage:Z
     const/4 v3, 0x7
 
@@ -3138,17 +3232,17 @@
 
     int-to-long v0, v3
 
-    move-wide/from16 v27, v0
+    move-wide/from16 v28, v0
 
-    const-wide/16 v29, 0x400
+    const-wide/16 v30, 0x400
 
-    mul-long v27, v27, v29
+    mul-long v28, v28, v30
 
-    const-wide/16 v29, 0x400
+    const-wide/16 v30, 0x400
 
-    mul-long v10, v27, v29
+    mul-long v10, v28, v30
 
-    .line 1266
+    .line 1214
     .local v10, maxFileSize:J
     const-string v3, "MountService"
 
@@ -3156,9 +3250,9 @@
 
     invoke-direct {v12}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v27, "got storage path: "
+    const-string v28, "got storage path: "
 
-    move-object/from16 v0, v27
+    move-object/from16 v0, v28
 
     invoke-virtual {v12, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -3170,9 +3264,9 @@
 
     move-result-object v12
 
-    const-string v27, " description: "
+    const-string v28, " description: "
 
-    move-object/from16 v0, v27
+    move-object/from16 v0, v28
 
     invoke-virtual {v12, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -3182,9 +3276,9 @@
 
     move-result-object v12
 
-    const-string v27, " primary: "
+    const-string v28, " primary: "
 
-    move-object/from16 v0, v27
+    move-object/from16 v0, v28
 
     invoke-virtual {v12, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -3194,9 +3288,9 @@
 
     move-result-object v12
 
-    const-string v27, " removable: "
+    const-string v28, " removable: "
 
-    move-object/from16 v0, v27
+    move-object/from16 v0, v28
 
     invoke-virtual {v12, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -3206,9 +3300,9 @@
 
     move-result-object v12
 
-    const-string v27, " emulated: "
+    const-string v28, " emulated: "
 
-    move-object/from16 v0, v27
+    move-object/from16 v0, v28
 
     invoke-virtual {v12, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -3218,9 +3312,9 @@
 
     move-result-object v12
 
-    const-string v27, " mtpReserve: "
+    const-string v28, " mtpReserve: "
 
-    move-object/from16 v0, v27
+    move-object/from16 v0, v28
 
     invoke-virtual {v12, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -3230,9 +3324,9 @@
 
     move-result-object v12
 
-    const-string v27, " allowMassStorage: "
+    const-string v28, " allowMassStorage: "
 
-    move-object/from16 v0, v27
+    move-object/from16 v0, v28
 
     invoke-virtual {v12, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -3242,9 +3336,9 @@
 
     move-result-object v12
 
-    const-string v27, " maxFileSize: "
+    const-string v28, " maxFileSize: "
 
-    move-object/from16 v0, v27
+    move-object/from16 v0, v28
 
     invoke-virtual {v12, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -3260,10 +3354,10 @@
 
     invoke-static {v3, v12}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1272
-    if-eqz v7, :cond_4
+    .line 1220
+    if-eqz v7, :cond_5
 
-    .line 1275
+    .line 1223
     new-instance v2, Landroid/os/storage/StorageVolume;
 
     const/4 v3, 0x0
@@ -3288,16 +3382,16 @@
 
     iput-object v2, v0, Lcom/android/server/MountService;->mEmulatedTemplate:Landroid/os/storage/StorageVolume;
 
-    .line 1278
+    .line 1226
     invoke-static {}, Lcom/android/server/pm/UserManagerService;->getInstance()Lcom/android/server/pm/UserManagerService;
 
-    move-result-object v26
+    move-result-object v27
 
-    .line 1279
-    .local v26, userManager:Lcom/android/server/pm/UserManagerService;
+    .line 1227
+    .local v27, userManager:Lcom/android/server/pm/UserManagerService;
     const/4 v3, 0x0
 
-    move-object/from16 v0, v26
+    move-object/from16 v0, v27
 
     invoke-virtual {v0, v3}, Lcom/android/server/pm/UserManagerService;->getUsers(Z)Ljava/util/List;
 
@@ -3308,22 +3402,22 @@
     move-result-object v18
 
     .restart local v18       #i$:Ljava/util/Iterator;
-    :goto_3
+    :goto_4
     invoke-interface/range {v18 .. v18}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v3
 
-    if-eqz v3, :cond_6
+    if-eqz v3, :cond_7
 
     invoke-interface/range {v18 .. v18}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    move-result-object v25
+    move-result-object v26
 
-    check-cast v25, Landroid/content/pm/UserInfo;
+    check-cast v26, Landroid/content/pm/UserInfo;
 
-    .line 1280
-    .local v25, user:Landroid/content/pm/UserInfo;
-    invoke-virtual/range {v25 .. v25}, Landroid/content/pm/UserInfo;->getUserHandle()Landroid/os/UserHandle;
+    .line 1228
+    .local v26, user:Landroid/content/pm/UserInfo;
+    invoke-virtual/range {v26 .. v26}, Landroid/content/pm/UserInfo;->getUserHandle()Landroid/os/UserHandle;
 
     move-result-object v3
 
@@ -3335,9 +3429,9 @@
     .catch Lorg/xmlpull/v1/XmlPullParserException; {:try_start_1 .. :try_end_1} :catch_0
     .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_1
 
-    goto :goto_3
+    goto :goto_4
 
-    .line 1297
+    .line 1245
     .end local v4           #descriptionId:I
     .end local v8           #mtpReserve:I
     .end local v10           #maxFileSize:J
@@ -3346,12 +3440,12 @@
     .end local v17           #element:Ljava/lang/String;
     .end local v18           #i$:Ljava/util/Iterator;
     .end local v23           #path:Ljava/lang/String;
-    .end local v25           #user:Landroid/content/pm/UserInfo;
-    .end local v26           #userManager:Lcom/android/server/pm/UserManagerService;
+    .end local v26           #user:Landroid/content/pm/UserInfo;
+    .end local v27           #userManager:Lcom/android/server/pm/UserManagerService;
     :catch_0
     move-exception v16
 
-    .line 1298
+    .line 1246
     .local v16, e:Lorg/xmlpull/v1/XmlPullParserException;
     :try_start_2
     new-instance v3, Ljava/lang/RuntimeException;
@@ -3364,7 +3458,7 @@
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    .line 1304
+    .line 1252
     .end local v16           #e:Lorg/xmlpull/v1/XmlPullParserException;
     :catchall_0
     move-exception v3
@@ -3373,13 +3467,13 @@
 
     move-result v12
 
-    if-eqz v12, :cond_a
+    if-eqz v12, :cond_b
 
     const/16 v20, 0x1
 
-    .line 1305
+    .line 1253
     .restart local v20       #index:I
-    :goto_4
+    :goto_5
     move-object/from16 v0, p0
 
     iget-object v12, v0, Lcom/android/server/MountService;->mVolumes:Ljava/util/ArrayList;
@@ -3389,13 +3483,13 @@
     move-result-object v18
 
     .restart local v18       #i$:Ljava/util/Iterator;
-    :cond_3
-    :goto_5
+    :cond_4
+    :goto_6
     invoke-interface/range {v18 .. v18}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v12
 
-    if-eqz v12, :cond_8
+    if-eqz v12, :cond_9
 
     invoke-interface/range {v18 .. v18}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
@@ -3403,15 +3497,15 @@
 
     check-cast v2, Landroid/os/storage/StorageVolume;
 
-    .line 1306
+    .line 1254
     .restart local v2       #volume:Landroid/os/storage/StorageVolume;
     invoke-virtual {v2}, Landroid/os/storage/StorageVolume;->isEmulated()Z
 
     move-result v12
 
-    if-nez v12, :cond_3
+    if-nez v12, :cond_4
 
-    .line 1307
+    .line 1255
     add-int/lit8 v21, v20, 0x1
 
     .end local v20           #index:I
@@ -3424,9 +3518,9 @@
 
     .end local v21           #index:I
     .restart local v20       #index:I
-    goto :goto_5
+    goto :goto_6
 
-    .line 1284
+    .line 1232
     .end local v2           #volume:Landroid/os/storage/StorageVolume;
     .end local v18           #i$:Ljava/util/Iterator;
     .end local v20           #index:I
@@ -3441,13 +3535,13 @@
     .restart local v15       #description:Ljava/lang/CharSequence;
     .restart local v17       #element:Ljava/lang/String;
     .restart local v23       #path:Ljava/lang/String;
-    :cond_4
-    if-eqz v23, :cond_5
-
-    if-nez v15, :cond_7
-
-    .line 1285
     :cond_5
+    if-eqz v23, :cond_6
+
+    if-nez v15, :cond_8
+
+    .line 1233
+    :cond_6
     :try_start_3
     const-string v3, "MountService"
 
@@ -3455,22 +3549,22 @@
 
     invoke-static {v3, v12}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1294
+    .line 1242
     .end local v5           #primary:Z
     .end local v6           #removable:Z
     .end local v7           #emulated:Z
     .end local v9           #allowMassStorage:Z
-    :cond_6
-    :goto_6
+    :cond_7
+    :goto_7
     invoke-virtual {v13}, Landroid/content/res/TypedArray;->recycle()V
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
     .catch Lorg/xmlpull/v1/XmlPullParserException; {:try_start_3 .. :try_end_3} :catch_0
     .catch Ljava/io/IOException; {:try_start_3 .. :try_end_3} :catch_1
 
-    goto/16 :goto_0
+    goto/16 :goto_1
 
-    .line 1299
+    .line 1247
     .end local v4           #descriptionId:I
     .end local v8           #mtpReserve:I
     .end local v10           #maxFileSize:J
@@ -3481,7 +3575,7 @@
     :catch_1
     move-exception v16
 
-    .line 1300
+    .line 1248
     .local v16, e:Ljava/io/IOException;
     :try_start_4
     new-instance v3, Ljava/lang/RuntimeException;
@@ -3494,7 +3588,7 @@
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_0
 
-    .line 1287
+    .line 1235
     .end local v16           #e:Ljava/io/IOException;
     .restart local v4       #descriptionId:I
     .restart local v5       #primary:Z
@@ -3507,7 +3601,7 @@
     .restart local v15       #description:Ljava/lang/CharSequence;
     .restart local v17       #element:Ljava/lang/String;
     .restart local v23       #path:Ljava/lang/String;
-    :cond_7
+    :cond_8
     :try_start_5
     new-instance v2, Landroid/os/storage/StorageVolume;
 
@@ -3521,7 +3615,7 @@
 
     invoke-direct/range {v2 .. v12}, Landroid/os/storage/StorageVolume;-><init>(Ljava/io/File;IZZZIZJLandroid/os/UserHandle;)V
 
-    .line 1290
+    .line 1238
     .restart local v2       #volume:Landroid/os/storage/StorageVolume;
     move-object/from16 v0, p0
 
@@ -3531,9 +3625,9 @@
     .catch Lorg/xmlpull/v1/XmlPullParserException; {:try_start_5 .. :try_end_5} :catch_0
     .catch Ljava/io/IOException; {:try_start_5 .. :try_end_5} :catch_1
 
-    goto :goto_6
+    goto :goto_7
 
-    .line 1310
+    .line 1258
     .end local v2           #volume:Landroid/os/storage/StorageVolume;
     .end local v4           #descriptionId:I
     .end local v5           #primary:Z
@@ -3548,34 +3642,34 @@
     .end local v23           #path:Ljava/lang/String;
     .restart local v18       #i$:Ljava/util/Iterator;
     .restart local v20       #index:I
-    :cond_8
-    invoke-interface/range {v22 .. v22}, Landroid/content/res/XmlResourceParser;->close()V
-
-    .line 1304
-    throw v3
-
-    .line 1310
-    .restart local v17       #element:Ljava/lang/String;
     :cond_9
     invoke-interface/range {v22 .. v22}, Landroid/content/res/XmlResourceParser;->close()V
 
-    .line 1312
+    .line 1252
+    throw v3
+
+    .line 1258
+    .restart local v17       #element:Ljava/lang/String;
+    :cond_a
+    invoke-interface/range {v22 .. v22}, Landroid/content/res/XmlResourceParser;->close()V
+
+    .line 1260
     return-void
 
-    .line 1304
+    .line 1252
     .end local v17           #element:Ljava/lang/String;
     .end local v18           #i$:Ljava/util/Iterator;
     .end local v20           #index:I
-    :cond_a
-    const/16 v20, 0x0
-
-    goto :goto_4
-
-    .restart local v17       #element:Ljava/lang/String;
     :cond_b
     const/16 v20, 0x0
 
-    goto/16 :goto_1
+    goto :goto_5
+
+    .restart local v17       #element:Ljava/lang/String;
+    :cond_c
+    const/16 v20, 0x0
+
+    goto/16 :goto_2
 .end method
 
 .method private removeObbStateLocked(Lcom/android/server/MountService$ObbState;)V
@@ -3975,6 +4069,18 @@
     invoke-static {v6, v7}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 708
+    invoke-virtual {p1}, Landroid/os/storage/StorageVolume;->isPrimary()Z
+    
+    move-result v6
+    
+    if-eqz v6, :cond_1
+    
+    invoke-virtual {p1}, Landroid/os/storage/StorageVolume;->isEmulated()Z
+    
+    move-result v6
+    
+    if-nez v6, :cond_1
+    
     const-string v6, "unmounted"
 
     invoke-virtual {v6, p2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z

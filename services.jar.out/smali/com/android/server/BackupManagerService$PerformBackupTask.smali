@@ -453,7 +453,7 @@
     iget-object v7, p0, Lcom/android/server/BackupManagerService$PerformBackupTask;->this$0:Lcom/android/server/BackupManagerService;
 
     #getter for: Lcom/android/server/BackupManagerService;->mPackageManager:Landroid/content/pm/PackageManager;
-    invoke-static {v7}, Lcom/android/server/BackupManagerService;->access$600(Lcom/android/server/BackupManagerService;)Landroid/content/pm/PackageManager;
+    invoke-static {v7}, Lcom/android/server/BackupManagerService;->access$700(Lcom/android/server/BackupManagerService;)Landroid/content/pm/PackageManager;
 
     move-result-object v7
 
@@ -851,7 +851,7 @@
     iget-object v0, p0, Lcom/android/server/BackupManagerService$PerformBackupTask;->this$0:Lcom/android/server/BackupManagerService;
 
     #getter for: Lcom/android/server/BackupManagerService;->mActivityManager:Landroid/app/IActivityManager;
-    invoke-static {v0}, Lcom/android/server/BackupManagerService;->access$800(Lcom/android/server/BackupManagerService;)Landroid/app/IActivityManager;
+    invoke-static {v0}, Lcom/android/server/BackupManagerService;->access$900(Lcom/android/server/BackupManagerService;)Landroid/app/IActivityManager;
 
     move-result-object v0
 
@@ -1324,7 +1324,7 @@
     iget-object v1, v1, Landroid/content/pm/PackageInfo;->packageName:Ljava/lang/String;
 
     #calls: Lcom/android/server/BackupManagerService;->dataChangedImpl(Ljava/lang/String;)V
-    invoke-static {v0, v1}, Lcom/android/server/BackupManagerService;->access$700(Lcom/android/server/BackupManagerService;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/android/server/BackupManagerService;->access$800(Lcom/android/server/BackupManagerService;Ljava/lang/String;)V
 
     .line 2249
     return-void
@@ -1763,7 +1763,7 @@
     iget-object v5, p0, Lcom/android/server/BackupManagerService$PerformBackupTask;->this$0:Lcom/android/server/BackupManagerService;
 
     #getter for: Lcom/android/server/BackupManagerService;->mPackageManager:Landroid/content/pm/PackageManager;
-    invoke-static {v5}, Lcom/android/server/BackupManagerService;->access$600(Lcom/android/server/BackupManagerService;)Landroid/content/pm/PackageManager;
+    invoke-static {v5}, Lcom/android/server/BackupManagerService;->access$700(Lcom/android/server/BackupManagerService;)Landroid/content/pm/PackageManager;
 
     move-result-object v5
 
@@ -1859,7 +1859,7 @@
     iget-object v7, v4, Lcom/android/server/BackupManagerService$BackupRequest;->packageName:Ljava/lang/String;
 
     #calls: Lcom/android/server/BackupManagerService;->dataChangedImpl(Ljava/lang/String;)V
-    invoke-static {v5, v7}, Lcom/android/server/BackupManagerService;->access$700(Lcom/android/server/BackupManagerService;Ljava/lang/String;)V
+    invoke-static {v5, v7}, Lcom/android/server/BackupManagerService;->access$800(Lcom/android/server/BackupManagerService;Ljava/lang/String;)V
 
     .line 2030
     iput v6, p0, Lcom/android/server/BackupManagerService$PerformBackupTask;->mStatus:I
@@ -1993,7 +1993,7 @@
     iget-object v7, v4, Lcom/android/server/BackupManagerService$BackupRequest;->packageName:Ljava/lang/String;
 
     #calls: Lcom/android/server/BackupManagerService;->dataChangedImpl(Ljava/lang/String;)V
-    invoke-static {v5, v7}, Lcom/android/server/BackupManagerService;->access$700(Lcom/android/server/BackupManagerService;Ljava/lang/String;)V
+    invoke-static {v5, v7}, Lcom/android/server/BackupManagerService;->access$800(Lcom/android/server/BackupManagerService;Ljava/lang/String;)V
 
     .line 2030
     iput v6, p0, Lcom/android/server/BackupManagerService$PerformBackupTask;->mStatus:I
@@ -2117,7 +2117,7 @@
     iget-object v7, v4, Lcom/android/server/BackupManagerService$BackupRequest;->packageName:Ljava/lang/String;
 
     #calls: Lcom/android/server/BackupManagerService;->dataChangedImpl(Ljava/lang/String;)V
-    invoke-static {v5, v7}, Lcom/android/server/BackupManagerService;->access$700(Lcom/android/server/BackupManagerService;Ljava/lang/String;)V
+    invoke-static {v5, v7}, Lcom/android/server/BackupManagerService;->access$800(Lcom/android/server/BackupManagerService;Ljava/lang/String;)V
 
     .line 2030
     iput v6, p0, Lcom/android/server/BackupManagerService$PerformBackupTask;->mStatus:I
@@ -2167,7 +2167,7 @@
     iget-object v8, v4, Lcom/android/server/BackupManagerService$BackupRequest;->packageName:Ljava/lang/String;
 
     #calls: Lcom/android/server/BackupManagerService;->dataChangedImpl(Ljava/lang/String;)V
-    invoke-static {v7, v8}, Lcom/android/server/BackupManagerService;->access$700(Lcom/android/server/BackupManagerService;Ljava/lang/String;)V
+    invoke-static {v7, v8}, Lcom/android/server/BackupManagerService;->access$800(Lcom/android/server/BackupManagerService;Ljava/lang/String;)V
 
     .line 2030
     iput v6, p0, Lcom/android/server/BackupManagerService$PerformBackupTask;->mStatus:I
@@ -2802,7 +2802,7 @@
     iget-object v3, v1, Lcom/android/server/BackupManagerService$BackupRequest;->packageName:Ljava/lang/String;
 
     #calls: Lcom/android/server/BackupManagerService;->dataChangedImpl(Ljava/lang/String;)V
-    invoke-static {v2, v3}, Lcom/android/server/BackupManagerService;->access$700(Lcom/android/server/BackupManagerService;Ljava/lang/String;)V
+    invoke-static {v2, v3}, Lcom/android/server/BackupManagerService;->access$800(Lcom/android/server/BackupManagerService;Ljava/lang/String;)V
 
     goto :goto_0
 
