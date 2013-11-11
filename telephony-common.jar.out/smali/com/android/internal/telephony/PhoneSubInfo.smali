@@ -356,6 +356,75 @@
     return-object v0
 .end method
 
+.method public getIccCardType()Ljava/lang/String;
+    .locals 2
+
+    .prologue
+    .line 196
+    invoke-static {}, Lcom/android/internal/telephony/IccCardApplicationStatus;->getIccTypeHw()Lcom/android/internal/telephony/IccCardApplicationStatus$AppType;
+    
+    move-result-object v0
+    
+    invoke-virtual {v0}, Lcom/android/internal/telephony/IccCardApplicationStatus$AppType;->ordinal()I
+    
+    move-result v1
+    
+    packed-switch v1, :pswitch_data_0
+    
+    .line 496
+    const-string v0, "UNKNOWN"
+
+    :goto_0
+    return-object v0
+
+    .line 484
+    :pswitch_0
+    const-string v0, "UNKNOWN"
+
+    goto :goto_0
+
+    .line 486
+    :pswitch_1
+    const-string v0, "SIM"
+
+    goto :goto_0
+
+    .line 488
+    :pswitch_2
+    const-string v0, "USIM"
+
+    goto :goto_0
+
+    .line 490
+    :pswitch_3
+    const-string v0, "RUIM"
+
+    goto :goto_0
+
+    .line 492
+    :pswitch_4
+    const-string v0, "CSIM"
+
+    goto :goto_0
+
+    .line 494
+    :pswitch_5
+    const-string v0, "ISIM"
+
+    goto :goto_0
+
+    .line 482
+    :pswitch_data_0
+    .packed-switch 0x1
+        :pswitch_0
+        :pswitch_1
+        :pswitch_2
+        :pswitch_3
+        :pswitch_4
+        :pswitch_5
+    .end packed-switch
+.end method
+
 .method public getIccSerialNumber()Ljava/lang/String;
     .locals 3
 
