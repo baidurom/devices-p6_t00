@@ -74,6 +74,10 @@
 
 .field static final TRANSACTION_getVoiceMessageCount:I = 0x26
 
+.field static final TRANSACTION_getScAddress:I = 0x2e
+
+.field static final TRANSACTION_setScAddress:I = 0x2f
+
 .field static final TRANSACTION_handlePinMmi:I = 0x11
 
 .field static final TRANSACTION_hasIccCard:I = 0x28
@@ -1327,6 +1331,49 @@
 
     goto/16 :goto_0
 
+    :sswitch_2e
+    const-string v5, "com.android.internal.telephony.ITelephony"
+
+    invoke-virtual {p2, v5}, Landroid/os/Parcel;->enforceInterface(Ljava/lang/String;)V
+
+    .line 376
+    invoke-virtual {p0}, Lcom/android/internal/telephony/ITelephony$Stub;->getScAddress()Ljava/lang/String;
+
+    move-result-object v2
+
+    .line 377
+    .local v2, _result:Ljava/lang/String;
+    invoke-virtual {p3}, Landroid/os/Parcel;->writeNoException()V
+
+    .line 378
+    invoke-virtual {p3, v2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
+
+    goto/16 :goto_0
+
+    .line 383
+    .end local v2           #_result:Ljava/lang/String;
+
+    :sswitch_2f
+    const-string v5, "com.android.internal.telephony.ITelephony"
+
+    invoke-virtual {p2, v5}, Landroid/os/Parcel;->enforceInterface(Ljava/lang/String;)V
+
+    .line 385
+    invoke-virtual {p2}, Landroid/os/Parcel;->readString()Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 386
+    .restart local v0       #_arg0:Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lcom/android/internal/telephony/ITelephony$Stub;->setScAddress(Ljava/lang/String;)V
+
+    .line 387
+    invoke-virtual {p3}, Landroid/os/Parcel;->writeNoException()V
+
+    goto/16 :goto_0
+
+    .line 392
+    .end local v0           #_arg0:Ljava/lang/String;
     .line 45
     nop
 
@@ -1377,6 +1424,8 @@
         0x2b -> :sswitch_2b
         0x2c -> :sswitch_2c
         0x2d -> :sswitch_2d
+        0x2e -> :sswitch_2e
+        0x2f -> :sswitch_2f
         0x5f4e5446 -> :sswitch_0
     .end sparse-switch
 .end method
