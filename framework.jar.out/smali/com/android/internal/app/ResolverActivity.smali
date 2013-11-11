@@ -1663,7 +1663,7 @@
     .prologue
     .line 124
     .local p5, rList:Ljava/util/List;,"Ljava/util/List<Landroid/content/pm/ResolveInfo;>;"
-    const v1, 0x1030315
+    const v1, 0x103030f
 
     invoke-virtual {p0, v1}, Lcom/android/internal/app/ResolverActivity;->setTheme(I)V
 
@@ -1792,7 +1792,7 @@
     iput v1, p0, Lcom/android/internal/app/ResolverActivity;->mIconDpi:I
 
     .line 151
-    invoke-direct {p0, v8}, Lcom/android/internal/app/ResolverActivity;->getHwThemeLauncherIconSize(Landroid/app/ActivityManager;)I
+    invoke-virtual {v8}, Landroid/app/ActivityManager;->getLauncherLargeIconSize()I
 
     move-result v1
 
@@ -1922,13 +1922,6 @@
     invoke-virtual {v1, v2}, Landroid/widget/GridView;->setOnItemLongClickListener(Landroid/widget/AdapterView$OnItemLongClickListener;)V
 
     .line 167
-    if-eqz p6, :cond_4
-
-    .line 168
-    invoke-direct {p0}, Lcom/android/internal/app/ResolverActivity;->setDefaultApk()V
-
-    .line 172
-    :cond_4
     if-eqz p6, :cond_5
 
     .line 173
