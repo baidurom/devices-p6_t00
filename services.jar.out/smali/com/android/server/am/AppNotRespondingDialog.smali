@@ -63,7 +63,7 @@
     invoke-virtual {p0, v7}, Lcom/android/server/am/AppNotRespondingDialog;->setCancelable(Z)V
 
     .line 53
-    if-eqz p4, :cond_2
+    if-eqz p4, :cond_1
 
     iget-object v5, p4, Lcom/android/server/am/ActivityRecord;->info:Landroid/content/pm/ActivityInfo;
 
@@ -88,7 +88,7 @@
 
     move-result v5
 
-    if-ne v5, v8, :cond_4
+    if-ne v5, v8, :cond_3
 
     invoke-virtual {p2}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -100,10 +100,10 @@
 
     move-result-object v2
 
-    if-eqz v2, :cond_4
+    if-eqz v2, :cond_3
 
     .line 59
-    if-eqz v1, :cond_3
+    if-eqz v1, :cond_2
 
     .line 60
     const v4, 0x10403d7
@@ -111,7 +111,7 @@
     .line 76
     .local v4, resid:I
     :goto_1
-    if-eqz v2, :cond_6
+    if-eqz v2, :cond_5
 
     new-array v5, v9, [Ljava/lang/Object;
 
@@ -135,7 +135,7 @@
     invoke-virtual {p0, v5}, Lcom/android/server/am/AppNotRespondingDialog;->setMessage(Ljava/lang/CharSequence;)V
 
     .line 80
-    const/4 v5, -0x1
+    const/4 v5, -0x2
 
     const v6, 0x10403db
 
@@ -152,7 +152,7 @@
     invoke-virtual {p0, v5, v6, v7}, Lcom/android/server/am/AppNotRespondingDialog;->setButton(ILjava/lang/CharSequence;Landroid/os/Message;)V
 
     .line 83
-    const/4 v5, -0x2
+    const/4 v5, -0x3
 
     const v6, 0x10403dd
 
@@ -168,13 +168,8 @@
 
     invoke-virtual {p0, v5, v6, v7}, Lcom/android/server/am/AppNotRespondingDialog;->setButton(ILjava/lang/CharSequence;Landroid/os/Message;)V
 
-    .line 87
-    iget-object v5, p3, Lcom/android/server/am/ProcessRecord;->errorReportReceiver:Landroid/content/ComponentName;
-
-    if-eqz v5, :cond_0
-
     .line 88
-    const/4 v5, -0x3
+    const/4 v5, -0x1
 
     const v6, 0x10403dc
 
@@ -193,7 +188,6 @@
     invoke-virtual {p0, v5, v6, v7}, Lcom/android/server/am/AppNotRespondingDialog;->setButton(ILjava/lang/CharSequence;Landroid/os/Message;)V
 
     .line 93
-    :cond_0
     const v5, 0x10403d6
 
     invoke-virtual {v3, v5}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
@@ -203,7 +197,7 @@
     invoke-virtual {p0, v5}, Lcom/android/server/am/AppNotRespondingDialog;->setTitle(Ljava/lang/CharSequence;)V
 
     .line 94
-    if-eqz p5, :cond_1
+    if-eqz p5, :cond_0
 
     .line 95
     invoke-virtual {p0}, Lcom/android/server/am/AppNotRespondingDialog;->getWindow()Landroid/view/Window;
@@ -215,7 +209,7 @@
     invoke-virtual {v5, v6}, Landroid/view/Window;->setType(I)V
 
     .line 97
-    :cond_1
+    :cond_0
     invoke-virtual {p0}, Lcom/android/server/am/AppNotRespondingDialog;->getWindow()Landroid/view/Window;
 
     move-result-object v5
@@ -279,7 +273,7 @@
     .end local v1           #name1:Ljava/lang/CharSequence;
     .end local v2           #name2:Ljava/lang/CharSequence;
     .end local v4           #resid:I
-    :cond_2
+    :cond_1
     const/4 v1, 0x0
 
     goto/16 :goto_0
@@ -287,7 +281,7 @@
     .line 62
     .restart local v1       #name1:Ljava/lang/CharSequence;
     .restart local v2       #name2:Ljava/lang/CharSequence;
-    :cond_3
+    :cond_2
     move-object v1, v2
 
     .line 63
@@ -301,8 +295,8 @@
 
     .line 67
     .end local v4           #resid:I
-    :cond_4
-    if-eqz v1, :cond_5
+    :cond_3
+    if-eqz v1, :cond_4
 
     .line 68
     iget-object v2, p3, Lcom/android/server/am/ProcessRecord;->processName:Ljava/lang/String;
@@ -315,7 +309,7 @@
 
     .line 71
     .end local v4           #resid:I
-    :cond_5
+    :cond_4
     iget-object v1, p3, Lcom/android/server/am/ProcessRecord;->processName:Ljava/lang/String;
 
     .line 72
@@ -325,7 +319,7 @@
     goto/16 :goto_1
 
     .line 76
-    :cond_6
+    :cond_5
     new-array v5, v8, [Ljava/lang/Object;
 
     invoke-virtual {v1}, Ljava/lang/Object;->toString()Ljava/lang/String;
