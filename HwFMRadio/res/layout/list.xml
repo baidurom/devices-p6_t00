@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#ff262424" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/toolbar" android:background="@drawable/toolbar_bg" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_alignParentBottom="true">
+        <ImageView android:id="@id/edit" android:background="@drawable/btn_press_bg" android:paddingLeft="14.0dip" android:paddingRight="14.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/menu_edit_icon" android:layout_alignParentLeft="true" android:contentDescription="@string/menu_rename_channel" />
+        <ImageView android:id="@id/sleep" android:background="@drawable/btn_press_bg" android:paddingLeft="14.0dip" android:paddingRight="14.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/menu_sleep_icon" android:layout_centerInParent="true" android:contentDescription="@string/msg_sleep_mode_setting" />
+        <ImageView android:id="@id/search" android:background="@drawable/btn_press_bg" android:paddingLeft="14.0dip" android:paddingRight="14.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/menu_search_icon" android:layout_alignParentRight="true" android:contentDescription="@string/title_search_station" />
+    </RelativeLayout>
+    <ListView android:scrollbarStyle="outsideOverlay" android:id="@*android:id/list" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/btn_press_bg" android:drawSelectorOnTop="false" android:divider="@drawable/list_divider" android:layout_above="@id/toolbar" />
+    <View android:background="@drawable/actionbar_shadow" android:layout_width="fill_parent" android:layout_height="5.0dip" android:layout_alignParentTop="true" />
+</RelativeLayout>

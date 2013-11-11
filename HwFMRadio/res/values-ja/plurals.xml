@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="msg_sleep_time">
+        <item quantity="other">FMラジオは%d分後に終了します。</item>
+        <item quantity="zero">FMラジオは%d分後に終了します。</item>
+        <item quantity="one">FMラジオは1分後に終了します。</item>
+        <item quantity="two">FMラジオは%d分後に終了します。</item>
+        <item quantity="few">FMラジオは%d分後に終了します。</item>
+        <item quantity="many">FMラジオは%d分後に終了します。</item>
+    </plurals>
+</resources>

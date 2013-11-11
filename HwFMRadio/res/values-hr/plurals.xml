@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="msg_sleep_time">
+        <item quantity="other">FM radio zatvorit će se za %d minuta.</item>
+        <item quantity="zero">FM radio zatvorit će se za %d minuta.</item>
+        <item quantity="one">FM radio zatvorit će se za 1 minutu.</item>
+        <item quantity="two">FM radio zatvorit će se za %d minute.</item>
+        <item quantity="few">FM radio zatvorit će se za %d minute.</item>
+        <item quantity="many">FM radio zatvorit će se za %d minuta.</item>
+    </plurals>
+</resources>

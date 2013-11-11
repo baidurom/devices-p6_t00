@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="msg_sleep_time">
+        <item quantity="other">FM Radyo %d dakika sonra kapatılacak.</item>
+        <item quantity="zero">FM Radyo %d dakika sonra kapatılacak.</item>
+        <item quantity="one">FM Radyo 1 dakika sonra kapatılacak.</item>
+        <item quantity="two">FM Radyo %d dakika sonra kapatılacak.</item>
+        <item quantity="few">FM Radyo %d dakika sonra kapatılacak.</item>
+        <item quantity="many">FM Radyo %d dakika sonra kapatılacak.</item>
+    </plurals>
+</resources>

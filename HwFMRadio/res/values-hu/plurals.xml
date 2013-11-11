@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="msg_sleep_time">
+        <item quantity="other">Az FM rádió %d perc múlva bezárul.</item>
+        <item quantity="zero">Az FM rádió %d perc múlva bezárul.</item>
+        <item quantity="one">Az FM rádió 1 perc múlva bezárul.</item>
+        <item quantity="two">Az FM rádió %d perc múlva bezárul.</item>
+        <item quantity="few">Az FM rádió %d perc múlva bezárul.</item>
+        <item quantity="many">Az FM rádió %d perc múlva bezárul.</item>
+    </plurals>
+</resources>

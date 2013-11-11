@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/actionbar_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentLeft="true">
+        <ImageView android:id="@*android:id/home" android:background="@drawable/btn_press_bg" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/btn_tab_up" />
+        <View android:layout_gravity="center_vertical" android:background="@drawable/actionbar_divider" android:layout_width="1.0dip" android:layout_height="24.0dip" />
+        <TextView android:textSize="18.0sp" android:textColor="#ffffffff" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="12.0dip" android:text="@string/title_channellist" android:singleLine="true" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/tool_layout" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+        <View android:layout_gravity="center_vertical" android:background="@drawable/actionbar_divider" android:layout_width="1.0dip" android:layout_height="24.0dip" />
+        <ImageView android:id="@id/edit" android:background="@drawable/btn_press_bg" android:paddingLeft="14.0dip" android:paddingRight="14.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/menu_edit_icon" android:contentDescription="@string/menu_rename_channel" />
+        <View android:layout_gravity="center_vertical" android:background="@drawable/actionbar_divider" android:layout_width="1.0dip" android:layout_height="24.0dip" />
+        <ImageView android:id="@id/sleep" android:background="@drawable/btn_press_bg" android:paddingLeft="14.0dip" android:paddingRight="14.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/menu_sleep_icon" android:contentDescription="@string/msg_sleep_mode_setting" />
+        <View android:layout_gravity="center_vertical" android:background="@drawable/actionbar_divider" android:layout_width="1.0dip" android:layout_height="24.0dip" />
+        <ImageView android:id="@id/search" android:background="@drawable/btn_press_bg" android:paddingLeft="14.0dip" android:paddingRight="14.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/menu_search_icon" android:contentDescription="@string/title_search_station" />
+    </LinearLayout>
+</RelativeLayout>

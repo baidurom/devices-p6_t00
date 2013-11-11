@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="msg_sleep_time">
+        <item quantity="other">La ràdio FM es tancarà al cap de %d minuts.</item>
+        <item quantity="zero">La ràdio FM es tancarà al cap de %d minuts.</item>
+        <item quantity="one">"La ràdio FM es tancarà al cap d'1 minut."</item>
+        <item quantity="two">La ràdio FM es tancarà al cap de %d minuts.</item>
+        <item quantity="few">La ràdio FM es tancarà al cap de %d minuts.</item>
+        <item quantity="many">La ràdio FM es tancarà al cap de %d minuts.</item>
+    </plurals>
+</resources>

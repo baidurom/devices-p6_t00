@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:sharedUserId="android.uid.system" android:versionCode="6101" android:versionName="6.1.01" package="com.huawei.android.FMRadio"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <supports-screens android:anyDensity="true" android:smallScreens="true" android:normalScreens="true" android:largeScreens="true" />
+    <application android:label="@string/title_fm" android:icon="@drawable/ic_launcher_icon">
+        <activity android:theme="@*android:style/Theme.DeviceDefault.NoActionBar" android:name=".FMRadioMainActivity" android:launchMode="singleTop" android:configChanges="keyboardHidden|navigation|orientation|screenSize">
+            <intent-filter>
+                <action android:name="com.huawei.android.FMRadio.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/title_channellist" android:name="ChannelListActivity" android:taskAffinity="" android:clearTaskOnLaunch="true" android:excludeFromRecents="true" android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="content" />
+                <data android:scheme="file" />
+                <data android:mimeType="fmradio/*" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.huawei.android.FMRadio.LIST_VIEWER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <service android:name="FMRadioService">
+            <intent-filter>
+                <action android:name="com.huawei.android.FMRadio.SERVICE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+        <receiver android:label="@string/widget_title_fm" android:icon="@drawable/ic_launcher_icon" android:name="FMRadioWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="com.huawei.android.FMRadio.openfm" />
+                <action android:name="com.huawei.android.FMRadio.stopfm" />
+                <action android:name="com.huawei.android.FMRadio.opensoundsuccess" />
+                <action android:name="com.huawei.android.FMRadio.playstatechanged" />
+                <action android:name="com.huawei.android.FMRadio.stopstatechanged" />
+                <action android:name="com.huawei.android.FMRadio.manualtunecomplete" />
+                <action android:name="com.huawei.android.FMRadio.operationfail" />
+                <action android:name="com.huawei.android.FMRadio.namechanged" />
+                <action android:name="com.huawei.android.FMRadio.savecollect" />
+                <action android:name="com.huawei.android.FMRadio.appwidget.update" />
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/appwidget_info" />
+        </receiver>
+        <provider android:name=".ChannelListProvider" android:authorities="com.huawei.android.FMRadio.Provider.ChannelList" />
+        <receiver android:name="com.huawei.android.FMRadio.FMMediaButtonIntentReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_BUTTON" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.huawei.android.FMRadio.FMEventReceiver">
+            <intent-filter>
+                <action android:name="android.media.AUDIO_BECOMING_NOISY" />
+                <action android:name="android.intent.action.AIRPLANE_MODE" />
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

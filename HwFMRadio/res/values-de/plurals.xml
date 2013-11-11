@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="msg_sleep_time">
+        <item quantity="other">UKW Radio wird nach %d Minuten geschlossen.</item>
+        <item quantity="zero">UKW Radio wird nach %d Minuten geschlossen.</item>
+        <item quantity="one">UKW Radio wird nach 1 Minute geschlossen.</item>
+        <item quantity="two">UKW Radio wird nach %d Minuten geschlossen.</item>
+        <item quantity="few">UKW Radio wird nach %d Minuten geschlossen.</item>
+        <item quantity="many">UKW Radio wird nach %d Minuten geschlossen.</item>
+    </plurals>
+</resources>

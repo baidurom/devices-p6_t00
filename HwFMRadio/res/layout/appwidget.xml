@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.huawei.android.FMRadio.WidgetParentLayout android:id="@id/appwidget_layout" android:background="@drawable/appwidget_bg" android:layout_width="@dimen/appwidget_width" android:layout_height="@dimen/appwidget_height" package="com.huawei.android.FMRadio"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="@dimen/appwidget_center_layout_width" android:layout_height="fill_parent" android:layout_marginRight="@dimen/appwidget_center_layout_margin_right" android:layout_alignParentRight="true">
+        <RelativeLayout android:layout_width="@dimen/appwidget_name_width" android:layout_height="@dimen/appwidget_name_height">
+            <TextView android:textSize="@dimen/appwidget_name_size" android:textColor="@color/widget_name_on_color" android:ellipsize="marquee" android:id="@id/station_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:shadowColor="#cc000000" android:shadowDx="0.0" android:shadowDy="1.5" android:shadowRadius="1.2" android:layout_centerInParent="true" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <TextView android:textSize="@dimen/appwidget_name_size" android:textColor="@color/widget_name_on_color" android:id="@id/frequency_view" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:shadowColor="#cc000000" android:shadowDx="0.0" android:shadowDy="1.5" android:shadowRadius="1.2" />
+                <TextView android:textSize="@dimen/appwidget_freq_unit_text_size" android:textColor="@color/widget_name_on_color" android:id="@id/frequency_unit_view" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/freq_unit_text_margin_left" android:text="@string/freq_tag" android:shadowColor="#cc000000" android:shadowDx="0.0" android:shadowDy="1.5" android:shadowRadius="1.2" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageButton android:id="@id/prev_btn" android:background="@drawable/appwidget_btn_prev_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/appwidget_prev_next_margin_horizontal" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <ImageButton android:id="@id/power_btn" android:background="@drawable/appwidget_btn_power_off_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+            <ImageButton android:id="@id/next_btn" android:background="@drawable/appwidget_btn_next_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/appwidget_prev_next_margin_horizontal" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</com.huawei.android.FMRadio.WidgetParentLayout>

@@ -1,0 +1,13 @@
+version: 1.5.2
+apkFileName: HwFMRadio.apk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1
+sdkInfo:
+  minSdkVersion: '14'
+  targetSdkVersion: '14'
+packageInfo:
+  cur_package: com.huawei.android.FMRadio
+  orig_package: com.huawei.android.FMRadio
+compressionType: false

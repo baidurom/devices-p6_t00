@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="@dimen/left_layout_width" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/display_layout" android:background="@drawable/display_bg" android:layout_width="fill_parent" android:layout_height="@dimen/display_layout_height_land">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <RelativeLayout android:id="@id/top_layout" android:layout_width="fill_parent" android:layout_height="@dimen/top_layout_height" android:layout_alignParentTop="true">
+                    <ImageButton android:id="@id/list_btn" android:background="#00000000" android:layout_width="@dimen/top_layout_btn_width" android:layout_height="fill_parent" android:src="@drawable/btn_list_src" android:layout_alignParentRight="true" />
+                    <ImageButton android:id="@id/headset_btn" android:background="#00000000" android:layout_width="@dimen/top_layout_btn_width" android:layout_height="fill_parent" android:src="@drawable/btn_headset_src" android:layout_toLeftOf="@id/list_btn" />
+                </RelativeLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/freq_text_margin_top_land" android:layout_centerHorizontal="true">
+                    <TextView android:textSize="@dimen/freq_text_size" android:textColor="#ff000000" android:id="@id/frequency_view" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:textSize="@dimen/freq_unit_text_size" android:textColor="#ff333333" android:id="@id/frequency_unit_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/freq_unit_text_margin_left" android:text="@string/freq_tag" />
+                </LinearLayout>
+                <TextView android:textSize="@dimen/name_text_size" android:textColor="#ff2f2f2f" android:ellipsize="marquee" android:gravity="center" android:id="@id/name_view" android:layout_width="@dimen/name_text_width_land" android:layout_height="wrap_content" android:layout_marginTop="@dimen/name_text_margin_top_land" android:singleLine="true" android:layout_centerHorizontal="true" />
+                <ImageView android:id="@id/indicator_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/indicator_margin_left_land" android:src="@drawable/control_bar" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <ImageView android:id="@id/mask_view" android:background="@drawable/display_mask_off" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+        <GridView android:id="@id/collect_layout_view" android:background="@drawable/btn_favorite_bg" android:layout_width="fill_parent" android:layout_height="@dimen/favorite_layout_height_land" android:columnWidth="@dimen/favorite_item_width_land" android:numColumns="4" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/control_layout" android:background="@drawable/control_repeat_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageButton android:id="@id/prev_btn" android:background="@drawable/btn_prev_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/prev_next_btn_margin_vertical_land" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+        <ImageButton android:id="@id/power_btn" android:background="@drawable/btn_power_off_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <ImageButton android:id="@id/next_btn" android:background="@drawable/btn_next_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/prev_next_btn_margin_vertical_land" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</LinearLayout>

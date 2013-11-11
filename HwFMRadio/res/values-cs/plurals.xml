@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="msg_sleep_time">
+        <item quantity="other">FM rádio skončí po %d minutách.</item>
+        <item quantity="zero">FM rádio skončí po %d minutách.</item>
+        <item quantity="one">FM rádio skončí po 1 minutě.</item>
+        <item quantity="two">FM rádio skončí po %d minutách.</item>
+        <item quantity="few">FM rádio skončí po %d minutách.</item>
+        <item quantity="many">FM rádio skončí po %d minutách.</item>
+    </plurals>
+</resources>

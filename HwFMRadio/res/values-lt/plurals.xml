@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="msg_sleep_time">
+        <item quantity="other">FM radijas bus uždarytas po %d minutės.</item>
+        <item quantity="zero">FM radijas bus uždarytas po %d minučių.</item>
+        <item quantity="one">FM radijas bus uždarytas po 1 minutės.</item>
+        <item quantity="two">FM radijas bus uždarytas po %d minučių.</item>
+        <item quantity="few">FM radijas bus uždarytas po %d minučių.</item>
+        <item quantity="many">FM radijas bus uždarytas po %d minučių.</item>
+    </plurals>
+</resources>

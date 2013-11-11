@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Widget.FM.EditText" parent="@*android:style/Widget.Holo.EditText">
+        <item name="android:textColor">@color/popudialog_text_color</item>
+        <item name="android:background">@drawable/edittext_bg</item>
+    </style>
+    <style name="Widget.FM.CheckBox" parent="@*android:style/Widget.Holo.CompoundButton.CheckBox">
+        <item name="android:textColor">@color/popudialog_text_color</item>
+        <item name="android:button">@drawable/btn_checkbox</item>
+    </style>
+    <style name="Widget.FM.SeekBar" parent="@*android:style/Widget.Holo.SeekBar">
+        <item name="android:thumb">@drawable/thumb</item>
+    </style>
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="display_frequency_on_color">#ff000000</color>
+    <color name="display_frequency_off_color">#33000000</color>
+    <color name="display_unit_on_color">#ff333333</color>
+    <color name="display_unit_off_color">#33333333</color>
+    <color name="display_name_on_color">#ff2f2f2f</color>
+    <color name="display_name_off_color">#332f2f2f</color>
+    <color name="widget_name_on_color">#ff0a9dcd</color>
+    <color name="widget_name_off_color">#9cffffff</color>
+    <color name="notify_name_on_color">#ff000000</color>
+    <color name="notify_name_off_color">#4c000000</color>
+    <color name="collect_name_on_color">#ff0a9dcd</color>
+    <color name="collect_name_off_color">#ffababab</color>
+    <color name="valuepicker_number_color">#ff0a9dcd</color>
+    <color name="title_name_and_downline_color">#ff0a9dcd</color>
+    <color name="pik_color">#ffe05a6d</color>
+    <color name="white_color">#ff9e7837</color>
+    <color name="gray_color">#ff474747</color>
+    <color name="popudialog_text_color">#ffffffff</color>
+</resources>
