@@ -39,7 +39,7 @@
     sput-object v0, Landroid/provider/SettingsEx$Systemex;->mNameValueCache:Landroid/provider/SettingsEx$NameValueCache;
 
     .line 415
-    const-string v0, "content://settings/systemex"
+    const-string v0, "content://settings/system"
 
     invoke-static {v0}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 

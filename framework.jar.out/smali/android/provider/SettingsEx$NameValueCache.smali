@@ -196,13 +196,17 @@
 
     .line 90
     iget-object v2, p0, Landroid/provider/SettingsEx$NameValueCache;->mUri:Landroid/net/Uri;
-
+    
+    
     invoke-virtual {v2}, Landroid/net/Uri;->getAuthority()Ljava/lang/String;
 
     move-result-object v2
 
     move-object/from16 v0, p1
-
+    
+    .line 91
+    if-eqz v0, :cond_3
+    
     invoke-virtual {v0, v2}, Landroid/content/ContentResolver;->acquireProvider(Ljava/lang/String;)Landroid/content/IContentProvider;
 
     move-result-object v10
@@ -290,7 +294,7 @@
 
     .line 118
     .local v9, c:Landroid/database/Cursor;
-    :try_start_5
+    :try_start_5   
     iget-object v2, p0, Landroid/provider/SettingsEx$NameValueCache;->mUri:Landroid/net/Uri;
 
     sget-object v3, Landroid/provider/SettingsEx$NameValueCache;->SELECT_VALUE:[Ljava/lang/String;
@@ -308,6 +312,10 @@
     const/4 v6, 0x0
 
     const/4 v7, 0x0
+    
+    const/4 v14, 0x0
+    
+    if-eqz v1, :cond_1
 
     invoke-interface/range {v1 .. v7}, Landroid/content/IContentProvider;->query(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Landroid/os/ICancellationSignal;)Landroid/database/Cursor;
 

@@ -35,7 +35,7 @@
     sput-object v0, Lcom/huawei/android/provider/SettingsEx$Systemex;->mNameValueCache:Lcom/huawei/android/provider/SettingsEx$NameValueCache;
 
     .line 476
-    const-string v0, "content://settings/systemex"
+    const-string v0, "content://settings/system"
 
     invoke-static {v0}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 
