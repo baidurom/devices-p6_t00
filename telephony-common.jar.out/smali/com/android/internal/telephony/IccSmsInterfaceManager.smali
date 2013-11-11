@@ -918,6 +918,189 @@
     throw v2
 .end method
 
+.method private checkSendSmsPermission(Ljava/lang/String;Ljava/lang/String;I[BLandroid/app/PendingIntent;Landroid/app/PendingIntent;)Z
+    .locals 7
+    .parameter "destAddr"
+    .parameter "scAddr"
+    .parameter "destPort"
+    .parameter "data"
+    .parameter "sentIntent"
+    .parameter "deliveryIntent"
+
+    .prologue
+    .line 100
+    iget-object v1, p0, Lcom/android/internal/telephony/IccSmsInterfaceManager;->mPhone:Lcom/android/internal/telephony/PhoneBase;
+
+    invoke-virtual {v1}, Lcom/android/internal/telephony/PhoneBase;->getContext()Landroid/content/Context;
+
+    move-result-object v1
+
+    invoke-static {v1}, Lcom/baidu/server/dp/DynamicPermissionManager;->getInstance(Landroid/content/Context;)Lcom/baidu/server/dp/DynamicPermissionManager;
+
+    move-result-object v0
+
+    .local v0, dm:Lcom/baidu/server/dp/DynamicPermissionManager;
+    move-object v1, p1
+
+    move-object v2, p2
+
+    move v3, p3
+
+    move-object v4, p4
+
+    move-object v5, p5
+
+    move-object v6, p6
+
+    .line 101
+    invoke-virtual/range {v0 .. v6}, Lcom/baidu/server/dp/DynamicPermissionManager;->checkSendSmsPermission(Ljava/lang/String;Ljava/lang/String;I[BLandroid/app/PendingIntent;Landroid/app/PendingIntent;)I
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    .line 103
+    const/4 v1, 0x0
+
+    .line 105
+    :goto_0
+    return v1
+
+    :cond_0
+    const/4 v1, 0x1
+
+    goto :goto_0
+.end method
+
+.method private checkSendSmsPermission(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/app/PendingIntent;Landroid/app/PendingIntent;)Z
+    .locals 6
+    .parameter "destAddr"
+    .parameter "scAddr"
+    .parameter "text"
+    .parameter "sentIntent"
+    .parameter "deliveryIntent"
+
+    .prologue
+    .line 156
+    iget-object v1, p0, Lcom/android/internal/telephony/IccSmsInterfaceManager;->mPhone:Lcom/android/internal/telephony/PhoneBase;
+
+    invoke-virtual {v1}, Lcom/android/internal/telephony/PhoneBase;->getContext()Landroid/content/Context;
+
+    move-result-object v1
+
+    invoke-static {v1}, Lcom/baidu/server/dp/DynamicPermissionManager;->getInstance(Landroid/content/Context;)Lcom/baidu/server/dp/DynamicPermissionManager;
+
+    move-result-object v0
+
+    .local v0, dm:Lcom/baidu/server/dp/DynamicPermissionManager;
+    move-object v1, p1
+
+    move-object v2, p2
+
+    move-object v3, p3
+
+    move-object v4, p4
+
+    move-object v5, p5
+
+    .line 157
+    invoke-virtual/range {v0 .. v5}, Lcom/baidu/server/dp/DynamicPermissionManager;->checkSendSmsPermission(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/app/PendingIntent;Landroid/app/PendingIntent;)I
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    .line 159
+    const/4 v1, 0x0
+
+    .line 161
+    :goto_0
+    return v1
+
+    :cond_0
+    const/4 v1, 0x1
+
+    goto :goto_0
+.end method
+
+.method private checkSendSmsPermission(Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/util/List;Ljava/util/List;)Z
+    .locals 6
+    .parameter "destAddr"
+    .parameter "scAddr"
+    .parameter
+    .parameter
+    .parameter
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            "Ljava/util/List",
+            "<",
+            "Ljava/lang/String;",
+            ">;",
+            "Ljava/util/List",
+            "<",
+            "Landroid/app/PendingIntent;",
+            ">;",
+            "Ljava/util/List",
+            "<",
+            "Landroid/app/PendingIntent;",
+            ">;)Z"
+        }
+    .end annotation
+
+    .prologue
+    .line 216
+    .local p3, parts:Ljava/util/List;,"Ljava/util/List<Ljava/lang/String;>;"
+    .local p4, sentIntents:Ljava/util/List;,"Ljava/util/List<Landroid/app/PendingIntent;>;"
+    .local p5, deliveryIntents:Ljava/util/List;,"Ljava/util/List<Landroid/app/PendingIntent;>;"
+    iget-object v1, p0, Lcom/android/internal/telephony/IccSmsInterfaceManager;->mPhone:Lcom/android/internal/telephony/PhoneBase;
+
+    invoke-virtual {v1}, Lcom/android/internal/telephony/PhoneBase;->getContext()Landroid/content/Context;
+
+    move-result-object v1
+
+    invoke-static {v1}, Lcom/baidu/server/dp/DynamicPermissionManager;->getInstance(Landroid/content/Context;)Lcom/baidu/server/dp/DynamicPermissionManager;
+
+    move-result-object v0
+
+    .local v0, dm:Lcom/baidu/server/dp/DynamicPermissionManager;
+    move-object v3, p3
+
+    .line 217
+    check-cast v3, Ljava/util/ArrayList;
+
+    move-object v4, p4
+
+    check-cast v4, Ljava/util/ArrayList;
+
+    move-object v5, p5
+
+    check-cast v5, Ljava/util/ArrayList;
+
+    move-object v1, p1
+
+    move-object v2, p2
+
+    invoke-virtual/range {v0 .. v5}, Lcom/baidu/server/dp/DynamicPermissionManager;->checkSendSmsPermission(Ljava/lang/String;Ljava/lang/String;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/util/ArrayList;)I
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    .line 220
+    const/4 v1, 0x0
+
+    .line 222
+    :goto_0
+    return v1
+
+    :cond_0
+    const/4 v1, 0x1
+
+    goto :goto_0
+.end method
 
 # virtual methods
 .method protected buildValidRawData(Ljava/util/ArrayList;)Ljava/util/ArrayList;
@@ -2467,17 +2650,11 @@
 
     .line 397
     :cond_0
-    iget-object v0, p0, Lcom/android/internal/telephony/IccSmsInterfaceManager;->mSmsPermission:Lcom/huawei/permission/SmsPermission;
-
-    new-instance v1, Ljava/lang/String;
-
-    invoke-direct {v1, p4}, Ljava/lang/String;-><init>([B)V
-
-    invoke-virtual {v0, p1, v1, p5}, Lcom/huawei/permission/SmsPermission;->isSmsBlocked(Ljava/lang/String;Ljava/lang/String;Landroid/app/PendingIntent;)Z
+    invoke-direct/range {p0 .. p6}, Lcom/android/internal/telephony/IccSmsInterfaceManager;->checkSendSmsPermission(Ljava/lang/String;Ljava/lang/String;I[BLandroid/app/PendingIntent;Landroid/app/PendingIntent;)Z
 
     move-result v0
 
-    if-eqz v0, :cond_1
+    if-nez v0, :cond_1
 
     .line 403
     :goto_0
@@ -3000,21 +3177,11 @@
     .end local v8           #i$:Ljava/util/Iterator;
     .end local v9           #part:Ljava/lang/String;
     :cond_0
-    iget-object v1, p0, Lcom/android/internal/telephony/IccSmsInterfaceManager;->mSmsPermission:Lcom/huawei/permission/SmsPermission;
-
-    const/4 v0, 0x0
-
-    invoke-interface {p3, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Ljava/lang/String;
-
-    invoke-virtual {v1, p1, v0, p4}, Lcom/huawei/permission/SmsPermission;->isSmsBlocked(Ljava/lang/String;Ljava/lang/String;Ljava/util/List;)Z
+    invoke-direct/range {p0 .. p5}, Lcom/android/internal/telephony/IccSmsInterfaceManager;->checkSendSmsPermission(Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/util/List;Ljava/util/List;)Z
 
     move-result v0
 
-    if-eqz v0, :cond_1
+    if-nez v0, :cond_1
 
     .line 570
     :goto_1
@@ -3137,13 +3304,11 @@
 
     .line 517
     :cond_0
-    iget-object v0, p0, Lcom/android/internal/telephony/IccSmsInterfaceManager;->mSmsPermission:Lcom/huawei/permission/SmsPermission;
-
-    invoke-virtual {v0, p1, p3, p4}, Lcom/huawei/permission/SmsPermission;->isSmsBlocked(Ljava/lang/String;Ljava/lang/String;Landroid/app/PendingIntent;)Z
+    invoke-direct/range {p0 .. p5}, Lcom/android/internal/telephony/IccSmsInterfaceManager;->checkSendSmsPermission(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/app/PendingIntent;Landroid/app/PendingIntent;)Z
 
     move-result v0
 
-    if-eqz v0, :cond_1
+    if-nez v0, :cond_1
 
     .line 523
     :goto_0
