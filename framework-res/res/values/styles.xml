@@ -1887,7 +1887,7 @@
         <item name="background">@drawable/btn_group_holo_light</item>
     </style>
     <style name="Widget.CalendarView" parent="@style/Widget">
-        <item name="firstDayOfWeek">0</item>
+        <item name="firstDayOfWeek">1</item>
         <item name="showWeekNumber">true</item>
         <item name="minDate">01/01/1900</item>
         <item name="maxDate">12/31/2100</item>
@@ -2446,9 +2446,7 @@
     <style name="Widget.DeviceDefault.AutoCompleteTextView" parent="@style/Widget.Holo.AutoCompleteTextView" />
     <style name="Widget.DeviceDefault.CompoundButton.CheckBox" parent="@style/Widget.Holo.CompoundButton.CheckBox" />
     <style name="Widget.DeviceDefault.ListView.DropDown" parent="@style/Widget.Holo.ListView.DropDown" />
-    <style name="Widget.DeviceDefault.EditText" parent="@style/Widget.Holo.EditText">
-        <item name="background">@drawable/edit_text_devicedefault_dark</item>
-    </style>
+    <style name="Widget.DeviceDefault.EditText" parent="@style/Widget.Holo.EditText" />
     <style name="Widget.DeviceDefault.ExpandableListView" parent="@style/Widget.Holo.ExpandableListView" />
     <style name="Widget.DeviceDefault.GridView" parent="@style/Widget.Holo.GridView" />
     <style name="Widget.DeviceDefault.ImageButton" parent="@style/Widget.Holo.ImageButton" />
@@ -2468,9 +2466,7 @@
     <style name="Widget.DeviceDefault.HorizontalScrollView" parent="@style/Widget.Holo.HorizontalScrollView" />
     <style name="Widget.DeviceDefault.Spinner" parent="@style/Widget.Holo.Spinner" />
     <style name="Widget.DeviceDefault.CompoundButton.Star" parent="@style/Widget.Holo.CompoundButton.Star" />
-    <style name="Widget.DeviceDefault.TabWidget" parent="@style/Widget.Holo.TabWidget">
-        <item name="background">@drawable/tab_indicator_devicedefault_dark</item>
-    </style>
+    <style name="Widget.DeviceDefault.TabWidget" parent="@style/Widget.Holo.TabWidget" />
     <style name="Widget.DeviceDefault.WebTextView" parent="@style/Widget.Holo.WebTextView" />
     <style name="Widget.DeviceDefault.WebView" parent="@style/Widget.Holo.WebView" />
     <style name="Widget.DeviceDefault.DropDownItem" parent="@style/Widget.Holo.DropDownItem" />
@@ -2506,9 +2502,7 @@
     <style name="Widget.DeviceDefault.Light.AutoCompleteTextView" parent="@style/Widget.Holo.Light.AutoCompleteTextView" />
     <style name="Widget.DeviceDefault.Light.CompoundButton.CheckBox" parent="@style/Widget.Holo.Light.CompoundButton.CheckBox" />
     <style name="Widget.DeviceDefault.Light.ListView.DropDown" parent="@style/Widget.Holo.Light.ListView.DropDown" />
-    <style name="Widget.DeviceDefault.Light.EditText" parent="@style/Widget.Holo.Light.EditText">
-        <item name="background">@drawable/edit_text_devicedefault_light</item>
-    </style>
+    <style name="Widget.DeviceDefault.Light.EditText" parent="@style/Widget.Holo.Light.EditText" />
     <style name="Widget.DeviceDefault.Light.ExpandableListView" parent="@style/Widget.Holo.Light.ExpandableListView" />
     <style name="Widget.DeviceDefault.Light.GridView" parent="@style/Widget.Holo.Light.GridView" />
     <style name="Widget.DeviceDefault.Light.ImageButton" parent="@style/Widget.Holo.Light.ImageButton" />
@@ -3306,7 +3300,7 @@
         <item name="layout_marginEnd">16.0dip</item>
     </style>
     <style name="wifi_item_label">
-        <item name="textSize">18.0sp</item>
+        <item name="textSize">14.0sp</item>
         <item name="layout_width">wrap_content</item>
         <item name="layout_height">wrap_content</item>
     </style>
