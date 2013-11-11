@@ -38,8 +38,6 @@
 
 
 # instance fields
-.field private mAlbumArt:Landroid/widget/ImageView;
-
 .field private mAttached:Z
 
 .field private mAudioManager:Landroid/media/AudioManager;
@@ -197,18 +195,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$600(Lcom/android/internal/widget/TransportControlView;)Landroid/widget/ImageView;
-    .locals 1
-    .parameter "x0"
-
-    .prologue
-    .line 55
-    iget-object v0, p0, Lcom/android/internal/widget/TransportControlView;->mAlbumArt:Landroid/widget/ImageView;
-
-    return-object v0
-.end method
-
-.method static synthetic access$700(Lcom/android/internal/widget/TransportControlView;)Lcom/android/internal/widget/LockScreenWidgetCallback;
+.method static synthetic access$600(Lcom/android/internal/widget/TransportControlView;)Lcom/android/internal/widget/LockScreenWidgetCallback;
     .locals 1
     .parameter "x0"
 
@@ -219,7 +206,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$802(Lcom/android/internal/widget/TransportControlView;Landroid/app/PendingIntent;)Landroid/app/PendingIntent;
+.method static synthetic access$702(Lcom/android/internal/widget/TransportControlView;Landroid/app/PendingIntent;)Landroid/app/PendingIntent;
     .locals 0
     .parameter "x0"
     .parameter "x1"
@@ -250,10 +237,12 @@
 .end method
 
 .method private populateMetadata()V
-    .locals 8
+    .locals 9
 
     .prologue
-    const/16 v7, 0x21
+    const/16 v8, 0x21
+    
+    const/4 v7, -0x1
 
     .line 282
     new-instance v1, Ljava/lang/StringBuilder;
@@ -269,7 +258,7 @@
     iget-object v4, p0, Lcom/android/internal/widget/TransportControlView;->mMetadata:Lcom/android/internal/widget/TransportControlView$Metadata;
 
     #getter for: Lcom/android/internal/widget/TransportControlView$Metadata;->trackTitle:Ljava/lang/String;
-    invoke-static {v4}, Lcom/android/internal/widget/TransportControlView$Metadata;->access$1000(Lcom/android/internal/widget/TransportControlView$Metadata;)Ljava/lang/String;
+    invoke-static {v4}, Lcom/android/internal/widget/TransportControlView$Metadata;->access$900(Lcom/android/internal/widget/TransportControlView$Metadata;)Ljava/lang/String;
 
     move-result-object v4
 
@@ -283,7 +272,7 @@
     iget-object v4, p0, Lcom/android/internal/widget/TransportControlView;->mMetadata:Lcom/android/internal/widget/TransportControlView$Metadata;
 
     #getter for: Lcom/android/internal/widget/TransportControlView$Metadata;->trackTitle:Ljava/lang/String;
-    invoke-static {v4}, Lcom/android/internal/widget/TransportControlView$Metadata;->access$1000(Lcom/android/internal/widget/TransportControlView$Metadata;)Ljava/lang/String;
+    invoke-static {v4}, Lcom/android/internal/widget/TransportControlView$Metadata;->access$900(Lcom/android/internal/widget/TransportControlView$Metadata;)Ljava/lang/String;
 
     move-result-object v4
 
@@ -293,7 +282,7 @@
     iget-object v4, p0, Lcom/android/internal/widget/TransportControlView;->mMetadata:Lcom/android/internal/widget/TransportControlView$Metadata;
 
     #getter for: Lcom/android/internal/widget/TransportControlView$Metadata;->trackTitle:Ljava/lang/String;
-    invoke-static {v4}, Lcom/android/internal/widget/TransportControlView$Metadata;->access$1000(Lcom/android/internal/widget/TransportControlView$Metadata;)Ljava/lang/String;
+    invoke-static {v4}, Lcom/android/internal/widget/TransportControlView$Metadata;->access$900(Lcom/android/internal/widget/TransportControlView$Metadata;)Ljava/lang/String;
 
     move-result-object v4
 
@@ -306,7 +295,7 @@
     iget-object v4, p0, Lcom/android/internal/widget/TransportControlView;->mMetadata:Lcom/android/internal/widget/TransportControlView$Metadata;
 
     #getter for: Lcom/android/internal/widget/TransportControlView$Metadata;->artist:Ljava/lang/String;
-    invoke-static {v4}, Lcom/android/internal/widget/TransportControlView$Metadata;->access$900(Lcom/android/internal/widget/TransportControlView$Metadata;)Ljava/lang/String;
+    invoke-static {v4}, Lcom/android/internal/widget/TransportControlView$Metadata;->access$800(Lcom/android/internal/widget/TransportControlView$Metadata;)Ljava/lang/String;
 
     move-result-object v4
 
@@ -333,7 +322,7 @@
     iget-object v4, p0, Lcom/android/internal/widget/TransportControlView;->mMetadata:Lcom/android/internal/widget/TransportControlView$Metadata;
 
     #getter for: Lcom/android/internal/widget/TransportControlView$Metadata;->artist:Ljava/lang/String;
-    invoke-static {v4}, Lcom/android/internal/widget/TransportControlView$Metadata;->access$900(Lcom/android/internal/widget/TransportControlView$Metadata;)Ljava/lang/String;
+    invoke-static {v4}, Lcom/android/internal/widget/TransportControlView$Metadata;->access$800(Lcom/android/internal/widget/TransportControlView$Metadata;)Ljava/lang/String;
 
     move-result-object v4
 
@@ -344,7 +333,7 @@
     iget-object v4, p0, Lcom/android/internal/widget/TransportControlView;->mMetadata:Lcom/android/internal/widget/TransportControlView$Metadata;
 
     #getter for: Lcom/android/internal/widget/TransportControlView$Metadata;->albumTitle:Ljava/lang/String;
-    invoke-static {v4}, Lcom/android/internal/widget/TransportControlView$Metadata;->access$1100(Lcom/android/internal/widget/TransportControlView$Metadata;)Ljava/lang/String;
+    invoke-static {v4}, Lcom/android/internal/widget/TransportControlView$Metadata;->access$1000(Lcom/android/internal/widget/TransportControlView$Metadata;)Ljava/lang/String;
 
     move-result-object v4
 
@@ -371,7 +360,7 @@
     iget-object v4, p0, Lcom/android/internal/widget/TransportControlView;->mMetadata:Lcom/android/internal/widget/TransportControlView$Metadata;
 
     #getter for: Lcom/android/internal/widget/TransportControlView$Metadata;->albumTitle:Ljava/lang/String;
-    invoke-static {v4}, Lcom/android/internal/widget/TransportControlView$Metadata;->access$1100(Lcom/android/internal/widget/TransportControlView$Metadata;)Ljava/lang/String;
+    invoke-static {v4}, Lcom/android/internal/widget/TransportControlView$Metadata;->access$1000(Lcom/android/internal/widget/TransportControlView$Metadata;)Ljava/lang/String;
 
     move-result-object v4
 
@@ -405,13 +394,11 @@
     .line 303
     new-instance v4, Landroid/text/style/ForegroundColorSpan;
 
-    const/4 v5, -0x1
-
-    invoke-direct {v4, v5}, Landroid/text/style/ForegroundColorSpan;-><init>(I)V
+    invoke-direct {v4, v7}, Landroid/text/style/ForegroundColorSpan;-><init>(I)V
 
     const/4 v5, 0x0
 
-    invoke-interface {v2, v4, v5, v3, v7}, Landroid/text/Spannable;->setSpan(Ljava/lang/Object;III)V
+    invoke-interface {v2, v4, v5, v3, v8}, Landroid/text/Spannable;->setSpan(Ljava/lang/Object;III)V
 
     .line 305
     add-int/lit8 v3, v3, 0x1
@@ -427,29 +414,16 @@
     .line 308
     new-instance v4, Landroid/text/style/ForegroundColorSpan;
 
-    const v5, 0x7fffffff
-
-    invoke-direct {v4, v5}, Landroid/text/style/ForegroundColorSpan;-><init>(I)V
+    invoke-direct {v4, v7}, Landroid/text/style/ForegroundColorSpan;-><init>(I)V
 
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->length()I
 
     move-result v5
 
-    invoke-interface {v2, v4, v3, v5, v7}, Landroid/text/Spannable;->setSpan(Ljava/lang/Object;III)V
+    invoke-interface {v2, v4, v3, v5, v8}, Landroid/text/Spannable;->setSpan(Ljava/lang/Object;III)V
 
     .line 312
     :cond_6
-    iget-object v4, p0, Lcom/android/internal/widget/TransportControlView;->mAlbumArt:Landroid/widget/ImageView;
-
-    iget-object v5, p0, Lcom/android/internal/widget/TransportControlView;->mMetadata:Lcom/android/internal/widget/TransportControlView$Metadata;
-
-    #getter for: Lcom/android/internal/widget/TransportControlView$Metadata;->bitmap:Landroid/graphics/Bitmap;
-    invoke-static {v5}, Lcom/android/internal/widget/TransportControlView$Metadata;->access$500(Lcom/android/internal/widget/TransportControlView$Metadata;)Landroid/graphics/Bitmap;
-
-    move-result-object v5
-
-    invoke-virtual {v4, v5}, Landroid/widget/ImageView;->setImageBitmap(Landroid/graphics/Bitmap;)V
-
     .line 313
     iget v0, p0, Lcom/android/internal/widget/TransportControlView;->mTransportControlFlags:I
 
@@ -699,7 +673,7 @@
     move-result-object v1
 
     #setter for: Lcom/android/internal/widget/TransportControlView$Metadata;->artist:Ljava/lang/String;
-    invoke-static {v0, v1}, Lcom/android/internal/widget/TransportControlView$Metadata;->access$902(Lcom/android/internal/widget/TransportControlView$Metadata;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v1}, Lcom/android/internal/widget/TransportControlView$Metadata;->access$802(Lcom/android/internal/widget/TransportControlView$Metadata;Ljava/lang/String;)Ljava/lang/String;
 
     .line 270
     iget-object v0, p0, Lcom/android/internal/widget/TransportControlView;->mMetadata:Lcom/android/internal/widget/TransportControlView$Metadata;
@@ -711,7 +685,7 @@
     move-result-object v1
 
     #setter for: Lcom/android/internal/widget/TransportControlView$Metadata;->trackTitle:Ljava/lang/String;
-    invoke-static {v0, v1}, Lcom/android/internal/widget/TransportControlView$Metadata;->access$1002(Lcom/android/internal/widget/TransportControlView$Metadata;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v1}, Lcom/android/internal/widget/TransportControlView$Metadata;->access$902(Lcom/android/internal/widget/TransportControlView$Metadata;Ljava/lang/String;)Ljava/lang/String;
 
     .line 271
     iget-object v0, p0, Lcom/android/internal/widget/TransportControlView;->mMetadata:Lcom/android/internal/widget/TransportControlView$Metadata;
@@ -723,7 +697,7 @@
     move-result-object v1
 
     #setter for: Lcom/android/internal/widget/TransportControlView$Metadata;->albumTitle:Ljava/lang/String;
-    invoke-static {v0, v1}, Lcom/android/internal/widget/TransportControlView$Metadata;->access$1102(Lcom/android/internal/widget/TransportControlView$Metadata;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v1}, Lcom/android/internal/widget/TransportControlView$Metadata;->access$1002(Lcom/android/internal/widget/TransportControlView$Metadata;Ljava/lang/String;)Ljava/lang/String;
 
     .line 272
     invoke-direct {p0}, Lcom/android/internal/widget/TransportControlView;->populateMetadata()V
@@ -843,7 +817,7 @@
 
     .line 353
     .restart local v0       #imageDescId:I
-    const/4 v2, 0x1
+    const/4 v2, 0x0
 
     .line 354
     goto :goto_1
@@ -860,7 +834,7 @@
 
     .line 359
     .restart local v0       #imageDescId:I
-    const/4 v2, 0x1
+    const/4 v2, 0x0
 
     .line 360
     goto :goto_1
@@ -1142,17 +1116,6 @@
     iget-object v5, p0, Lcom/android/internal/widget/TransportControlView;->mTrackTitle:Landroid/widget/TextView;
 
     invoke-virtual {v5, v7}, Landroid/widget/TextView;->setSelected(Z)V
-
-    .line 210
-    const v5, 0x1020304
-
-    invoke-virtual {p0, v5}, Lcom/android/internal/widget/TransportControlView;->findViewById(I)Landroid/view/View;
-
-    move-result-object v5
-
-    check-cast v5, Landroid/widget/ImageView;
-
-    iput-object v5, p0, Lcom/android/internal/widget/TransportControlView;->mAlbumArt:Landroid/widget/ImageView;
 
     .line 211
     const v5, 0x1020305
