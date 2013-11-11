@@ -169,7 +169,7 @@
 
     const/16 v1, 0x9
 
-    const-string/jumbo v2, "mime_type AS media_type"
+    const-string/jumbo v2, "mimetype AS media_type"
 
     aput-object v2, v0, v1
 
@@ -465,7 +465,7 @@
     if-eqz v0, :cond_1
 
     .line 1393
-    const-string/jumbo v0, "mime_type"
+    const-string/jumbo v0, "mimetype"
 
     const-string v1, "application/vnd.oma.drm.message"
 
@@ -487,7 +487,7 @@
     if-eqz v0, :cond_0
 
     .line 1395
-    const-string/jumbo v0, "mime_type"
+    const-string/jumbo v0, "mimetype"
 
     const-string v1, "application/vnd.oma.drm.content"
 

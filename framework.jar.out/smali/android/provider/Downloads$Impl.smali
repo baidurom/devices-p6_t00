@@ -68,7 +68,7 @@
 
 .field public static final COLUMN_MEDIA_SCANNED:Ljava/lang/String; = "scanned"
 
-.field public static final COLUMN_MIME_TYPE:Ljava/lang/String; = "mime_type"
+.field public static final COLUMN_MIME_TYPE:Ljava/lang/String; = "mimetype"
 
 .field public static final COLUMN_NOTIFICATION_CLASS:Ljava/lang/String; = "notificationclass"
 
