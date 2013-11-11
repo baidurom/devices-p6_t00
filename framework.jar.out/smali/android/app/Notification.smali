@@ -119,6 +119,10 @@
 
 .field public priority:I
 
+.field public simId:J
+
+.field public simInfoType:I
+
 .field public sound:Landroid/net/Uri;
 
 .field public tickerText:Ljava/lang/CharSequence;
@@ -170,6 +174,8 @@
     iput v0, p0, Landroid/app/Notification;->priority:I
 
     .line 508
+    invoke-direct {p0}, Landroid/app/Notification;->setSimIdAndInfoType()V
+
     return-void
 .end method
 
@@ -234,6 +240,8 @@
     iput-object p3, p0, Landroid/app/Notification;->tickerText:Ljava/lang/CharSequence;
 
     .line 519
+    invoke-direct {p0}, Landroid/app/Notification;->setSimIdAndInfoType()V
+
     invoke-static {p1, v1, p8, v1}, Landroid/app/PendingIntent;->getActivity(Landroid/content/Context;ILandroid/content/Intent;I)Landroid/app/PendingIntent;
 
     move-result-object v0
@@ -590,6 +598,23 @@
     return-object p1
 .end method
 
+.method private setSimIdAndInfoType()V
+    .locals 2
+
+    .prologue
+    .line 554
+    const/4 v0, 0x0
+
+    iput v0, p0, Landroid/app/Notification;->simInfoType:I
+
+    .line 555
+    const-wide/16 v0, -0x1
+
+    iput-wide v0, p0, Landroid/app/Notification;->simId:J
+
+    .line 556
+    return-void
+.end method
 
 # virtual methods
 .method public clone()Landroid/app/Notification;
@@ -708,6 +733,16 @@
     iget v7, p0, Landroid/app/Notification;->audioStreamType:I
 
     iput v7, v2, Landroid/app/Notification;->audioStreamType:I
+
+    .line 677
+    iget v7, p0, Landroid/app/Notification;->simInfoType:I
+
+    iput v7, v2, Landroid/app/Notification;->simInfoType:I
+
+    .line 678
+    iget-wide v7, p0, Landroid/app/Notification;->simId:J
+
+    iput-wide v7, v2, Landroid/app/Notification;->simId:J
 
     .line 631
     iget-object v6, p0, Landroid/app/Notification;->vibrate:[J
