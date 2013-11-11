@@ -54,22 +54,15 @@
 
 # virtual methods
 .method public applyStyle(IZ)V
-    .locals 2
+    .locals 1
     .parameter "resid"
     .parameter "force"
 
     .prologue
-    .line 1114
-    #calls: Landroid/content/res/Resources;->getHuaweiRealTheme(I)I
-    invoke-static {p1}, Landroid/content/res/Resources;->access$000(I)I
-
-    move-result v0
-
     .line 1115
-    .local v0, realTheme:I
-    iget v1, p0, Landroid/content/res/Resources$Theme;->mTheme:I
+    iget v0, p0, Landroid/content/res/Resources$Theme;->mTheme:I
 
-    invoke-static {v1, v0, p2}, Landroid/content/res/AssetManager;->applyThemeStyle(IIZ)V
+    invoke-static {v0, p1, p2}, Landroid/content/res/AssetManager;->applyThemeStyle(IIZ)V
 
     .line 1118
     return-void
@@ -135,7 +128,7 @@
     iget-object v0, p0, Landroid/content/res/Resources$Theme;->this$0:Landroid/content/res/Resources;
 
     #calls: Landroid/content/res/Resources;->getCachedStyledAttributes(I)Landroid/content/res/TypedArray;
-    invoke-static {v0, v8}, Landroid/content/res/Resources;->access$100(Landroid/content/res/Resources;I)Landroid/content/res/TypedArray;
+    invoke-static {v0, v8}, Landroid/content/res/Resources;->access$000(Landroid/content/res/Resources;I)Landroid/content/res/TypedArray;
 
     move-result-object v7
 
@@ -178,7 +171,7 @@
     iget-object v0, p0, Landroid/content/res/Resources$Theme;->this$0:Landroid/content/res/Resources;
 
     #calls: Landroid/content/res/Resources;->getCachedStyledAttributes(I)Landroid/content/res/TypedArray;
-    invoke-static {v0, v8}, Landroid/content/res/Resources;->access$100(Landroid/content/res/Resources;I)Landroid/content/res/TypedArray;
+    invoke-static {v0, v8}, Landroid/content/res/Resources;->access$000(Landroid/content/res/Resources;I)Landroid/content/res/TypedArray;
 
     move-result-object v7
 
@@ -240,7 +233,7 @@
     iget-object v0, p0, Landroid/content/res/Resources$Theme;->this$0:Landroid/content/res/Resources;
 
     #calls: Landroid/content/res/Resources;->getCachedStyledAttributes(I)Landroid/content/res/TypedArray;
-    invoke-static {v0, v8}, Landroid/content/res/Resources;->access$100(Landroid/content/res/Resources;I)Landroid/content/res/TypedArray;
+    invoke-static {v0, v8}, Landroid/content/res/Resources;->access$000(Landroid/content/res/Resources;I)Landroid/content/res/TypedArray;
 
     move-result-object v7
 

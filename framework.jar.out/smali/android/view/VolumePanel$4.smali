@@ -35,11 +35,13 @@
 
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
-    .locals 4
+    .locals 5
     .parameter "context"
     .parameter "intent"
 
     .prologue
+    const/16 v4, 0x3e8
+    
     const/4 v3, 0x6
 
     .line 365
@@ -55,7 +57,7 @@
 
     move-result v1
 
-    if-eqz v1, :cond_0
+    if-eqz v1, :cond_1
 
     .line 368
     iget-object v1, p0, Landroid/view/VolumePanel$4;->this$0:Landroid/view/VolumePanel;
@@ -75,5 +77,31 @@
 
     .line 371
     :cond_0
+    :goto_0
     return-void
+    
+    :cond_1
+    const-string v1, "android.intent.action.THEME_CHANGED"
+    
+    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    
+    move-result v1
+    
+    if-eqz v1, :cond_0
+    
+    iget-object v1, p0, Landroid/view/VolumePanel$4;->this$0:Landroid/view/VolumePanel;
+    
+    invoke-virtual {v1, v4}, Landroid/view/VolumePanel;->removeMessages(I)V
+    
+    iget-object v1, p0, Landroid/view/VolumePanel$4;->this$0:Landroid/view/VolumePanel;
+    
+    iget-object v2, p0, Landroid/view/VolumePanel$4;->this$0:Landroid/view/VolumePanel;
+    
+    invoke-virtual {v2, v4}, Landroid/view/VolumePanel;->obtainMessage(I)Landroid/os/Message;
+    
+    move-result-object v2
+    
+    invoke-virtual {v1, v2}, Landroid/view/VolumePanel;->sendMessage(Landroid/os/Message;)Z
+    
+    goto :goto_0
 .end method

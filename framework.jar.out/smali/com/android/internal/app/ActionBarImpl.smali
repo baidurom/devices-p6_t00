@@ -686,12 +686,8 @@
     new-instance v0, Lcom/android/internal/widget/ScrollingTabContainerView;
 
     iget-object v1, p0, Lcom/android/internal/app/ActionBarImpl;->mContext:Landroid/content/Context;
-
-    iget-object v2, p0, Lcom/android/internal/app/ActionBarImpl;->mActionView:Lcom/android/internal/widget/ActionBarView;
-
-    iget-boolean v2, v2, Lcom/android/internal/widget/ActionBarView;->mIsHwActionBar:Z
-
-    invoke-direct {v0, v1, v2}, Lcom/android/internal/widget/ScrollingTabContainerView;-><init>(Landroid/content/Context;Z)V
+    
+    invoke-direct {v0, v1}, Lcom/android/internal/widget/ScrollingTabContainerView;-><init>(Landroid/content/Context;)V
 
     .line 252
     .local v0, tabScroller:Lcom/android/internal/widget/ScrollingTabContainerView;
@@ -2527,6 +2523,10 @@
 
     .prologue
     .line 210
+    iget-object v0, p0, Lcom/android/internal/app/ActionBarImpl;->mActionView:Lcom/android/internal/widget/ActionBarView;
+    
+    invoke-virtual {v0}, Lcom/android/internal/widget/ActionBarView;->reloadHomeIcon()V
+    
     iget-object v0, p0, Lcom/android/internal/app/ActionBarImpl;->mContext:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/android/internal/view/ActionBarPolicy;->get(Landroid/content/Context;)Lcom/android/internal/view/ActionBarPolicy;

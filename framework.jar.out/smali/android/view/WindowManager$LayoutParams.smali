@@ -171,6 +171,8 @@
 
 .field public static final PRIVATE_FLAG_KEYEVENT_PASS_TO_USER_HOME:I = 0x100
 
+.field public static final PRIVATE_FLAG_NOT_RESPONSE_HOME_KEY:I = 0x10
+
 .field public static final PRIVATE_FLAG_SET_NEEDS_MENU_KEY:I = 0x8
 
 .field public static final PRIVATE_FLAG_SHOW_FOR_ALL_USERS:I = 0x10
@@ -284,6 +286,8 @@
 .field public static final TYPE_SYSTEM_OVERLAY:I = 0x7d6
 
 .field public static final TYPE_TOAST:I = 0x7d5
+
+.field public static final TYPE_TOP_MOST:I = 0x7ed
 
 .field public static final TYPE_UNIVERSE_BACKGROUND:I = 0x7e9
 
