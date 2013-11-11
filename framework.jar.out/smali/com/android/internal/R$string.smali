@@ -417,6 +417,8 @@
 
 .field public static final description_target_unlock_tablet:I = 0x10404df
 
+.field public static final description_target_unlock:I = 0x10404da
+
 .field public static final dial_number_using:I = 0x1040478
 
 .field public static final dialog_alert_title:I = 0x1040014
