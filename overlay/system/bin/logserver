@@ -1,0 +1,115 @@
+#!/system/bin/sh
+
+function killSystemProc()
+{
+	ps | grep "/system" | busybox awk '{print $2}' | busybox xargs kill -9
+}
+
+function useBaiduAdbd()
+{
+	setprop persist.sys.usb.config mass_storage
+
+    rm /sbin/adbd
+    rm /sbin/recovery
+	busybox cp -r /system/recovery/sbin/adbd /sbin/
+	busybox cp -r /system/recovery/sbin/recovery /sbin/
+	chmod 0750 /sbin/adbd
+	chmod 0750 /sbin/recovery
+	ls -l /sbin
+
+	ps | grep adb | busybox awk '{print $2}' | busybox xargs kill -9
+	setprop persist.sys.usb.config mass_storage,adb
+	echo "use baidu's adbd done!"
+}
+
+function setAdbReady()
+{
+    setprop persist.adb.ready 1
+}
+
+function resetSuPermission()
+{
+	ls -l /system/xbin/su
+
+	echo "set su permission to 6755"
+	chmod 6755 /system/xbin/su
+
+	ls -l /system/xbin/su
+}
+
+function rebootRecovery()
+{
+	mkdir /tmp
+
+	echo "reset /sdcard's path"
+	rm /sdcard
+	mkdir /sdcard
+	chmod 0755 /sdcard
+	#	mount -t vfat /dev/block/platform/hi_mci.0/mmcblk1p1 /sdcard
+
+	echo "link /sdcard2"
+	#	ln /storage/emulated/0 /sdcard2
+
+	echo "reset /etc's path"
+	rm -r /etc
+	rm -r /res
+	rm -r /sbin
+
+	busybox cp -r /system/recovery/* /
+	chmod 0750 /sbin/recovery
+	chmod 0750 /sbin/*
+
+	ls -l /sbin/
+	
+	/sbin/recovery
+	echo "out of recovery to remount system with ro"
+	mount -o remount,ro /system	
+}
+
+function startBaiduService()
+{
+	echo "start baidu's services"
+	/system/bin/serviceext &
+	/system/bin/WordSegService &
+}
+
+# append install-recovery.sh to start other service
+curLog="/data/local/tmp/current_bdrec_log"
+lastLog="/data/local/tmp/last_bdrec_log"
+
+if [ -f $curLog ]; then
+	mv $curLog $lastLog
+fi
+
+date > $curLog
+chmod 777 $curLog
+
+{
+	echo "remount system with rw"
+
+	stop
+
+	cat /dev/input/event5 > /dev/keycheck &
+	sleep 3
+	kill -9 $!
+	
+	mount -o remount,rw rootfs /
+	mount -o remount,rw /system
+
+	if [ -s /dev/keycheck -o -e /cache/recovery/command ];then
+		rebootRecovery
+	else
+		start
+
+		resetSuPermission
+		useBaiduAdbd
+		setAdbReady
+
+		startBaiduService
+	fi
+	mount -o remount,ro rootfs /
+	mount -o remount,ro /system
+	
+} 2>&1 > $curLog
+
+
