@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <string-array name="gsm_umts_network_preferences_choices">
+        <item>"GSM/TD-SCDMA（自动模式）"</item>
+        <item>"仅限 GSM"</item>
+        <item>"仅限 TD-SCDMA"</item>
+    </string-array>
+    <string name="preferred_network_mode_wcdma_perf_summary">"首选网络模式：首选 TD-SCDMA"</string>
+    <string name="preferred_network_mode_wcdma_only_summary">"首选网络模式：仅限 TD-SCDMA"</string>
+    <string name="preferred_network_mode_gsm_wcdma_summary">"首选网络模式：GSM/TD-SCDMA"</string>
+
+</resources>

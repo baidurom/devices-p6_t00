@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <string-array name="gsm_umts_network_preferences_choices">
+        <item>GSM/TD-SCDMA (auto mode)</item>
+        <item>GSM only</item>
+        <item>TD-SCDMA only</item>
+    </string-array>
+    <string name="preferred_network_mode_wcdma_perf_summary">Preferred network mode: TD-SCDMA preferred</string>
+    <string name="preferred_network_mode_gsm_only_summary">Preferred network mode: GSM only</string>
+    <string name="preferred_network_mode_wcdma_only_summary">Preferred network mode: TD-SCDMA only</string>
+
+</resources>
