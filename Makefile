@@ -130,7 +130,7 @@ vendor_modify_jars := framework services hwframework telephony-common
 ##############################################################################
 # Files which you want to saved in baidu directory
 #-----------------------------------------------------------------------------
-baidu_saved_files := bin/bootanimation
+baidu_saved_files := bin/bootanimation fonts/Clockopia.ttf
 
 ##############################################################################
 # baidu_remove_apps: those baidu apk you want remove 
