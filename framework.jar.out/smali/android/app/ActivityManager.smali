@@ -534,6 +534,28 @@
     goto :goto_0
 .end method
 
+.method public static isLowRamDeviceStatic()Z
+    .locals 3
+
+    .prologue
+    .line 389
+    const-string v0, "true"
+
+    const-string v1, "ro.config.low_ram"
+
+    const-string v2, "false"
+
+    invoke-static {v1, v2}, Landroid/os/SystemProperties;->get(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    return v0
+.end method
+
 .method public static isRunningInTestHarness()Z
     .locals 2
 
@@ -1853,6 +1875,18 @@
     const/4 v1, 0x0
 
     goto :goto_0
+.end method
+
+.method public isLowRamDevice()Z
+    .locals 1
+
+    .prologue
+    .line 384
+    invoke-static {}, Landroid/app/ActivityManager;->isLowRamDeviceStatic()Z
+
+    move-result v0
+
+    return v0
 .end method
 
 .method public isUserRunning(I)Z
