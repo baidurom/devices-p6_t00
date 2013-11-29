@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <add-resource type="string" name="dolby_mobile_settings_title" />
+    <string name="dolby_mobile_settings_title">Dolby Mobile settings</string>
+</resources>
