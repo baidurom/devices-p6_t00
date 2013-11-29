@@ -89,7 +89,7 @@ vendor_remove_dirs := app media/audio/notifications media/Pre-loaded media/video
 ##############################################################################
 # Vendor apks you want to use
 #-----------------------------------------------------------------------------
-vendor_saved_apps := Bluetooth HwBluetoothImport
+vendor_saved_apps := Bluetooth HwBluetoothImport DolbyMobileAudioEffectService
 
 ##############################################################################
 # Apks build from current project root directory
