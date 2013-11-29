@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Ajustes de Dolby Mobile</string>
+    <string name="pref_title_global_dolby">Ajustes de Dolby Mobile</string>
+    <string name="pref_title_dolby_effect_on">Dolby Mobile activado</string>
+    <string name="dialog_title_dolby_effect_on">Ajustes de Dolby Mobile</string>
+    <string name="dialog_msg_dolby_effect_on">Efecto Dolby desactivado. ¿Activarlo?</string>
+    <string name="pref_title_audio_effect">Efecto de audio</string>
+    <string name="dialog_title_audio_effect">Efecto de audio</string>
+    <string name="pref_title_video_effect">Efecto de vídeo</string>
+    <string name="dialog_title_video_effect">Efecto de vídeo</string>
+    <string name="msg_more_audio_effect">Para ver más efectos de audio, conecte unos auriculares.</string>
+    <string name="item_dolby_off">Desactivado</string>
+    <string name="item_dolby_on">Activado</string>
+    <string name="item_dolby_none">Ninguno</string>
+    <string name="item_dolby_default">Predeterminado</string>
+    <string name="item_dolby_rock">Rock</string>
+    <string name="item_dolby_jazz">Jazz</string>
+    <string name="item_dolby_pop">Pop</string>
+    <string name="item_dolby_classical">Clásica</string>
+    <string name="item_dolby_r_b">R&amp;B</string>
+    <string name="item_dolby_hip_hop">Hip-Hop</string>
+    <string name="item_dolby_blues">Blues</string>
+    <string name="item_dolby_electronic">Electrónica</string>
+    <string name="item_dolby_country">País</string>
+    <string name="item_dolby_urban">Urbana contemporánea</string>
+    <string name="item_dolby_podcast">Podcast</string>
+    <string name="item_dolby_dance">Baile</string>
+    <string name="item_dolby_latin">Latinoamericano</string>
+    <string name="item_dolby_jungle">Jungla</string>
+    <string name="item_dolby_metal">Metal</string>
+    <string name="item_dolby_flat">Plana</string>
+    <string name="item_dolby_news">Noticias</string>
+    <string name="item_dolby_sports">Deportes</string>
+    <string name="item_dolby_drama">Teatro</string>
+    <string name="item_dolby_music_video">Vídeo musical</string>
+    <string name="item_dolby_movie">Music</string>
+    <string name="item_dolby_comedy">Comedia</string>
+    <string name="item_dolby_musical">Musical</string>
+    <string name="item_dolby_animated">Animación</string>
+    <string name="item_dolby_variety_show">Variedades</string>
+</resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="dialog_items_audio_speaker">
+        <item>@string/item_dolby_none</item>
+        <item>@string/item_dolby_default</item>
+    </string-array>
+    <string-array name="dialog_items_audio_headset">
+        <item>@string/item_dolby_none</item>
+        <item>@string/item_dolby_default</item>
+        <item>@string/item_dolby_rock</item>
+        <item>@string/item_dolby_jazz</item>
+        <item>@string/item_dolby_pop</item>
+        <item>@string/item_dolby_classical</item>
+        <item>@string/item_dolby_r_b</item>
+        <item>@string/item_dolby_hip_hop</item>
+        <item>@string/item_dolby_blues</item>
+        <item>@string/item_dolby_electronic</item>
+        <item>@string/item_dolby_country</item>
+        <item>@string/item_dolby_urban</item>
+        <item>@string/item_dolby_podcast</item>
+        <item>@string/item_dolby_dance</item>
+        <item>@string/item_dolby_latin</item>
+        <item>@string/item_dolby_jungle</item>
+        <item>@string/item_dolby_metal</item>
+        <item>@string/item_dolby_flat</item>
+    </string-array>
+    <string-array name="dialog_items_video_speaker">
+        <item>@string/item_dolby_none</item>
+        <item>@string/item_dolby_default</item>
+    </string-array>
+    <string-array name="dialog_items_video_headset">
+        <item>@string/item_dolby_none</item>
+        <item>@string/item_dolby_default</item>
+        <item>@string/item_dolby_news</item>
+        <item>@string/item_dolby_sports</item>
+        <item>@string/item_dolby_drama</item>
+        <item>@string/item_dolby_music_video</item>
+        <item>@string/item_dolby_movie</item>
+        <item>@string/item_dolby_comedy</item>
+        <item>@string/item_dolby_musical</item>
+        <item>@string/item_dolby_animated</item>
+        <item>@string/item_dolby_variety_show</item>
+    </string-array>
+</resources>

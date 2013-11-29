@@ -10,8 +10,6 @@ if [ "$apkBaseName" = "Settings" ];then
         sed -i '/unlock_set_baidu_slide/d' $tempSmaliDir/res/xml/security_settings_picker.xml
     fi
 
-elif [ "$apkBaseName" = "BaiduImageSearch" ];then
-       echo ">>> in custom_app for BaiduImageSearch"
-       sed -i -e "/^\.method.*getOptimalPreviewSize(Landroid\/app\/Activity;Ljava\/util\/List;)Landroid\/hardware\/Camera\$Size/,/^\.end method/d" $tempSmaliDir/smali/com/baidu/imagesearch/utility/CameraUtility.smali
+    sed -i '/sound_category_system_title/r Settings/sound_settings.xml.part' $tempSmaliDir/res/xml/sound_settings.xml
 
 fi

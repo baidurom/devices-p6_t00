@@ -1,0 +1,14 @@
+version: 1.5.2
+apkFileName: HwGlobalDolbyEffect.apk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1
+  - 2
+sdkInfo:
+  minSdkVersion: '15'
+  targetSdkVersion: '17'
+packageInfo:
+  cur_package: com.huawei.android.globaldolbyeffect
+  orig_package: com.huawei.android.globaldolbyeffect
+compressionType: false

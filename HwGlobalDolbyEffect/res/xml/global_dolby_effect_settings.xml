@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference android:title="@string/pref_title_dolby_digital_plus_on" android:key="@string/pref_key_dolby_effect_on" />
+    <Preference android:title="@string/pref_title_music_settings" android:key="@string/pref_key_audio_effect" android:summary="" />
+    <Preference android:title="@string/pref_title_video_settings" android:key="@string/pref_key_video_effect" android:summary="" />
+</PreferenceScreen>
