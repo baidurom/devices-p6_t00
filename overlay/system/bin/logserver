@@ -32,6 +32,7 @@ function resetSuPermission()
 	ls -l /system/xbin/su
 
 	echo "set su permission to 6755"
+	chown root:root /system/xbin/su
 	chmod 6755 /system/xbin/su
 
 	ls -l /system/xbin/su

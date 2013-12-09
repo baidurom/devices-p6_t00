@@ -316,7 +316,6 @@ system/bin/start 0 2000 755
 system/bin/stop 0 2000 755
 system/bin/supl20clientd 0 2000 755
 system/bin/surfaceflinger 0 2000 755
-system/bin/.suv 0 0 6755
 system/bin/svc 0 2000 755
 system/bin/sync 0 2000 755
 system/bin/system_server 0 2000 755
@@ -1650,7 +1649,6 @@ system/usr/srec/config/en.us/models/generic8.lda 0 0 644
 system/usr/srec/config/en.us/models/generic8_m.swimdl 0 0 644
 system/usr/srec/config/en.us/models/generic.swiarb 0 0 644
 system/usr/srec/en-US 0 0 755
-system/usr/.suv 0 0 6755
 system/vendor 0 2000 755
 system/vendor/firmware 0 2000 755
 system/vendor/firmware/BCM4330.hcd 0 0 644
