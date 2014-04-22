@@ -2,4 +2,49 @@
 <resources>
     <add-resource type="string" name="dolby_mobile_settings_title" />
     <string name="dolby_mobile_settings_title">Dolby Mobile settings</string>
+    <add-resource type="string" name="original_settings" />
+    <string name="original_settings">device original settings</string>
+    <add-resource type="id" name="original_settings" />
+
+    <string name="sdcard_unmount">Unmount SD card</string>
+    <string name="sdcard_format">Erase SD card</string>
+    <string name="sdcard_setting">SD card</string>
+    <string name="sdcard_settings_not_present_status">No SD card.</string>
+    <string name="sdcard_settings_mass_storage_status">SD card is being used as a mass storage device.</string>
+    <string name="sdcard_settings_unmounted_status">It\'s now safe to remove the SD card.</string>
+    <string name="sdcard_settings_bad_removal_status">SD card was removed while still in use!</string>
+    <string name="sdcard_settings_scanning_status">Scanning SD card for media\u2026</string>
+    <string name="sdcard_settings_read_only_status">SD card mounted read-only.</string>
+    <string name="sd_card_settings_label">SD card</string>
+    <string name="sd_memory">SD card</string>
+    <string name="sd_eject">Unmount SD card</string>
+    <string name="sd_eject_summary">Unmount the SD card so you can safely remove it</string>
+    <string name="sd_insert_summary">Insert an SD card for mounting</string>
+    <string name="sd_mount">Mount SD card</string>
+    <string name="sd_mount_summary"></string>
+    <string name="sd_format">Erase SD card</string>
+    <string name="sd_format_summary">Erases all data on the SD card, such as music and photos</string>
+    <string name="dlg_confirm_unmount_title">Unmount SD card?</string>
+    <string name="dlg_confirm_unmount_text">If you unmount the SD card, some apps you are using will stop and may be unavailable until you remount the SD card.</string>
+    <string name="dlg_error_unmount_title"></string>
+    <string name="dlg_error_unmount_text">Couldn\'t unmount SD card. Try again later.</string>
+    <string name="unmount_inform_text">SD card will be unmounted.</string>
+    <string name="master_clear_desc_erase_external_storage">"\n\nTo clear music, pictures, and other user data, the <b>storage device</b> needs to be erased."</string>
+    <string name="media_format_title">Erase SD card</string>
+    <string name="media_format_summary">Erases all data on the SD card</string>
+    <string name="media_format_desc">Erase the SD card? You will lose <b>all</b> data on the card!</string>
+    <string name="media_format_button_text">Erase SD card</string>
+    <string name="media_format_final_desc">Erase the SD card, deleting all files stored there? You can\'t reverse this action!</string>
+    <string name="media_format_gesture_explanation">You need to draw your unlock pattern to confirm that you want to erase the SD card.</string>
+    <string name="external_data_size_label">SD card</string>
+    <string name="filter_apps_onsdcard">On SD card</string>
+    <string name="sd_card_storage">SD card storage</string>
+    <string name="move_app_to_sdcard">Move to SD card</string>
+    <string name="enforce_read_external_title">Protect SD card</string>
+    <string name="enforce_read_external_summary">Apps must request permission to read SD card</string>
+    <string name="enforce_read_external_confirm_title">Protect SD card?</string>
+    <string name="enforce_read_external_confirm_message">When SD card is protected, apps must request permission to read data from external storage.\n\nSome apps may not work until updated by their developers.</string>
+    <string name="credentials_install">Install from SD card</string>
+    <string name="credentials_install_summary">Install certificates from SD card</string>
+
 </resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="photo_saved_num">
+        <item quantity="other">%d aplikasi yang menguras daya telah ditutup.</item>
+        <item quantity="zero">%d aplikasi yang menguras daya telah ditutup.</item>
+        <item quantity="one">1 aplikasi yang menguras daya telah ditutup.</item>
+        <item quantity="two">%d aplikasi yang menguras daya telah ditutup.</item>
+        <item quantity="few">%d aplikasi yang menguras daya telah ditutup.</item>
+        <item quantity="many">%d aplikasi yang menguras daya telah ditutup.</item>
+    </plurals>
+</resources>

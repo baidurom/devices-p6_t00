@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="photo_saved_num">
+        <item quantity="other">%d aplicativos de uso pesado de bateria foram fechados.</item>
+        <item quantity="zero">%d aplicativos de uso pesado de bateria foram fechados.</item>
+        <item quantity="one">1 aplicativo de uso pesado de bateria foi fechado.</item>
+        <item quantity="two">%d aplicativos de uso pesado de bateria foram fechados.</item>
+        <item quantity="few">%d aplicativos de uso pesado de bateria foram fechados.</item>
+        <item quantity="many">%d aplicativos de uso pesado de bateria foram fechados.</item>
+    </plurals>
+</resources>

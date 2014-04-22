@@ -2939,7 +2939,7 @@
     return-wide v1
 
     :cond_1
-    const-wide/16 v1, 0x2710
+    const-wide/16 v1, 0x1f40
 
     monitor-exit v3
 

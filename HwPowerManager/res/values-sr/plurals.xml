@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="photo_saved_num">
+        <item quantity="other">Zatvoreno je %d aplikacija koje intenzivno troše energiju.</item>
+        <item quantity="zero">Zatvoreno je %d aplikacija koje intenzivno troše energiju.</item>
+        <item quantity="one">Zatvorena je 1 aplikacija koja intenzivno troši energiju.</item>
+        <item quantity="two">Zatvorenе su %d aplikacije koje intenzivno troše energiju.</item>
+        <item quantity="few">Zatvorene su %d aplikacije koje intenzivno troše energiju.</item>
+        <item quantity="many">Zatvoreno je %d aplikacija koje intenzivno troše energiju.</item>
+    </plurals>
+</resources>

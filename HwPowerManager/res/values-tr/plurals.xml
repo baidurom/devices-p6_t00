@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="photo_saved_num">
+        <item quantity="other">%d yoğun güç kullanan uygulama kapatıldı.</item>
+        <item quantity="zero">%d yoğun güç kullanan uygulama kapatıldı.</item>
+        <item quantity="one">1 yoğun güç kullanan uygulama kapatıldı.</item>
+        <item quantity="two">%d yoğun güç kullanan uygulama kapatıldı.</item>
+        <item quantity="few">%d yoğun güç kullanan uygulama kapatıldı.</item>
+        <item quantity="many">%d yoğun güç kullanan uygulama kapatıldı.</item>
+    </plurals>
+</resources>

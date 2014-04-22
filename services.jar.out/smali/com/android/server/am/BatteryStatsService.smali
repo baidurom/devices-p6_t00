@@ -616,7 +616,7 @@
 
     const/4 v4, 0x0
 
-    invoke-virtual {v2, v3, v4}, Landroid/content/Context;->enforceCallingPermission(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v2, v3, v4}, Landroid/content/Context;->enforceCallingOrSelfPermission(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 98
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
@@ -625,23 +625,46 @@
 
     .line 99
     .local v1, out:Landroid/os/Parcel;
+    iget-object v3, p0, Lcom/android/server/am/BatteryStatsService;->mStats:Lcom/android/internal/os/BatteryStatsImpl;
+
+    monitor-enter v3
+
+    .line 102
+    :try_start_0
     iget-object v2, p0, Lcom/android/server/am/BatteryStatsService;->mStats:Lcom/android/internal/os/BatteryStatsImpl;
 
-    const/4 v3, 0x0
+    const/4 v4, 0x0
 
-    invoke-virtual {v2, v1, v3}, Lcom/android/internal/os/BatteryStatsImpl;->writeToParcel(Landroid/os/Parcel;I)V
+    invoke-virtual {v2, v1, v4}, Lcom/android/internal/os/BatteryStatsImpl;->writeToParcel(Landroid/os/Parcel;I)V
 
-    .line 100
+    .line 103
+    monitor-exit v3
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 105
     invoke-virtual {v1}, Landroid/os/Parcel;->marshall()[B
 
     move-result-object v0
 
-    .line 101
+    .line 106
     .local v0, data:[B
     invoke-virtual {v1}, Landroid/os/Parcel;->recycle()V
 
-    .line 102
+    .line 107
     return-object v0
+
+    .line 103
+    .end local v0           #data:[B
+    :catchall_0
+    move-exception v2
+
+    :try_start_1
+    monitor-exit v3
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    throw v2
 .end method
 
 .method public isOnBattery()Z

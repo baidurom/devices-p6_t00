@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="photo_saved_num">
+        <item quantity="other">%d de aplicaţii mari consumatoare au fost închise.</item>
+        <item quantity="zero">%d aplicaţii mari consumatoare au fost închise.</item>
+        <item quantity="one">1 aplicaţie mare consumatoare a fost închisă.</item>
+        <item quantity="two">%d aplicaţii mari consumatoare au fost închise.</item>
+        <item quantity="few">%d aplicaţii mari consumatoare au fost închise.</item>
+        <item quantity="many">%d aplicaţii mari consumatoare au fost închise.</item>
+    </plurals>
+</resources>

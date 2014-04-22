@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="photo_saved_num">
+        <item quantity="other">%d энергоемких приложения было закрыто.</item>
+        <item quantity="zero">%d энергоемких приложений было закрыто.</item>
+        <item quantity="one">1 энергоемкое приложение было закрыто.</item>
+        <item quantity="two">%d энергоемких приложения было закрыто.</item>
+        <item quantity="few">%d энергоемких приложения было закрыто.</item>
+        <item quantity="many">%d энергоемких приложений было закрыто.</item>
+    </plurals>
+</resources>

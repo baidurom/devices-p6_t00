@@ -7,8 +7,8 @@
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/server/wm/WindowManagerService;
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/android/server/wm/WindowManagerService;->performLayoutAndPlaceSurfacesLockedInner(Z)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,15 +20,45 @@
 # instance fields
 .field final synthetic this$0:Lcom/android/server/wm/WindowManagerService;
 
+.field final synthetic val$client:Landroid/view/IWindow;
+
+.field final synthetic val$contentInsets:Landroid/graphics/Rect;
+
+.field final synthetic val$frame:Landroid/graphics/Rect;
+
+.field final synthetic val$newConfig:Landroid/content/res/Configuration;
+
+.field final synthetic val$reportDraw:Z
+
+.field final synthetic val$visibleInsets:Landroid/graphics/Rect;
+
 
 # direct methods
-.method constructor <init>(Lcom/android/server/wm/WindowManagerService;)V
+.method constructor <init>(Lcom/android/server/wm/WindowManagerService;Landroid/view/IWindow;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Rect;ZLandroid/content/res/Configuration;)V
     .locals 0
+    .parameter
+    .parameter
+    .parameter
+    .parameter
+    .parameter
+    .parameter
     .parameter
 
     .prologue
-    .line 10530
+    .line 9660
     iput-object p1, p0, Lcom/android/server/wm/WindowManagerService$7;->this$0:Lcom/android/server/wm/WindowManagerService;
+
+    iput-object p2, p0, Lcom/android/server/wm/WindowManagerService$7;->val$client:Landroid/view/IWindow;
+
+    iput-object p3, p0, Lcom/android/server/wm/WindowManagerService$7;->val$frame:Landroid/graphics/Rect;
+
+    iput-object p4, p0, Lcom/android/server/wm/WindowManagerService$7;->val$contentInsets:Landroid/graphics/Rect;
+
+    iput-object p5, p0, Lcom/android/server/wm/WindowManagerService$7;->val$visibleInsets:Landroid/graphics/Rect;
+
+    iput-boolean p6, p0, Lcom/android/server/wm/WindowManagerService$7;->val$reportDraw:Z
+
+    iput-object p7, p0, Lcom/android/server/wm/WindowManagerService$7;->val$newConfig:Landroid/content/res/Configuration;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,78 +68,34 @@
 
 # virtual methods
 .method public run()V
-    .locals 3
+    .locals 6
 
     .prologue
-    .line 10533
-    iget-object v0, p0, Lcom/android/server/wm/WindowManagerService$7;->this$0:Lcom/android/server/wm/WindowManagerService;
-
-    iget-object v1, v0, Lcom/android/server/wm/WindowManagerService;->mWindowMap:Ljava/util/HashMap;
-
-    monitor-enter v1
-
-    .line 10537
+    .line 9664
     :try_start_0
-    iget-object v0, p0, Lcom/android/server/wm/WindowManagerService$7;->this$0:Lcom/android/server/wm/WindowManagerService;
+    iget-object v0, p0, Lcom/android/server/wm/WindowManagerService$7;->val$client:Landroid/view/IWindow;
 
-    iget-boolean v0, v0, Lcom/android/server/wm/WindowManagerService;->mLayoutNaviBar:Z
+    iget-object v1, p0, Lcom/android/server/wm/WindowManagerService$7;->val$frame:Landroid/graphics/Rect;
 
-    if-eqz v0, :cond_1
+    iget-object v2, p0, Lcom/android/server/wm/WindowManagerService$7;->val$contentInsets:Landroid/graphics/Rect;
 
-    .line 10538
-    iget-object v0, p0, Lcom/android/server/wm/WindowManagerService$7;->this$0:Lcom/android/server/wm/WindowManagerService;
+    iget-object v3, p0, Lcom/android/server/wm/WindowManagerService$7;->val$visibleInsets:Landroid/graphics/Rect;
 
-    const/4 v2, 0x0
+    iget-boolean v4, p0, Lcom/android/server/wm/WindowManagerService$7;->val$reportDraw:Z
 
-    iput-boolean v2, v0, Lcom/android/server/wm/WindowManagerService;->mLayoutNaviBar:Z
+    iget-object v5, p0, Lcom/android/server/wm/WindowManagerService$7;->val$newConfig:Landroid/content/res/Configuration;
 
-    .line 10539
-    iget-object v0, p0, Lcom/android/server/wm/WindowManagerService$7;->this$0:Lcom/android/server/wm/WindowManagerService;
+    invoke-interface/range {v0 .. v5}, Landroid/view/IWindow;->resized(Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Rect;ZLandroid/content/res/Configuration;)V
+    :try_end_0
+    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
-    invoke-virtual {v0}, Lcom/android/server/wm/WindowManagerService;->computeNewConfigurationLocked()Landroid/content/res/Configuration;
-
-    .line 10540
-    iget-object v0, p0, Lcom/android/server/wm/WindowManagerService$7;->this$0:Lcom/android/server/wm/WindowManagerService;
-
-    iget-object v0, v0, Lcom/android/server/wm/WindowManagerService;->mWallpaperTarget:Lcom/android/server/wm/WindowState;
-
-    if-eqz v0, :cond_0
-
-    .line 10541
-    iget-object v0, p0, Lcom/android/server/wm/WindowManagerService$7;->this$0:Lcom/android/server/wm/WindowManagerService;
-
-    invoke-virtual {v0}, Lcom/android/server/wm/WindowManagerService;->updateWallpaperVisibilityLocked()V
-
-    .line 10543
-    :cond_0
-    iget-object v0, p0, Lcom/android/server/wm/WindowManagerService$7;->this$0:Lcom/android/server/wm/WindowManagerService;
-
-    #calls: Lcom/android/server/wm/WindowManagerService;->performLayoutAndPlaceSurfacesLocked()V
-    invoke-static {v0}, Lcom/android/server/wm/WindowManagerService;->access$300(Lcom/android/server/wm/WindowManagerService;)V
-
-    .line 10547
+    .line 9670
     :goto_0
-    monitor-exit v1
-
-    .line 10548
     return-void
 
-    .line 10545
-    :cond_1
-    iget-object v0, p0, Lcom/android/server/wm/WindowManagerService$7;->this$0:Lcom/android/server/wm/WindowManagerService;
-
-    #calls: Lcom/android/server/wm/WindowManagerService;->performLayoutAndPlaceSurfacesLocked()V
-    invoke-static {v0}, Lcom/android/server/wm/WindowManagerService;->access$300(Lcom/android/server/wm/WindowManagerService;)V
-
-    goto :goto_0
-
-    .line 10547
-    :catchall_0
+    .line 9666
+    :catch_0
     move-exception v0
 
-    monitor-exit v1
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    throw v0
+    goto :goto_0
 .end method

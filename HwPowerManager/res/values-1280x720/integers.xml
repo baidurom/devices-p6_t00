@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="soft_icon_imageview_layout_rowSpan">3</integer>
+    <integer name="soft_progress_processbar_layout_columnSpan">2</integer>
+    <integer name="soft_progress_processbar_max">100</integer>
+</resources>

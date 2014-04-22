@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="photo_saved_num">
+        <item quantity="other">%d batterikrävande appar har stängts.</item>
+        <item quantity="zero">%d batterikrävande appar har stängts.</item>
+        <item quantity="one">1 batterikrävande app har stängts.</item>
+        <item quantity="two">%d batterikrävande appar har stängts.</item>
+        <item quantity="few">%d batterikrävande appar har stängts.</item>
+        <item quantity="many">%d batterikrävande appar har stängts.</item>
+    </plurals>
+</resources>

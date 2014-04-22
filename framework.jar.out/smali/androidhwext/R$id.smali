@@ -75,6 +75,8 @@
 
 .field public static final titleDivider:I = 0x20d0001
 
+.field public static final wifi_switch_to_pdp_never_notify:I = 0x20d001e
+
 
 # direct methods
 .method public constructor <init>()V

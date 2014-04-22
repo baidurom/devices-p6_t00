@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">"Enerģ. pārvald. "</string>
+    <string name="enduration_time_title">Atl. laiks:</string>
+    <string name="enduration_time_detail_new">Info par atl. laiku</string>
+    <string name="consume_detail_button_new">Patēriņa līmenis</string>
+    <string name="charging">Uzlāde</string>
+    <string name="lower_battery">Zems akumul.</string>
+    <string name="normal_mode_msg">Sistēma atbildēs uz notikumiem savlaicīgi un efektīvi, bet var tikt patērēts vairāk enerģijas. Ieteicams, kad izmantojat lietojumprogrammas, kas patērē ievērojamus sistēmas resursus, piemēram, spēles.</string>
+    <string name="smart_mode_msg">Norādot, ka jūsu darbības nav ietekmētas, sistēma automātiski pielāgos centrālā procesora izmantošanu un lietojumprogrammas tīkla piekļuves biežumu, lai samazinātu enerģijas patēriņu. Ieteicams pastāvīgai lietošanai.</string>
+    <string name="super_mode_msg">Visam, izņemot zvanīšanu, īsziņu sūtīšanu un citas pamatfunkcijas, sistēma samazinās centrālā procesora lietošanu un lietojumprogrammas tīkla piekļuves biežumu līdz to minimālajam līmenim. Ietiecams, kad akumulatora uzlādes līmenis ir mazāks par 30%.</string>
+    <string name="normal_mode_content">Pārl., vai sist. darbojas optim. līmenī</string>
+    <string name="smart_mode_content_new">Autom. samazināt strāvas patēriņu apjomu</string>
+    <string name="super_mode_content_new">Nodr., lai tikai pamatf. (zvan./īsz. sūt.) darb. norm.</string>
+    <string name="low_level_title">Akum. uzlādes līmenis ir līdz 30%</string>
+    <string name="low_level_msg">Piesk., lai main. barošanas plānu.</string>
+    <string name="alert_dialog_ok">Iespējot</string>
+    <string name="alert_dialog_cancel">Atcelt</string>
+    <string name="normal_mode_title">Normāls</string>
+    <string name="smart_mode_title">Viedais</string>
+    <string name="super_mode_title">Ilgums</string>
+    <string name="scene_calling">Zvana laiks</string>
+    <string name="scene_Surfacing_internet">Interneta lietošana</string>
+    <string name="scene_watching_moving">Video demonstrēšana</string>
+    <string name="scene_reading_book">Lasīšanas laiks</string>
+    <string name="scene_playing_music">Mūzikas atskaņošana</string>
+    <string name="battery_activity_title">Informācija par akumulatoru</string>
+    <string name="capacitiy_identifier">Kapacitāte: %1$s mAH</string>
+    <string name="voltage_identifier">Spriegums: %1$s V</string>
+    <string name="temperature_identifier">Temperatūra: %1$s °C</string>
+    <string name="save_power_toast">Ilguma plāns iespējots.</string>
+    <string name="conversion_zero">0</string>
+    <string name="conversion_hour">h</string>
+    <string name="conversion_hour_short">h</string>
+    <string name="conversion_minute_new">m</string>
+    <string name="conversion_minute_short_new">m</string>
+    <string name="powermode_actionbar_titile">Barošanas plāns</string>
+    <string name="process_mediaserver_label">Multivides serveris</string>
+    <string name="android_os">Android sistēma</string>
+    <string name="android_os_new">Sistēma</string>
+    <string name="power_other">Citi</string>
+    <string name="percent_identifier">%</string>
+    <string name="power_saving_tex">"Taup. enerģ.
+"</string>
+    <string name="forbid">dzēst</string>
+    <string name="menu_title_1">"Taup. enerģ.
+"</string>
+    <string name="menu_title_1_new">Enerģijas taupīšana</string>
+    <string name="menu_title_2">"Palaiš. pārvaldn.
+"</string>
+    <string name="save_power_content">Pārvaldīt lietotnes, kas turpina darboties pēc enerģijas taupīšanas aktivizēšanas vai gadījumā, kad ierīces ekrāns ir bloķēts</string>
+    <string name="boot_manager_content">Pārvaldīt lietotnes, kas var tikt palaistas, startējot sistēmu</string>
+    <string name="boot_application_title_new_new">IESPĒJOTĀS LIETOTNES VAR TIKT AUTOMĀTISKI PALAISTAS PIE STARTĒŠANAS</string>
+    <string name="saving_setting_title_new_new">SAGLABĀT IESPĒJOTO LIETOTŅU DARBĪBU PĒC ENERĢIJAS TAUPĪŠANAS DARBĪBAS VAI EKRĀNA BLOĶĒŠANAS</string>
+    <string name="powermode_config_titile">IESTATĪJUMI</string>
+    <string name="powermode_other_titile">CITS</string>
+    <string name="menu_title_valid_all_new">IESPĒJOT VISU</string>
+    <string name="menu_title_invalid_all_new">ATSP. VISU</string>
+    <string name="menu_title_select_all">Visas</string>
+    <string name="consume_detail_button">Monitors</string>
+    <string name="conversion_minute">min</string>
+    <string name="conversion_minute_short">min</string>
+    <string name="enduration_time_detail">Informācija</string>
+    <string name="photo_saved_num">%d jaudu tērējošas lietojumprogrammas tika aizvērtas.</string>
+    <string name="boot_application_title_new">ĻAUT IESP. LIETOJUMPR. AUTOMĀTISKI STARTĒTIES PIE SĀKNĒŠANAS</string>
+    <string name="saving_setting_title_new">NEAIZV. IESP. LIETOJUMPR., JA AKTIV. ENER. TAUP. VAI EKRĀNS IR BLOĶ.</string>
+    <string name="menu_title_invalid_all">Atspējot visu</string>
+</resources>

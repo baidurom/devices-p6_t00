@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="photo_saved_num">
+        <item quantity="other">Zatvorené aplikácie nadmerne využívajúce energiu: %d.</item>
+        <item quantity="zero">Zatvorené aplikácie nadmerne využívajúce energiu: %d.</item>
+        <item quantity="one">1 aplikácia nadmerne využívajúca energiu bola zatvorená.</item>
+        <item quantity="two">Zatvorené aplikácie nadmerne využívajúce energiu: %d.</item>
+        <item quantity="few">Zatvorené aplikácie nadmerne využívajúce energiu: %d.</item>
+        <item quantity="many">Zatvorené aplikácie nadmerne využívajúce energiu: %d.</item>
+    </plurals>
+</resources>

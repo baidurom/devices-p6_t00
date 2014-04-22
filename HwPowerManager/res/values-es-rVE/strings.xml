@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Gestor de energía</string>
+    <string name="enduration_time_title">Tiempo restante:</string>
+    <string name="charging">Cargando</string>
+    <string name="lower_battery">Batería baja</string>
+    <string name="normal_mode_msg">El sistema responderá a los eventos oportuna y eficazmente, pero es posible que se consuma más energía. Se recomienda cuando se utilizan aplicaciones que consumen gran cantidad de recursos del sistema, como los juegos.</string>
+    <string name="smart_mode_msg">Si las acciones no se ven afectadas, el sistema ajustará automáticamente el uso de la CPU y la frecuencia de acceso a la red de las aplicaciones para reducir el consumo de energía. Recomendado para uso regular.</string>
+    <string name="super_mode_msg">Excepto para las llamadas, los mensajes y otras funciones básicas, el sistema reducirá el uso de la CPU y la frecuencia de acceso a la red de las aplicaciones al mínimo. Se recomienda cuando el nivel de carga de la batería es inferior a 30%.</string>
+    <string name="low_level_title">Carga de batería: inferior a 30%.</string>
+    <string name="low_level_msg">Presione aquí para cambiar el plan de energía.</string>
+    <string name="alert_dialog_ok">Activar</string>
+    <string name="alert_dialog_cancel">Cancelar</string>
+    <string name="normal_mode_title">Normal</string>
+    <string name="smart_mode_title">Inteligente</string>
+    <string name="super_mode_title">Bajo consumo</string>
+    <string name="scene_calling">Duración de llamada</string>
+    <string name="scene_Surfacing_internet">Uso de Internet</string>
+    <string name="scene_watching_moving">Reproducción de video</string>
+    <string name="scene_reading_book">Duración de lectura</string>
+    <string name="scene_playing_music">Reproducción de música</string>
+    <string name="battery_activity_title">Información de la batería</string>
+    <string name="capacitiy_identifier">Capacidad: %1$s mAH</string>
+    <string name="voltage_identifier">Tensión: %1$s V</string>
+    <string name="temperature_identifier">Temperatura: %1$s °C</string>
+    <string name="save_power_toast">Configuración de ahorro habilitada.</string>
+    <string name="conversion_zero">0</string>
+    <string name="conversion_hour">h</string>
+    <string name="conversion_hour_short">h</string>
+    <string name="powermode_actionbar_titile">PLAN DE ENERGÍA</string>
+    <string name="process_mediaserver_label">Servidor multimedia</string>
+    <string name="android_os">Sistema</string>
+    <string name="android_os_new">Sistema</string>
+    <string name="power_other">Otros</string>
+    <string name="percent_identifier">%</string>
+    <string name="forbid">borrar</string>
+    <string name="menu_title_select_all">Todo</string>
+    <string name="consume_detail_button">Consumo</string>
+    <string name="conversion_minute">min</string>
+    <string name="conversion_minute_short">min</string>
+    <string name="menu_title_invalid_all">Deshabilitar todas</string>
+</resources>

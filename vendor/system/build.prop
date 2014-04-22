@@ -3,8 +3,8 @@
 ro.build.version.sdk=17
 ro.build.version.codename=REL
 ro.build.version.release=4.2.2
-ro.build.date=Mon Sep 23 16:14:35 CST 2013
-ro.build.date.utc=1379924075
+ro.build.date=Tue Jan 14 02:57:17 CST 2014
+ro.build.date.utc=1389639437
 ro.build.type=user
 ro.product.cpu.abi=armeabi-v7a
 ro.product.cpu.abi2=armeabi
@@ -126,7 +126,7 @@ ro.config.hw_subtitle_support=true
 ro.com.android.dateformat=MM-dd-yyyy
 ro.carrier=unknown
 ro.setupwizard.mode=OPTIONAL
-ro.com.google.gmsversion=4.2_r2
+ro.com.google.gmsversion=4.2_r3
 drm.service.enabled=true
 dalvik.vm.dexopt-flags=m=y
 net.bt.name=Android
@@ -203,9 +203,9 @@ ro.product.name=P6-T00
 
 ro.product.device=hwp6-t00
 
-ro.confg.hw_systemversion=P6-T00V100R001C01B117SP01_SYSTEM
+ro.confg.hw_systemversion=P6-T00V100R001C01B120SP01_SYSTEM
 
-ro.build.display.id=P6-T00V100R001C01B117SP01
+ro.build.display.id=P6-T00V100R001C01B120SP01
 
 ro.build.tags=ota-rel-keys,release-keys
 
@@ -215,10 +215,10 @@ ro.build.host=localhost#1
 
 ro.build.id=HuaweiP6-T00
 
-ro.build.version.incremental=C01B117SP01
+ro.build.version.incremental=C01B120SP01
 
-ro.build.description=P6-T00-user 4.2.2 HuaweiP6-T00 C01B117SP01 ota-rel-keys,release-keys
+ro.build.description=P6-T00-user 4.2.2 HuaweiP6-T00 C01B120SP01 ota-rel-keys,release-keys
 
-ro.build.fingerprint=Huawei/P6-T00/hwp6-t00:4.2.2/HuaweiP6-T00/C01B117SP01:user/ota-rel-keys,release-keys
+ro.build.fingerprint=Huawei/P6-T00/hwp6-t00:4.2.2/HuaweiP6-T00/C01B120SP01:user/ota-rel-keys,release-keys
 
 ro.build.version.emui=EmotionUI_1.6

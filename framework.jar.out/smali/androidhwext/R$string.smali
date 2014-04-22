@@ -15,11 +15,11 @@
 
 
 # static fields
-.field public static final accessibility_compound_button_selected:I = 0x202008a
+.field public static final accessibility_compound_button_selected:I = 0x202008b
 
-.field public static final accessibility_compound_button_unselected:I = 0x202008b
+.field public static final accessibility_compound_button_unselected:I = 0x202008d
 
-.field public static final alternate_eri_file:I = 0x2020085
+.field public static final alternate_eri_file:I = 0x2020086
 
 .field public static final automatic_locale_code:I = 0x202007b
 
@@ -45,15 +45,15 @@
 
 .field public static final cdnorights_message:I = 0x202005f
 
-.field public static final contact_status_update_attribution:I = 0x2020088
+.field public static final contact_status_update_attribution:I = 0x2020089
 
-.field public static final contact_status_update_attribution_with_date:I = 0x2020089
+.field public static final contact_status_update_attribution_with_date:I = 0x202008a
 
 .field public static final copyAll:I = 0x2020053
 
 .field public static final cutAll:I = 0x2020052
 
-.field public static final description_star:I = 0x2020091
+.field public static final description_star:I = 0x2020092
 
 .field public static final drm_securitytime_error:I = 0x202005c
 
@@ -79,11 +79,11 @@
 
 .field public static final keyguard_pin_accepted:I = 0x2020070
 
-.field public static final l2tp_ipsec_crt_vpn_description:I = 0x2020090
+.field public static final l2tp_ipsec_crt_vpn_description:I = 0x2020091
 
-.field public static final l2tp_ipsec_psk_vpn_description:I = 0x202008f
+.field public static final l2tp_ipsec_psk_vpn_description:I = 0x2020090
 
-.field public static final l2tp_vpn_description:I = 0x202008e
+.field public static final l2tp_vpn_description:I = 0x202008f
 
 .field public static final last_one_month:I = 0x202007e
 
@@ -221,7 +221,7 @@
 
 .field public static final poweroffDes:I = 0x2020061
 
-.field public static final pptp_vpn_description:I = 0x202008d
+.field public static final pptp_vpn_description:I = 0x202008e
 
 .field public static final restartConfirm:I = 0x202000d
 
@@ -247,7 +247,7 @@
 
 .field public static final select:I = 0x2020027
 
-.field public static final selectText:I = 0x2020087
+.field public static final selectText:I = 0x2020088
 
 .field public static final share:I = 0x202007c
 
@@ -279,7 +279,7 @@
 
 .field public static final stopSelectingText:I = 0x2020051
 
-.field public static final test_version_for_develop:I = 0x2020086
+.field public static final test_version_for_develop:I = 0x2020087
 
 .field public static final translate:I = 0x202007d
 
@@ -303,7 +303,9 @@
 
 .field public static final volume_icon_description_voice_helper:I = 0x2020063
 
-.field public static final web_user_agent:I = 0x2020092
+.field public static final web_user_agent:I = 0x2020093
+
+.field public static final wifi_switch_to_pdp_never_notify:I = 0x2020085
 
 .field public static final wifi_switch_to_pdp_title:I = 0x2020010
 
@@ -315,7 +317,7 @@
     .locals 0
 
     .prologue
-    .line 905
+    .line 907
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

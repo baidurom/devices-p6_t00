@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="photo_saved_num">
+        <item quantity="other">%d ứng dụng tốn pin vừa được tắt đi.</item>
+        <item quantity="zero">%d ứng dụng tốn pin vừa được tắt đi.</item>
+        <item quantity="one">1 ứng dụng tốn pin vừa được tắt đi.</item>
+        <item quantity="two">%d ứng dụng tốn pin vừa được tắt đi.</item>
+        <item quantity="few">%d ứng dụng tốn pin vừa được tắt đi.</item>
+        <item quantity="many">%d ứng dụng tốn pin vừa được tắt đi.</item>
+    </plurals>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="photo_saved_num">
+        <item quantity="other">ปิดแอปพลิเคชันที่ใช้พลังงานมากแล้ว %d ตัว</item>
+        <item quantity="zero">ปิดแอปพลิเคชันที่ใช้พลังงานมากแล้ว %d ตัว</item>
+        <item quantity="one">ปิดแอปพลิเคชันที่ใช้พลังงานมากแล้ว 1 ตัว</item>
+        <item quantity="two">ปิดแอปพลิเคชันที่ใช้พลังงานมากแล้ว %d ตัว</item>
+        <item quantity="few">ปิดแอปพลิเคชันที่ใช้พลังงานมากแล้ว %d ตัว</item>
+        <item quantity="many">ปิดแอปพลิเคชันที่ใช้พลังงานมากแล้ว %d ตัว</item>
+    </plurals>
+</resources>

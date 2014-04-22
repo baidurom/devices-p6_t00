@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="photo_saved_num">
+        <item quantity="other">%d個の電池消費量が高いアプリを終了しました。</item>
+        <item quantity="zero">%d個の電池消費量が高いアプリを終了しました。</item>
+        <item quantity="one">1個の電池消費量が高いアプリを終了しました。</item>
+        <item quantity="two">%d個の電池消費量が高いアプリを終了しました。</item>
+        <item quantity="few">%d個の電池消費量が高いアプリを終了しました。</item>
+        <item quantity="many">%d個の電池消費量が高いアプリを終了しました。</item>
+    </plurals>
+</resources>

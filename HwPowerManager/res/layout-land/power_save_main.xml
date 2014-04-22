@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/charge_main" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/bettary_charge_relativelayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip">
+                <ProgressBar android:id="@id/bettary_charge_green_processbar" android:background="@drawable/charge" android:layout_width="@dimen/processbar_layout_width" android:layout_height="@dimen/processbar_layout_height" android:max="100" android:progress="100" android:indeterminate="false" style="@style/Progress_Green" />
+                <ProgressBar android:id="@id/bettary_charge_yellow_processbar" android:background="@drawable/charge" android:visibility="gone" android:layout_width="@dimen/processbar_layout_width" android:layout_height="@dimen/processbar_layout_height" android:max="100" android:progress="100" android:indeterminate="false" style="@style/Progress_Yellow" />
+                <ProgressBar android:id="@id/bettary_charge_red_processbar" android:background="@drawable/charge" android:visibility="gone" android:layout_width="@dimen/processbar_layout_width" android:layout_height="@dimen/processbar_layout_height" android:max="100" android:progress="100" android:indeterminate="false" style="@style/Progress_Red" />
+                <ImageView android:id="@id/bettary_charge_imageview" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:src="@drawable/charging" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                    <TextView android:textSize="33.299988sp" android:textColor="#ffffffff" android:id="@id/bettary_charge_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:shadowColor="#1e212121" android:shadowDx="2.0" android:shadowDy="2.0" android:shadowRadius="2.0" />
+                    <TextView android:textSize="20.0sp" android:textColor="#ffffffff" android:id="@id/battery_percent_identifier" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/percent_identifier" android:shadowColor="#1e212121" android:shadowDx="2.0" android:shadowDy="2.0" android:shadowRadius="2.0" />
+                </LinearLayout>
+            </RelativeLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <TextView android:textStyle="bold" android:textColor="@color/color_tag_text" android:id="@id/enduration_time_title_textview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="11.0dip" android:text="@string/enduration_time_title" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/enduration_time_linearlayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip">
+                    <TextView android:textSize="45.0sp" android:textColor="#ff000000" android:id="@id/enduration_time_hour_textview" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <TextView android:textColor="#ff000000" android:id="@id/enduration_time_hour_tag_textview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/conversion_hour_short" />
+                    <TextView android:textSize="45.0sp" android:textColor="#ff000000" android:id="@id/enduration_time_minute_textview" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <TextView android:textColor="#ff000000" android:id="@id/enduration_time_minute_tag_textview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/conversion_minute_short_new" android:singleLine="true" />
+                </LinearLayout>
+                <TextView android:textSize="27.0dip" android:textColor="#ff000000" android:id="@id/enduration_charging_textview" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="18.0dip" android:text="@string/charging" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="15.0dip">
+            <Button android:textColor="#ff000000" android:id="@id/power_saving_button" android:layout_width="150.0dip" android:layout_height="wrap_content" android:text="@string/power_saving_tex" android:singleLine="true" />
+            <Button android:textColor="#ff000000" android:id="@id/mode_change_button" android:layout_width="150.0dip" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/enduration_time_detail_new" android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ff0a9dcd" android:id="@id/power_save_plan_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.699982dip" android:text="@string/powermode_actionbar_titile" android:textAllCaps="true" />
+    <View android:id="@id/horizontal_line" android:background="#ff0a9dcd" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginLeft="10.699982dip" android:layout_marginRight="10.699982dip" />
+    <ListView android:id="@id/power_save_mode_listview" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.699982dip" android:layout_marginRight="10.699982dip" />
+    <View android:id="@id/power_save_main_bottom_line" android:background="#ffcbcbcb" android:layout_width="fill_parent" android:layout_height="@dimen/main_activity_bottom_line_height" android:layout_marginLeft="10.699982dip" android:layout_marginRight="10.699982dip" />
+    <RelativeLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:textColor="#ff000000" android:id="@id/quick_save_settings" android:layout_width="120.0dip" android:layout_height="wrap_content" android:text="@string/menu_title_1_new" android:singleLine="true" android:layout_weight="1.0" android:layout_alignParentBottom="true" />
+        <Button android:textColor="#ff000000" android:id="@id/consume_detail_button" android:layout_width="120.0dip" android:layout_height="wrap_content" android:text="@string/consume_detail_button_new" android:singleLine="true" android:layout_weight="1.0" android:layout_toRightOf="@id/quick_save_settings" android:layout_alignParentBottom="true" />
+        <Button android:textColor="#ff000000" android:id="@id/boot_up_settings" android:layout_width="120.0dip" android:layout_height="wrap_content" android:text="@string/menu_title_2" android:singleLine="true" android:layout_weight="1.0" android:layout_toRightOf="@id/consume_detail_button" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</LinearLayout>

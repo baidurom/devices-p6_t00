@@ -1,3 +1,8 @@
 #!/system/bin/sh
 
-echo " " > /cache/recovery/command && reboot
+if [ ! -f /cache/recovery/command ]; then
+    echo " " > /cache/recovery/command && reboot
+else
+    reboot
+fi
+

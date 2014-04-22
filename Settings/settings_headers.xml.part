@@ -1,0 +1,3 @@
+    <header android:icon="@drawable/ic_settings_auto" android:id="@+id/original_settings" android:title="@string/original_settings">
+        <intent android:action="com.baidu.device_original_settings" android:targetClass="com.baidu.deviceoriginalsettings.DeviceOriginalSettingsActivity" />
+    </header>

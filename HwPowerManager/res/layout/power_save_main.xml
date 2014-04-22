@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_gravity="center_vertical" android:id="@id/scrollView1" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="7.0dip">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/charge_main" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+                    <RelativeLayout android:id="@id/bettary_charge_relativelayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip">
+                        <ProgressBar android:id="@id/bettary_charge_green_processbar" android:background="@drawable/charge" android:layout_width="@dimen/processbar_layout_width" android:layout_height="@dimen/processbar_layout_height" android:max="100" android:progress="100" android:indeterminate="false" style="@style/Progress_Green" />
+                        <ProgressBar android:id="@id/bettary_charge_yellow_processbar" android:background="@drawable/charge" android:visibility="gone" android:layout_width="@dimen/processbar_layout_width" android:layout_height="@dimen/processbar_layout_height" android:max="100" android:progress="100" android:indeterminate="false" style="@style/Progress_Yellow" />
+                        <ProgressBar android:id="@id/bettary_charge_red_processbar" android:background="@drawable/charge" android:visibility="gone" android:layout_width="@dimen/processbar_layout_width" android:layout_height="@dimen/processbar_layout_height" android:max="100" android:progress="100" android:indeterminate="false" style="@style/Progress_Red" />
+                        <ImageView android:id="@id/bettary_charge_imageview" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/charging" />
+                        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                            <TextView android:textSize="33.299988sp" android:textColor="#ffffffff" android:id="@id/bettary_charge_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:shadowColor="#1e212121" android:shadowDx="2.0" android:shadowDy="2.0" android:shadowRadius="2.0" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip">
+                        <TextView android:textSize="14.0dip" android:textStyle="bold" android:textColor="@color/color_tag_text" android:id="@id/enduration_time_title_textview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/enduration_time_title" />
+                        <LinearLayout android:orientation="vertical" android:id="@id/enduration_time_linearlayout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-5.0dip" android:layout_marginBottom="-4.0dip">
+                                <TextView android:textSize="38.0dip" android:textColor="#ff000000" android:id="@id/enduration_time_hour_textview" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                                <TextView android:textSize="14.0dip" android:textColor="#ff000000" android:id="@id/enduration_time_hour_tag_textview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/conversion_hour_short" />
+                                <TextView android:textSize="38.0dip" android:textColor="#ff000000" android:id="@id/enduration_time_minute_textview" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                                <TextView android:textSize="14.0dip" android:textColor="#ff000000" android:id="@id/enduration_time_minute_tag_textview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/conversion_minute_short_new" android:singleLine="true" />
+                            </LinearLayout>
+                            <Button android:textSize="18.0dip" android:textColor="#ff000000" android:gravity="center" android:visibility="gone" android:id="@id/power_saving_button" android:layout_width="wrap_content" android:layout_height="35.0dip" android:minWidth="115.0dip" android:text="@string/power_saving_tex" android:singleLine="true" />
+                        </LinearLayout>
+                        <TextView android:textSize="26.0dip" android:textColor="#ff000000" android:id="@id/enduration_charging_textview" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip" android:layout_marginRight="6.0dip" android:text="@string/charging" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="1.0dip" android:layout_weight="1.0">
+                <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/color_tag_text" android:layout_gravity="right" android:id="@id/power_save_plan_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="12.0dip" android:text="@string/powermode_actionbar_titile" android:textAllCaps="true" />
+                <View android:id="@id/horizontal_line" android:background="@color/color_tag_divider" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginLeft="6.6999817dip" android:layout_marginTop="5.0dip" android:layout_marginRight="6.6999817dip" />
+                <include android:id="@id/mode_list_item_normal" layout="@layout/mode_list_item" />
+                <include layout="@layout/divide_line" />
+                <include android:id="@id/mode_list_item_smart" layout="@layout/mode_list_item" />
+                <include layout="@layout/divide_line" />
+                <include android:id="@id/mode_list_item_super" layout="@layout/mode_list_item" />
+                <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/color_tag_text" android:id="@id/power_save_plan_title" android:visibility="gone"  android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="12.0dip" android:text="@string/powermode_config_titile" />
+                <View android:id="@id/horizontal_line" android:background="@color/color_tag_divider" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginLeft="6.6999817dip" android:layout_marginTop="5.0dip" android:layout_marginRight="6.6999817dip" />
+                <include android:id="@id/svae_power_setting" android:visibility="gone" layout="@layout/save_config_list" />
+                <include layout="@layout/divide_line" android:visibility="gone" />
+                <include android:id="@id/bkgd_apps_setting" android:visibility="gone" layout="@layout/save_config_list" />
+                <include layout="@layout/divide_line" android:visibility="gone" />
+                <include android:id="@id/boot_manager_setting" android:visibility="gone" layout="@layout/save_config_list" />
+                <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/color_tag_text" android:visibility="gone" android:id="@id/powermode_other_titile" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="12.0dip" android:text="@string/powermode_other_titile" />
+                <View android:id="@id/horizontal_line" android:visibility="gone" android:background="@color/color_tag_divider" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginLeft="6.6999817dip" android:layout_marginTop="5.0dip" android:layout_marginRight="6.6999817dip" />
+                <TextView android:textAppearance="?android:textAppearanceListItemSmall" android:gravity="center_vertical" android:visibility="gone" android:id="@id/consumption_info" android:background="@drawable/item_pressed" android:paddingLeft="4.899994dip" android:paddingRight="4.899994dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.6999817dip" android:layout_marginRight="6.6999817dip" android:minHeight="?android:listPreferredItemHeightSmall" android:text="@string/consume_detail_button_new" />
+                <include layout="@layout/divide_line" android:visibility="gone" />
+                <TextView android:textAppearance="?android:textAppearanceListItemSmall" android:gravity="center_vertical" android:visibility="gone" android:id="@id/time_left" android:background="@drawable/item_pressed" android:paddingLeft="4.899994dip" android:paddingRight="4.899994dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.6999817dip" android:layout_marginRight="6.6999817dip" android:minHeight="?android:listPreferredItemHeightSmall" android:text="@string/enduration_time_detail_new" />
+                <TextView android:layout_width="fill_parent" android:visibility="gone" android:layout_height="5.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

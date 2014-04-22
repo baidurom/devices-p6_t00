@@ -1262,6 +1262,7 @@
     return-void
 .end method
 
+
 .method public closeSystemDialogs(Ljava/lang/String;)V
     .locals 5
     .parameter "reason"
@@ -4715,6 +4716,7 @@
     .line 3536
     return v2
 .end method
+
 
 .method public handleApplicationCrash(Landroid/os/IBinder;Landroid/app/ApplicationErrorReport$CrashInfo;)V
     .locals 5
@@ -11147,3 +11149,71 @@
     .line 2120
     return v2
 .end method
+
+.method public setPersistent(Landroid/content/pm/ApplicationInfo;Z)V
+    .locals 5
+    .parameter "app"
+    .parameter "persistent"
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+
+    .prologue
+    const/4 v3, 0x0
+
+    .line 4161
+    invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
+
+    move-result-object v0
+
+    .line 4162
+    .local v0, data:Landroid/os/Parcel;
+    invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
+
+    move-result-object v1
+
+    .line 4163
+    .local v1, reply:Landroid/os/Parcel;
+    const-string v2, "android.app.IActivityManager"
+
+    invoke-virtual {v0, v2}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
+
+    .line 4164
+    invoke-virtual {p1, v0, v3}, Landroid/content/pm/ApplicationInfo;->writeToParcel(Landroid/os/Parcel;I)V
+
+    .line 4165
+    if-eqz p2, :cond_0
+
+    const/4 v2, 0x1
+
+    :goto_0
+    invoke-virtual {v0, v2}, Landroid/os/Parcel;->writeInt(I)V
+
+    .line 4166
+    iget-object v2, p0, Landroid/app/ActivityManagerProxy;->mRemote:Landroid/os/IBinder;
+
+    const/16 v4, 0xf0
+
+    invoke-interface {v2, v4, v0, v1, v3}, Landroid/os/IBinder;->transact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
+
+    .line 4167
+    invoke-virtual {v1}, Landroid/os/Parcel;->readException()V
+
+    .line 4168
+    invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
+
+    .line 4169
+    invoke-virtual {v1}, Landroid/os/Parcel;->recycle()V
+
+    .line 4170
+    return-void
+
+    :cond_0
+    move v2, v3
+
+    .line 4165
+    goto :goto_0
+.end method
+

@@ -10,6 +10,6 @@ if [ "$apkBaseName" = "Settings" ];then
         sed -i '/unlock_set_baidu_slide/d' $tempSmaliDir/res/xml/security_settings_picker.xml
     fi
 
-    sed -i '/sound_category_system_title/r Settings/sound_settings.xml.part' $tempSmaliDir/res/xml/sound_settings.xml
+    sed -i '/com.android.settings.ManageApplicationsSettings/r Settings/settings_headers.xml.part' $tempSmaliDir/res/xml/settings_headers.xml
 
 fi

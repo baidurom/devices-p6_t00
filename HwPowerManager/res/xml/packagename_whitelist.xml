@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <package name="cn.wps.moffice" check="true" />
+    <package name="com.android.browser" check="false" />
+    <package name="com.android.calculator2" check="true" />
+    <package name="com.android.gallery3d" check="true" />
+    <package name="com.android.htmlviewer" check="false" />
+    <package name="com.android.magicsmoke" check="false" />
+    <package name="com.android.mediacenter" check="false" />
+    <package name="com.android.musicvis" check="false" />
+    <package name="com.android.packageinstaller" check="true" />
+    <package name="com.android.soundrecorder" check="true" />
+    <package name="com.android.stk" check="false" />
+    <package name="com.android.videoeditor" check="true" />
+    <package name="com.android.wallpaper" check="false" />
+    <package name="com.android.wallpaper.holospiral" check="false" />
+    <package name="com.android.wallpaper.livepicker" check="false" />
+    <package name="com.huawei.android.WeatherWallpaper" check="false" />
+    <package name="com.huawei.android.apkbatchinstall" check="true" />
+    <package name="com.huawei.appmarket" check="true" />
+    <package name="com.huawei.flashlight" check="false" />
+    <package name="com.huawei.helpcenter" check="true" />
+    <package name="com.huawei.hidisk" check="true" />
+    <package name="com.hw.sohu.newsclient" check="false" />
+    <package name="com.nd.assistance" check="false" />
+    <package name="com.tencent.mobileqq" check="true" />
+    <package name="com.huawei.qqpimsecure" check="true" />
+    <package name="com.sina.weibo" check="true" />
+    <package name="cn.kuwo.player" check="rogue" />
+    <package name="com.plexnor.gravityscreenoffpro" check="rogue" />
+    <package name="jp.smapho.battery_mix" check="rogue" />
+    <package name="cn.Longmaster.PhonePlus" check="rogue" />
+    <package name="com.pplive.androidphone" check="rogue" />
+    <package name="com.openet.hotel.view" check="rogue" />
+    <package name="com.fast.game.english3" check="rogue" />
+    <package name="com.anjuke.android.app" check="rogue" />
+    <package name="com.zdworks.android.zdclock" check="rogue" />
+    <package name="com.kandian.ustvapp" check="rogue" />
+</resources>

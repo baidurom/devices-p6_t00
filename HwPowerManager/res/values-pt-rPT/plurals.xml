@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="photo_saved_num">
+        <item quantity="other">Foram fechadas %d aplicações de utilização intensiva.</item>
+        <item quantity="zero">Foram fechadas %d aplicações de utilização intensiva.</item>
+        <item quantity="one">Foi fechada uma aplicação de utilização intensiva.</item>
+        <item quantity="two">Foram fechadas %d aplicações de utilização intensiva.</item>
+        <item quantity="few">Foram fechadas %d aplicações de utilização intensiva.</item>
+        <item quantity="many">Foram fechadas %d aplicações de utilização intensiva.</item>
+    </plurals>
+</resources>

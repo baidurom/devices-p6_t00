@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Gestión de energía</string>
+    <string name="enduration_time_title">Tiempo restante:</string>
+    <string name="charging">Cargando</string>
+    <string name="lower_battery">Nivel de batería bajo</string>
+    <string name="normal_mode_msg">El sistema responderá a los eventos puntual y eficientemente, pero podría consumir energía más rápidamente. Es recomendable cuando se usan aplicaciones que consumen muchos recursos del sistema, como los juegos.</string>
+    <string name="smart_mode_msg">A condición de que no afecte a su actividad, el sistema ajustará automáticamente el uso de la CPU y la frecuencia con la que las aplicaciones acceden a la red para reducir el consumo eléctrico. Se recomienda para el uso habitual.</string>
+    <string name="super_mode_msg">Para las aplicaciones que no sean de llamadas, mensajería y otras funciones básicas, el sistema reducirá a sus niveles mínimos el uso de la CPU y la frecuencia de acceso a la red desde las aplicaciones. Es recomendable cuando su nivel de carga de batería sea menor del 30 %.</string>
+    <string name="alert_dialog_ok">Habilitar</string>
+    <string name="alert_dialog_cancel">Cancelar</string>
+    <string name="normal_mode_title">Normal</string>
+    <string name="smart_mode_title">Inteligente</string>
+    <string name="super_mode_title">Duración</string>
+    <string name="scene_calling">Tiempo de llamada</string>
+    <string name="scene_Surfacing_internet">Uso de Internet</string>
+    <string name="scene_watching_moving">Reproducción de vídeo</string>
+    <string name="scene_reading_book">Tiempo de lectura</string>
+    <string name="scene_playing_music">Reproducción de música</string>
+    <string name="battery_activity_title">Información sobre la batería</string>
+    <string name="capacitiy_identifier">Capacidad: %1$s mAh</string>
+    <string name="voltage_identifier">Tensión: %1$s V</string>
+    <string name="temperature_identifier">Temperatura: %1$s °C</string>
+    <string name="save_power_toast">Maximizar duración habilitado.</string>
+    <string name="conversion_zero">0</string>
+    <string name="conversion_hour">h</string>
+    <string name="conversion_hour_short">h</string>
+    <string name="powermode_actionbar_titile">Plan de energía</string>
+    <string name="android_os">Sistema</string>
+    <string name="power_other">Otros</string>
+    <string name="percent_identifier">%</string>
+    <string name="consume_detail_button">Consumo</string>
+    <string name="conversion_minute">min.</string>
+    <string name="conversion_minute_short">min.</string>
+</resources>

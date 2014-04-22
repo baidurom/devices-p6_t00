@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="photo_saved_num">
+        <item quantity="other">%d programov z veliko porabo je zaprtih.</item>
+        <item quantity="zero">%d programov z veliko porabo je zaprtih.</item>
+        <item quantity="one">1 program z veliko porabo je zaprt.</item>
+        <item quantity="two">%d programa z veliko porabo sta zaprta.</item>
+        <item quantity="few">%d programi z veliko porabo so zaprti.</item>
+        <item quantity="many">%d programov z veliko porabo je zaprtih.</item>
+    </plurals>
+</resources>

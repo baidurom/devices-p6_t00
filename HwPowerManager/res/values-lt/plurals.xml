@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="photo_saved_num">
+        <item quantity="other">Uždaryta %d intensyviai energiją naudojančios programos.</item>
+        <item quantity="zero">Uždaryta %d intensyviai energiją naudojančių programų.</item>
+        <item quantity="one">Uždaryta 1 intensyviai energiją naudojanti programa.</item>
+        <item quantity="two">Uždarytos %d intensyviai energiją naudojančios programos.</item>
+        <item quantity="few">Uždarytos %d intensyviai energiją naudojančios programos.</item>
+        <item quantity="many">Uždaryta %d intensyviai energiją naudojančių programų.</item>
+    </plurals>
+</resources>

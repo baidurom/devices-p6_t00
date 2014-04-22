@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="photo_saved_num">
+        <item quantity="other">%d programmer som bruker mye strøm er blitt lukket.</item>
+        <item quantity="zero">%d programmer som bruker mye strøm er blitt lukket.</item>
+        <item quantity="one">1 program som bruker mye strøm er blitt lukket.</item>
+        <item quantity="two">%d programmer som bruker mye strøm er blitt lukket.</item>
+        <item quantity="few">%d programmer som bruker mye strøm er blitt lukket.</item>
+        <item quantity="many">%d programmer som bruker mye strøm er blitt lukket.</item>
+    </plurals>
+</resources>

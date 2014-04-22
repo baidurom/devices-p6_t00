@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="translucent_background">#60000000</color>
+    <color name="scene_title_textview_color">#ff000000</color>
+    <color name="scene_item_textview_color">#ff000000</color>
+    <color name="color_tag_text">#ff0a9dcd</color>
+    <color name="color_tag_divider">#ff0a9dcd</color>
+    <color name="color_selectall_text">#ff23a7d9</color>
+    <color name="color_settingsdescription_text">#ff23a7d9</color>
+</resources>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="15000" android:versionName="1.6.0" package="com.huawei.android.hwpowermanager"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.BATTERY_STATS" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.STATUS_BAR" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_NETWORK_USAGE_HISTORY" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.FORCE_STOP_PACKAGES" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS" />
+    <application android:label="@string/app_name" android:icon="@drawable/ic_launcher" android:name=".PowerManagerApp">
+        <activity android:theme="@*android:style/Theme.DeviceDefault.Light.DarkActionBar" android:label="@string/app_name" android:name=".HwPowerManagerActivity" android:launchMode="singleTask" android:screenOrientation="portrait">       
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@*android:style/Theme.Holo.Light" android:label="@string/app_name" android:name=".PowerConsumptionDetailActivity" android:launchMode="singleTask" android:windowActionBarOverlay="true">
+            <meta-data android:name="hwc-theme" android:value="androidhwext:style/Theme.Emui" />
+        </activity>
+        <activity android:theme="@*android:style/Theme.Holo.Light" android:label="@string/app_name" android:name=".PowerSavingModeActivity" android:launchMode="singleTask" android:windowActionBarOverlay="true">
+            <meta-data android:name="hwc-theme" android:value="androidhwext:style/Theme.Emui" />
+        </activity>
+        <activity android:theme="@*android:style/Theme.Holo.Light" android:label="@string/menu_title_2" android:name=".BootApplicationActivity" android:configChanges="keyboardHidden|orientation|screenSize" android:windowActionBarOverlay="true" android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="hwc-theme" android:value="androidhwext:style/Theme.Emui" />
+            <intent-filter>
+                <action android:name="huawei.intent.action.POWER_BOOTAPP_MANAGER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@*android:style/Theme.Holo.Light" android:label="@string/menu_title_1_new" android:name=".SavingSettingActivity" android:launchMode="singleTask" android:configChanges="keyboardHidden|orientation|screenSize" android:windowActionBarOverlay="true" android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="hwc-theme" android:value="androidhwext:style/Theme.Emui" />
+        </activity>
+        <provider android:name="com.huawei.android.hwpowermanager.provider.SmartProvider" android:exported="true" android:authorities="com.huawei.android.batteryspriteprovider" />
+        <receiver android:name=".ServiceReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".BootBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.BATTERY_CHANGED" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+                <action android:name="android.intent.action.POWER_STATISTIC" />
+                <action android:name="huawei.intent.action.PG_FOUND_WASTE_POWER_APP" />
+                <action android:name="huawei.intent.action.NOTIFICATION_ACTION_1" />
+                <action android:name="huawei.intent.action.NOTIFICATION_ACTION_2" />
+                <action android:name="huawei.intent.action.NOTIFICATION_DELETED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <activity android:theme="@*android:style/Theme.DeviceDefault.Light.DarkActionBar" android:name=".LowPowerMessageActivity">      
+        </activity>
+        <activity android:theme="@*android:style/Theme.Holo.Light" android:label="@string/app_name" android:name=".PowerConsumeBackgroundActivity" android:launchMode="singleInstance" android:screenOrientation="portrait" android:windowActionBarOverlay="true" android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="hwc-theme" android:value="androidhwext:style/Theme.Emui" />
+        </activity>
+        <service android:name=".BgPowerManagerService" android:enabled="true">
+            <intent-filter>
+                <action android:name="com.huawei.HwPowerManager.BgService" />
+            </intent-filter>
+        </service>
+    </application>
+</manifest>

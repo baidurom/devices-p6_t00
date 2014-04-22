@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="photo_saved_num">
+        <item quantity="other">"S'han tancat %d aplicacions amb un alt consum elèctric."</item>
+        <item quantity="zero">"S'han tancat %d aplicacions amb un alt consum elèctric."</item>
+        <item quantity="one">"S'ha tancat 1 aplicació amb un alt consum elèctric."</item>
+        <item quantity="two">"S'han tancat %d aplicacions amb un alt consum elèctric."</item>
+        <item quantity="few">"S'han tancat %d aplicacions amb un alt consum elèctric."</item>
+        <item quantity="many">"S'han tancat %d aplicacions amb un alt consum elèctric."</item>
+    </plurals>
+</resources>

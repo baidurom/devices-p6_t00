@@ -32,14 +32,13 @@ system/app/GmsCore.apk 0 0 644
 system/app/GoogleLoginService.apk 0 0 644
 system/app/GoogleServicesFramework.apk 0 0 644
 system/app/HandWritingSimpPack.apk 0 0 644
-system/app/HiSpace.apk 0 0 644
 system/app/HoloSpiralWallpaper.apk 0 0 644
 system/app/HTMLViewer.apk 0 0 644
 system/app/HwAllBackup.apk 0 0 644
+system/app/HwAllBackup_U.apk 0 0 644
 system/app/HwAppObserver.apk 0 0 644
 system/app/HwARNavigation.apk 0 0 644
 system/app/HwBluetoothImport.apk 0 0 644
-system/app/HwCloudDrive.apk 0 0 644
 system/app/HwDeskClock.apk 0 0 644
 system/app/HwDLNA.apk 0 0 644
 system/app/HwFileManager.apk 0 0 644
@@ -63,7 +62,6 @@ system/app/HwOUC.apk 0 0 644
 system/app/HwPermissionManager.apk 0 0 644
 system/app/HwPhoneFinder.apk 0 0 644
 system/app/HwPhoneService.apk 0 0 644
-system/app/HwPhoneServiceT.apk 0 0 644
 system/app/HwPowerGenieEngine.apk 0 0 644
 system/app/HwPowerManager.apk 0 0 644
 system/app/HwProfileSwitcher.apk 0 0 644
@@ -95,6 +93,7 @@ system/app/MyEmail.apk 0 0 644
 system/app/NetworkLocation.apk 0 0 644
 system/app/NoiseField.apk 0 0 644
 system/app/OMACP.apk 0 0 644
+system/app/OptimalRemoteClient.apk 0 0 644
 system/app/PackageInstaller.apk 0 0 644
 system/app/PGPSDownloader.apk 0 0 644
 system/app/PhaseBeam.apk 0 0 644
@@ -277,7 +276,7 @@ system/bin/ping 0 3004 2755
 system/bin/pm 0 2000 755
 system/bin/pppd 0 2000 755
 system/bin/pppoe 0 2000 755
-system/bin/preparesd.sh 0 0 750
+system/bin/preparesd.sh 0 0 754
 system/bin/printenv 0 2000 755
 system/bin/ps 0 2000 755
 system/bin/racoon 0 2000 755
@@ -712,7 +711,7 @@ system/etc/camera/tornado/SunsetModelTOA.model 0 0 644
 system/etc/camera/tornado/TornadoI.ini 0 0 644
 system/etc/camera/tracking 0 0 755
 system/etc/camera/tracking/targettracking.xml 0 0 644
-system/etc/dbus.conf 1002 1002 440
+system/etc/dbus.conf 1002 1002 444
 system/etc/dhcpcd 0 0 755
 system/etc/dhcpcd/dhcpcd-hooks 0 0 755
 system/etc/dhcpcd/dhcpcd-hooks/20-dns.conf 0 0 644
@@ -1147,8 +1146,6 @@ system/lib/hw/power.default.so 0 0 644
 system/lib/hw/sensors.k3v2oem1.so 0 0 644
 system/lib/lib_8290.so 0 0 644
 system/lib/libagnss.so 0 0 644
-system/lib/libAisound.so 0 0 644
-system/lib/libAitalkLD.so 0 0 644
 system/lib/libAmtJniProtocal_K3.so 0 0 644
 system/lib/libAmtJniProtocal.so 0 0 644
 system/lib/libandroidfw.so 0 0 644
@@ -1249,6 +1246,8 @@ system/lib/libhelixplayer.so 0 0 644
 system/lib/libhmp_client.so 0 0 644
 system/lib/libhmp_server.so 0 0 644
 system/lib/libhuawei-audio-ril.so 0 0 644
+system/lib/libhwAisound.so 0 0 644
+system/lib/libhwAitalkLD.so 0 0 644
 system/lib/libHWColorPen.so 0 0 644
 system/lib/libhw_flashlight.so 0 0 644
 system/lib/libHwMotionRecognition.so 0 0 644
@@ -1292,10 +1291,8 @@ system/lib/lib_k3_omx_vp8.so 0 0 644
 system/lib/libkeystore_client.so 0 0 644
 system/lib/liblive555.so 0 0 644
 system/lib/libllxml.so 0 0 644
-system/lib/liblocSDK_2.4.so 0 0 644
 system/lib/liblocSDK_2_5OEM.so 0 0 644
 system/lib/liblocSDK3.so 0 0 644
-system/lib/liblocSDK.so 0 0 644
 system/lib/liblog.so 0 0 644
 system/lib/libmdnssd.so 0 0 644
 system/lib/libmedia_jni.so 0 0 644
@@ -1326,6 +1323,7 @@ system/lib/liboeminfo_public_interface.so 0 0 644
 system/lib/liboeminfo.so 0 0 644
 system/lib/libOpenMAXAL.so 0 0 644
 system/lib/libOpenSLES.so 0 0 644
+system/lib/liboru.so 0 0 644
 system/lib/liboverlay.so 0 0 644
 system/lib/libparseprofile.so 0 0 644
 system/lib/libpcsclite.so 0 0 644
@@ -1390,6 +1388,7 @@ system/lib/libstagefright_wfd.so 0 0 644
 system/lib/libstagefright_yuv.so 0 0 644
 system/lib/libstdc++.so 0 0 644
 system/lib/libstlport.so 0 0 644
+system/lib/libsuc.so 0 0 755
 system/lib/libsupl10client.so 0 0 644
 system/lib/libsupl20client.so 0 0 644
 system/lib/libsupl20comon.so 0 0 644
@@ -1587,6 +1586,7 @@ system/tts/lang_pico/it-IT_ta.bin 0 0 644
 system/usr 0 0 755
 system/usr/icu 0 0 755
 system/usr/icu/icudt48l.dat 0 0 644
+system/usr/icu/icusuflag.conf 0 0 755
 system/usr/idc 0 0 755
 system/usr/idc/cyttsp4_mt.idc 0 0 644
 system/usr/idc/hisik3_touchscreen.idc 0 0 644
@@ -1596,6 +1596,8 @@ system/usr/idc/qwerty.idc 0 0 644
 system/usr/idc/screenovate_keyboard.idc 0 0 644
 system/usr/idc/screenovate_mouse.idc 0 0 644
 system/usr/idc/synaptics.idc 0 0 644
+system/usr/iku 0 0 711
+system/usr/iku/isu 0 0 6755
 system/usr/keychars 0 0 755
 system/usr/keychars/Generic.kcm 0 0 644
 system/usr/keychars/qwerty2.kcm 0 0 644

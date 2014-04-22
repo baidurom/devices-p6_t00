@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="photo_saved_num">
+        <item quantity="other">%d برنامه ای که مصرف باتری آنها زیاد است بسته شدند.</item>
+        <item quantity="zero">%d برنامه ای که مصرف باتری آن زیاد است بسته شد.</item>
+        <item quantity="one">1 برنامه ای که مصرف باتری آن زیاد است بسته شد.</item>
+        <item quantity="two">%d برنامه ای که مصرف باتری آنها زیاد است بسته شدند.</item>
+        <item quantity="few">%d برنامه ای که مصرف باتری آنها زیاد است بسته شدند.</item>
+        <item quantity="many">%d برنامه ای که مصرف باتری آنها زیاد است بسته شدند.</item>
+    </plurals>
+</resources>

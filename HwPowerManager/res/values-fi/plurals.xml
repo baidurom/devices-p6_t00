@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="photo_saved_num">
+        <item quantity="other">%d paljon virtaa kuluttavaa sovellusta on suljettu.</item>
+        <item quantity="zero">%d paljon virtaa kuluttavaa sovellusta on suljettu.</item>
+        <item quantity="one">1 paljon virtaa kuluttava sovellus on suljettu.</item>
+        <item quantity="two">%d paljon virtaa kuluttavaa sovellusta on suljettu.</item>
+        <item quantity="few">%d paljon virtaa kuluttavaa sovellusta on suljettu.</item>
+        <item quantity="many">%d paljon virtaa kuluttavaa sovellusta on suljettu.</item>
+    </plurals>
+</resources>

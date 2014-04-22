@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="photo_saved_num">
+        <item quantity="other">Zamknięto %d aplikacji silnie obciążających system.</item>
+        <item quantity="zero">Zamknięto %d aplikacji silnie obciążających system.</item>
+        <item quantity="one">Zamknięto 1 aplikację silnie obciążającą system.</item>
+        <item quantity="two">Zamknięto %d aplikacji silnie obciążających system.</item>
+        <item quantity="few">Zamknięto %d aplikacji silnie obciążających system.</item>
+        <item quantity="many">Zamknięto %d aplikacji silnie obciążających system.</item>
+    </plurals>
+</resources>

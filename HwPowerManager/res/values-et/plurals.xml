@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="photo_saved_num">
+        <item quantity="other">%d energiakulukat rakendust suleti.</item>
+        <item quantity="zero">%d energiakulukat rakendust suleti.</item>
+        <item quantity="one">1 energiakulukas rakendus suleti.</item>
+        <item quantity="two">%d energiakulukat rakendust suleti.</item>
+        <item quantity="few">%d energiakulukat rakendust suleti.</item>
+        <item quantity="many">%d energiakulukat rakendust suleti.</item>
+    </plurals>
+</resources>

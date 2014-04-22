@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="photo_saved_num">
+        <item quantity="other">%d εφαρμ. που καταναλώνει πολλή ισχύ έχει κλείσει.</item>
+        <item quantity="zero">%d εφαρμ. που καταναλώνει πολλή ισχύ έχει κλείσει.</item>
+        <item quantity="one">1 εφαρμ. που καταναλώνει πολλή ισχύ έχει κλείσει.</item>
+        <item quantity="two">%d εφαρμ. που καταναλώνει πολλή ισχύ έχει κλείσει.</item>
+        <item quantity="few">%d εφαρμ. που καταναλώνει πολλή ισχύ έχει κλείσει.</item>
+        <item quantity="many">%d εφαρμ. που καταναλώνει πολλή ισχύ έχει κλείσει.</item>
+    </plurals>
+</resources>

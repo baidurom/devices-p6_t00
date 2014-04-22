@@ -82,6 +82,10 @@
 
     invoke-virtual {v1, v2}, Landroid/app/ActionBar;->setDisplayHomeAsUpEnabled(Z)V
 
+    const/4 v2, 0x0
+
+    invoke-virtual {v1, v2}, Landroid/app/ActionBar;->setDisplayShowHomeEnabled(Z)V
+
     .line 25
     :cond_1
     return-void

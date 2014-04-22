@@ -24,7 +24,7 @@
     .parameter
 
     .prologue
-    .line 3858
+    .line 3932
     iput-object p1, p0, Lcom/android/server/ConnectivityService$4;->this$0:Lcom/android/server/ConnectivityService;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -44,12 +44,12 @@
 
     const/4 v11, 0x0
 
-    .line 3861
+    .line 3935
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 3863
+    .line 3937
     .local v0, action:Ljava/lang/String;
     iget-object v8, p0, Lcom/android/server/ConnectivityService$4;->this$0:Lcom/android/server/ConnectivityService;
 
@@ -66,24 +66,24 @@
 
     check-cast v5, Landroid/app/KeyguardManager;
 
-    .line 3865
+    .line 3939
     .local v5, keyguardManager:Landroid/app/KeyguardManager;
     invoke-virtual {v5}, Landroid/app/KeyguardManager;->isLockScreenDisabled()Z
 
     move-result v1
 
-    .line 3866
+    .line 3940
     .local v1, disable:Z
     invoke-virtual {v5}, Landroid/app/KeyguardManager;->isKeyguardLocked()Z
 
     move-result v6
 
-    .line 3873
+    .line 3947
     .local v6, locked:Z
     iget-object v8, p0, Lcom/android/server/ConnectivityService$4;->this$0:Lcom/android/server/ConnectivityService;
 
     #getter for: Lcom/android/server/ConnectivityService;->mSmartKeyguardLevel:Ljava/lang/String;
-    invoke-static {v8}, Lcom/android/server/ConnectivityService;->access$4600(Lcom/android/server/ConnectivityService;)Ljava/lang/String;
+    invoke-static {v8}, Lcom/android/server/ConnectivityService;->access$4700(Lcom/android/server/ConnectivityService;)Ljava/lang/String;
 
     move-result-object v8
 
@@ -107,7 +107,7 @@
 
     if-eqz v8, :cond_7
 
-    .line 3875
+    .line 3949
     :cond_0
     const-string v8, "android.intent.action.KEYGUARD_UNLOCK"
 
@@ -117,56 +117,56 @@
 
     if-eqz v8, :cond_2
 
-    .line 3876
+    .line 3950
     iget-object v8, p0, Lcom/android/server/ConnectivityService$4;->this$0:Lcom/android/server/ConnectivityService;
 
     #getter for: Lcom/android/server/ConnectivityService;->mPowerSavingLock:Ljava/lang/Object;
-    invoke-static {v8}, Lcom/android/server/ConnectivityService;->access$4700(Lcom/android/server/ConnectivityService;)Ljava/lang/Object;
+    invoke-static {v8}, Lcom/android/server/ConnectivityService;->access$4800(Lcom/android/server/ConnectivityService;)Ljava/lang/Object;
 
     move-result-object v9
 
     monitor-enter v9
 
-    .line 3877
+    .line 3951
     :try_start_0
     const-string v8, "receive keyguard unlock intent!"
 
     #calls: Lcom/android/server/ConnectivityService;->log(Ljava/lang/String;)V
     invoke-static {v8}, Lcom/android/server/ConnectivityService;->access$300(Ljava/lang/String;)V
 
-    .line 3879
+    .line 3953
     iget-object v8, p0, Lcom/android/server/ConnectivityService$4;->this$0:Lcom/android/server/ConnectivityService;
 
     iget-boolean v8, v8, Lcom/android/server/ConnectivityService;->mStartPowerSaving:Z
 
     if-eqz v8, :cond_1
 
-    .line 3880
+    .line 3954
     const-string v8, "stop powersaving action!"
 
     #calls: Lcom/android/server/ConnectivityService;->log(Ljava/lang/String;)V
     invoke-static {v8}, Lcom/android/server/ConnectivityService;->access$300(Ljava/lang/String;)V
 
-    .line 3881
+    .line 3955
     iget-object v8, p0, Lcom/android/server/ConnectivityService$4;->this$0:Lcom/android/server/ConnectivityService;
 
     #calls: Lcom/android/server/ConnectivityService;->cancelPowerSaving()V
-    invoke-static {v8}, Lcom/android/server/ConnectivityService;->access$4800(Lcom/android/server/ConnectivityService;)V
+    invoke-static {v8}, Lcom/android/server/ConnectivityService;->access$4900(Lcom/android/server/ConnectivityService;)V
 
-    .line 3882
+    .line 3956
     iget-object v8, p0, Lcom/android/server/ConnectivityService$4;->this$0:Lcom/android/server/ConnectivityService;
 
     const/4 v10, 0x0
 
     iput-boolean v10, v8, Lcom/android/server/ConnectivityService;->mStartPowerSaving:Z
 
-    .line 3884
+    .line 3958
     :cond_1
     monitor-exit v9
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 3899
+    .line 3973
     :cond_2
     :goto_0
     const-string v8, "android.intent.action.SCREEN_OFF"
@@ -177,24 +177,24 @@
 
     if-eqz v8, :cond_b
 
-    .line 3900
+    .line 3974
     iget-object v8, p0, Lcom/android/server/ConnectivityService$4;->this$0:Lcom/android/server/ConnectivityService;
 
     #getter for: Lcom/android/server/ConnectivityService;->mPowerSavingLock:Ljava/lang/Object;
-    invoke-static {v8}, Lcom/android/server/ConnectivityService;->access$4700(Lcom/android/server/ConnectivityService;)Ljava/lang/Object;
+    invoke-static {v8}, Lcom/android/server/ConnectivityService;->access$4800(Lcom/android/server/ConnectivityService;)Ljava/lang/Object;
 
     move-result-object v9
 
     monitor-enter v9
 
-    .line 3901
+    .line 3975
     :try_start_1
     const-string v8, "receive screen off intent!"
 
     #calls: Lcom/android/server/ConnectivityService;->log(Ljava/lang/String;)V
     invoke-static {v8}, Lcom/android/server/ConnectivityService;->access$300(Ljava/lang/String;)V
 
-    .line 3903
+    .line 3977
     const-string v8, "sys.iswifihotspoton"
 
     const/4 v10, 0x0
@@ -203,7 +203,7 @@
 
     move-result v4
 
-    .line 3904
+    .line 3978
     .local v4, isWifiApOn:Z
     const-string v8, "sys.isusbtetheringon"
 
@@ -213,7 +213,7 @@
 
     move-result v3
 
-    .line 3905
+    .line 3979
     .local v3, isUsbTetheringOn:Z
     const-string v8, "sys.isbthotspoton"
 
@@ -223,7 +223,7 @@
 
     move-result v2
 
-    .line 3906
+    .line 3980
     .local v2, isBtTetheringOn:Z
     new-instance v8, Ljava/lang/StringBuilder;
 
@@ -246,7 +246,7 @@
     #calls: Lcom/android/server/ConnectivityService;->log(Ljava/lang/String;)V
     invoke-static {v8}, Lcom/android/server/ConnectivityService;->access$300(Ljava/lang/String;)V
 
-    .line 3907
+    .line 3981
     new-instance v8, Ljava/lang/StringBuilder;
 
     invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
@@ -268,7 +268,7 @@
     #calls: Lcom/android/server/ConnectivityService;->log(Ljava/lang/String;)V
     invoke-static {v8}, Lcom/android/server/ConnectivityService;->access$300(Ljava/lang/String;)V
 
-    .line 3908
+    .line 3982
     new-instance v8, Ljava/lang/StringBuilder;
 
     invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
@@ -290,7 +290,7 @@
     #calls: Lcom/android/server/ConnectivityService;->log(Ljava/lang/String;)V
     invoke-static {v8}, Lcom/android/server/ConnectivityService;->access$300(Ljava/lang/String;)V
 
-    .line 3910
+    .line 3984
     iget-object v8, p0, Lcom/android/server/ConnectivityService$4;->this$0:Lcom/android/server/ConnectivityService;
 
     invoke-virtual {v8}, Lcom/android/server/ConnectivityService;->getMobileDataEnabled()Z
@@ -302,20 +302,20 @@
     iget-object v8, p0, Lcom/android/server/ConnectivityService$4;->this$0:Lcom/android/server/ConnectivityService;
 
     #calls: Lcom/android/server/ConnectivityService;->getPowerSavingState()Z
-    invoke-static {v8}, Lcom/android/server/ConnectivityService;->access$4900(Lcom/android/server/ConnectivityService;)Z
+    invoke-static {v8}, Lcom/android/server/ConnectivityService;->access$5000(Lcom/android/server/ConnectivityService;)Z
 
     move-result v8
 
     if-eqz v8, :cond_5
 
-    .line 3911
+    .line 3985
     if-nez v4, :cond_5
 
     if-nez v3, :cond_5
 
     if-nez v2, :cond_5
 
-    .line 3912
+    .line 3986
     iget-object v8, p0, Lcom/android/server/ConnectivityService$4;->this$0:Lcom/android/server/ConnectivityService;
 
     iget-boolean v8, v8, Lcom/android/server/ConnectivityService;->mStartPowerSaving:Z
@@ -325,7 +325,7 @@
     iget-object v8, p0, Lcom/android/server/ConnectivityService$4;->this$0:Lcom/android/server/ConnectivityService;
 
     #getter for: Lcom/android/server/ConnectivityService;->mSmartKeyguardLevel:Ljava/lang/String;
-    invoke-static {v8}, Lcom/android/server/ConnectivityService;->access$4600(Lcom/android/server/ConnectivityService;)Ljava/lang/String;
+    invoke-static {v8}, Lcom/android/server/ConnectivityService;->access$4700(Lcom/android/server/ConnectivityService;)Ljava/lang/String;
 
     move-result-object v8
 
@@ -339,20 +339,20 @@
 
     if-nez v1, :cond_5
 
-    .line 3914
+    .line 3988
     :cond_3
     const-string v8, "start powersaving action!"
 
     #calls: Lcom/android/server/ConnectivityService;->log(Ljava/lang/String;)V
     invoke-static {v8}, Lcom/android/server/ConnectivityService;->access$300(Ljava/lang/String;)V
 
-    .line 3915
+    .line 3989
     if-nez v1, :cond_4
 
     iget-object v8, p0, Lcom/android/server/ConnectivityService$4;->this$0:Lcom/android/server/ConnectivityService;
 
     #getter for: Lcom/android/server/ConnectivityService;->mSmartKeyguardLevel:Ljava/lang/String;
-    invoke-static {v8}, Lcom/android/server/ConnectivityService;->access$4600(Lcom/android/server/ConnectivityService;)Ljava/lang/String;
+    invoke-static {v8}, Lcom/android/server/ConnectivityService;->access$4700(Lcom/android/server/ConnectivityService;)Ljava/lang/String;
 
     move-result-object v8
 
@@ -364,14 +364,14 @@
 
     if-eqz v8, :cond_9
 
-    .line 3916
+    .line 3990
     :cond_4
     iget-object v8, p0, Lcom/android/server/ConnectivityService$4;->this$0:Lcom/android/server/ConnectivityService;
 
     #calls: Lcom/android/server/ConnectivityService;->tryPowerSaving()V
-    invoke-static {v8}, Lcom/android/server/ConnectivityService;->access$5000(Lcom/android/server/ConnectivityService;)V
+    invoke-static {v8}, Lcom/android/server/ConnectivityService;->access$5100(Lcom/android/server/ConnectivityService;)V
 
-    .line 3926
+    .line 4000
     :goto_1
     iget-object v8, p0, Lcom/android/server/ConnectivityService$4;->this$0:Lcom/android/server/ConnectivityService;
 
@@ -379,13 +379,13 @@
 
     iput-boolean v10, v8, Lcom/android/server/ConnectivityService;->mStartPowerSaving:Z
 
-    .line 3931
+    .line 4005
     :cond_5
     monitor-exit v9
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_2
 
-    .line 3969
+    .line 4043
     .end local v2           #isBtTetheringOn:Z
     .end local v3           #isUsbTetheringOn:Z
     .end local v4           #isWifiApOn:Z
@@ -393,7 +393,7 @@
     :goto_2
     return-void
 
-    .line 3884
+    .line 3958
     :catchall_0
     move-exception v8
 
@@ -404,7 +404,7 @@
 
     throw v8
 
-    .line 3887
+    .line 3961
     :cond_7
     const-string v8, "android.intent.action.SCREEN_ON"
 
@@ -414,50 +414,50 @@
 
     if-eqz v8, :cond_2
 
-    .line 3888
+    .line 3962
     iget-object v8, p0, Lcom/android/server/ConnectivityService$4;->this$0:Lcom/android/server/ConnectivityService;
 
     #getter for: Lcom/android/server/ConnectivityService;->mPowerSavingLock:Ljava/lang/Object;
-    invoke-static {v8}, Lcom/android/server/ConnectivityService;->access$4700(Lcom/android/server/ConnectivityService;)Ljava/lang/Object;
+    invoke-static {v8}, Lcom/android/server/ConnectivityService;->access$4800(Lcom/android/server/ConnectivityService;)Ljava/lang/Object;
 
     move-result-object v9
 
     monitor-enter v9
 
-    .line 3889
+    .line 3963
     :try_start_3
     const-string v8, "receive screen on intent!"
 
     #calls: Lcom/android/server/ConnectivityService;->log(Ljava/lang/String;)V
     invoke-static {v8}, Lcom/android/server/ConnectivityService;->access$300(Ljava/lang/String;)V
 
-    .line 3891
+    .line 3965
     iget-object v8, p0, Lcom/android/server/ConnectivityService$4;->this$0:Lcom/android/server/ConnectivityService;
 
     iget-boolean v8, v8, Lcom/android/server/ConnectivityService;->mStartPowerSaving:Z
 
     if-eqz v8, :cond_8
 
-    .line 3892
+    .line 3966
     const-string v8, "stop powersaving action!"
 
     #calls: Lcom/android/server/ConnectivityService;->log(Ljava/lang/String;)V
     invoke-static {v8}, Lcom/android/server/ConnectivityService;->access$300(Ljava/lang/String;)V
 
-    .line 3893
+    .line 3967
     iget-object v8, p0, Lcom/android/server/ConnectivityService$4;->this$0:Lcom/android/server/ConnectivityService;
 
     #calls: Lcom/android/server/ConnectivityService;->cancelPowerSaving()V
-    invoke-static {v8}, Lcom/android/server/ConnectivityService;->access$4800(Lcom/android/server/ConnectivityService;)V
+    invoke-static {v8}, Lcom/android/server/ConnectivityService;->access$4900(Lcom/android/server/ConnectivityService;)V
 
-    .line 3894
+    .line 3968
     iget-object v8, p0, Lcom/android/server/ConnectivityService$4;->this$0:Lcom/android/server/ConnectivityService;
 
     const/4 v10, 0x0
 
     iput-boolean v10, v8, Lcom/android/server/ConnectivityService;->mStartPowerSaving:Z
 
-    .line 3896
+    .line 3970
     :cond_8
     monitor-exit v9
 
@@ -472,7 +472,7 @@
 
     throw v8
 
-    .line 3919
+    .line 3993
     .restart local v2       #isBtTetheringOn:Z
     .restart local v3       #isUsbTetheringOn:Z
     .restart local v4       #isWifiApOn:Z
@@ -481,7 +481,7 @@
     iget-object v8, p0, Lcom/android/server/ConnectivityService$4;->this$0:Lcom/android/server/ConnectivityService;
 
     #getter for: Lcom/android/server/ConnectivityService;->mSmartKeyguardLevel:Ljava/lang/String;
-    invoke-static {v8}, Lcom/android/server/ConnectivityService;->access$4600(Lcom/android/server/ConnectivityService;)Ljava/lang/String;
+    invoke-static {v8}, Lcom/android/server/ConnectivityService;->access$4700(Lcom/android/server/ConnectivityService;)Ljava/lang/String;
 
     move-result-object v8
 
@@ -495,21 +495,21 @@
 
     if-nez v1, :cond_a
 
-    .line 3921
+    .line 3995
     iget-object v8, p0, Lcom/android/server/ConnectivityService$4;->this$0:Lcom/android/server/ConnectivityService;
 
     iget-boolean v6, v8, Lcom/android/server/ConnectivityService;->mStartPowerSaving:Z
 
-    .line 3924
+    .line 3998
     :cond_a
     iget-object v8, p0, Lcom/android/server/ConnectivityService$4;->this$0:Lcom/android/server/ConnectivityService;
 
     #calls: Lcom/android/server/ConnectivityService;->tryPowerSavingI(Z)V
-    invoke-static {v8, v6}, Lcom/android/server/ConnectivityService;->access$5100(Lcom/android/server/ConnectivityService;Z)V
+    invoke-static {v8, v6}, Lcom/android/server/ConnectivityService;->access$5200(Lcom/android/server/ConnectivityService;Z)V
 
     goto :goto_1
 
-    .line 3931
+    .line 4005
     .end local v2           #isBtTetheringOn:Z
     .end local v3           #isUsbTetheringOn:Z
     .end local v4           #isWifiApOn:Z
@@ -522,7 +522,7 @@
 
     throw v8
 
-    .line 3932
+    .line 4006
     :cond_b
     const-string v8, "android.telephony.turnoff_DC"
 
@@ -532,17 +532,17 @@
 
     if-eqz v8, :cond_e
 
-    .line 3933
+    .line 4007
     iget-object v8, p0, Lcom/android/server/ConnectivityService$4;->this$0:Lcom/android/server/ConnectivityService;
 
     #getter for: Lcom/android/server/ConnectivityService;->mPowerSavingLock:Ljava/lang/Object;
-    invoke-static {v8}, Lcom/android/server/ConnectivityService;->access$4700(Lcom/android/server/ConnectivityService;)Ljava/lang/Object;
+    invoke-static {v8}, Lcom/android/server/ConnectivityService;->access$4800(Lcom/android/server/ConnectivityService;)Ljava/lang/Object;
 
     move-result-object v9
 
     monitor-enter v9
 
-    .line 3934
+    .line 4008
     :try_start_5
     iget-object v8, p0, Lcom/android/server/ConnectivityService$4;->this$0:Lcom/android/server/ConnectivityService;
 
@@ -550,12 +550,12 @@
 
     if-eqz v8, :cond_c
 
-    .line 3936
+    .line 4010
     sget-boolean v8, Lcom/android/server/ConnectivityService;->useCtrlSocket:Z
 
     if-eqz v8, :cond_d
 
-    .line 3939
+    .line 4013
     const/16 v8, 0x64
 
     const/4 v10, 0x1
@@ -564,7 +564,7 @@
 
     move-result v7
 
-    .line 3940
+    .line 4014
     .local v7, retVal:I
     const-string v8, "ConnectivityService"
 
@@ -588,23 +588,23 @@
 
     invoke-static {v8, v10}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 3941
+    .line 4015
     if-nez v7, :cond_c
 
-    .line 3943
+    .line 4017
     const-string v8, "ConnectivityService"
 
     const-string v10, "turn off Data Connection!"
 
     invoke-static {v8, v10}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 3944
+    .line 4018
     iget-object v8, p0, Lcom/android/server/ConnectivityService$4;->this$0:Lcom/android/server/ConnectivityService;
 
     #calls: Lcom/android/server/ConnectivityService;->turnoffDC()V
-    invoke-static {v8}, Lcom/android/server/ConnectivityService;->access$5200(Lcom/android/server/ConnectivityService;)V
+    invoke-static {v8}, Lcom/android/server/ConnectivityService;->access$5300(Lcom/android/server/ConnectivityService;)V
 
-    .line 3953
+    .line 4027
     .end local v7           #retVal:I
     :cond_c
     :goto_3
@@ -621,7 +621,7 @@
 
     throw v8
 
-    .line 3949
+    .line 4023
     :cond_d
     :try_start_6
     const-string v8, "ConnectivityService"
@@ -630,17 +630,17 @@
 
     invoke-static {v8, v10}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 3950
+    .line 4024
     iget-object v8, p0, Lcom/android/server/ConnectivityService$4;->this$0:Lcom/android/server/ConnectivityService;
 
     #calls: Lcom/android/server/ConnectivityService;->turnoffDC()V
-    invoke-static {v8}, Lcom/android/server/ConnectivityService;->access$5200(Lcom/android/server/ConnectivityService;)V
+    invoke-static {v8}, Lcom/android/server/ConnectivityService;->access$5300(Lcom/android/server/ConnectivityService;)V
     :try_end_6
     .catchall {:try_start_6 .. :try_end_6} :catchall_3
 
     goto :goto_3
 
-    .line 3956
+    .line 4030
     :cond_e
     const-string v8, "android.intent.action.BOOT_COMPLETED"
 
@@ -650,13 +650,13 @@
 
     if-eqz v8, :cond_6
 
-    .line 3957
+    .line 4031
     const-string v8, "receive Intent.ACTION_BOOT_COMPLETED!"
 
     #calls: Lcom/android/server/ConnectivityService;->log(Ljava/lang/String;)V
     invoke-static {v8}, Lcom/android/server/ConnectivityService;->access$300(Ljava/lang/String;)V
 
-    .line 3958
+    .line 4032
     const-string v8, "ro.config.hw_power_saving"
 
     invoke-static {v8, v11}, Landroid/os/SystemProperties;->getBoolean(Ljava/lang/String;Z)Z
@@ -668,23 +668,23 @@
     iget-object v8, p0, Lcom/android/server/ConnectivityService$4;->this$0:Lcom/android/server/ConnectivityService;
 
     #calls: Lcom/android/server/ConnectivityService;->getTurnOffDCState()Z
-    invoke-static {v8}, Lcom/android/server/ConnectivityService;->access$5300(Lcom/android/server/ConnectivityService;)Z
+    invoke-static {v8}, Lcom/android/server/ConnectivityService;->access$5400(Lcom/android/server/ConnectivityService;)Z
 
     move-result v8
 
     if-eqz v8, :cond_6
 
-    .line 3963
+    .line 4037
     const-string v8, "exception of power saving when power off,then turnonDC"
 
     #calls: Lcom/android/server/ConnectivityService;->log(Ljava/lang/String;)V
     invoke-static {v8}, Lcom/android/server/ConnectivityService;->access$300(Ljava/lang/String;)V
 
-    .line 3965
+    .line 4039
     iget-object v8, p0, Lcom/android/server/ConnectivityService$4;->this$0:Lcom/android/server/ConnectivityService;
 
     #calls: Lcom/android/server/ConnectivityService;->turnonDC()V
-    invoke-static {v8}, Lcom/android/server/ConnectivityService;->access$5400(Lcom/android/server/ConnectivityService;)V
+    invoke-static {v8}, Lcom/android/server/ConnectivityService;->access$5500(Lcom/android/server/ConnectivityService;)V
 
     goto/16 :goto_2
 .end method

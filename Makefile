@@ -1,6 +1,17 @@
 # Makefile Reference
 # Please use this file as the project Makefile reference
 
+##############################################################################
+# This value defines which base this project should choose, only for baidu internal.
+# Support values: S710, JRD77SS, YINS, YIGN
+#-----------------------------------------------------------------------------
+BAIDU_BASE_DEVICE := I9250
+
+##############################################################################
+# This value define to trigger server to build timely and daily
+# if you want to enable server build, set BAIDU_SERVER_BUILD := true
+# ----------------------------------------------------------------------------
+BAIDU_SERVER_BUILD_ENABLE := true
 
 ##############################################################################
 # Default DALVIK_VM_BUILD setting is 27
@@ -17,6 +28,16 @@ DALVIK_VM_BUILD := 27
 DENSITY := xhdpi
 
 ##############################################################################
+# customize weather use prebuilt image or pack from BOOT/RECOVERY directory
+# Support Values:
+# vendor_modify_images := boot recovery
+# boot/recovery, pack boot.img/recovery.img from vendor/BOOT / vendor/RECOVERY
+# NULL, check boot.img/recovery.img in project root directory, if it exists,
+# use a prebuilt boot.img/recovery.img, if not, nothing to do
+#-----------------------------------------------------------------------------
+# vendor_modify_images := boot recovery
+
+##############################################################################
 # Directorys which you want to remove in vendor directory
 #-----------------------------------------------------------------------------
 vendor_remove_dirs := app media/audio/notifications media/Pre-loaded media/video themes asr tts/lang_iflytek vendor/pittpatt etc/facerecognition
@@ -29,7 +50,7 @@ vendor_remove_dirs := app media/audio/notifications media/Pre-loaded media/video
 ##############################################################################
 # Vendor apks you want to use
 #-----------------------------------------------------------------------------
-vendor_saved_apps := Bluetooth HwBluetoothImport DolbyMobileAudioEffectService
+vendor_saved_apps := Bluetooth HwBluetoothImport DolbyMobileAudioEffectService HwPowerGenieEngine DeviceOriginalSettings
 
 ##############################################################################
 # Apks build from current project root directory
@@ -47,7 +68,7 @@ vendor_saved_apps := Bluetooth HwBluetoothImport DolbyMobileAudioEffectService
 # you need decode FMRadio.apk to the project directory (use apktool d FMRadio.apk) first
 # then you can make it by:   make FMRadio
 #-----------------------------------------------------------------------------
-vendor_modify_apps := HwFMRadio HwGlobalDolbyEffect
+vendor_modify_apps := HwFMRadio HwGlobalDolbyEffect HwPowerManager
 
 ##############################################################################
 # Jars build from current project root directory
@@ -97,9 +118,12 @@ baidu_modify_jars := android.policy
 override_property += \
     ro.baidu.default_write.settable=true \
     ro.baidu.recovery.pixelformat=RGB_565 \
-	ro.baidu.secure=0 \
-	ro.baidu.debuggable=1 \
-	ro.call.record=1 \
+    ro.baidu.2nd_storage.format=enable \
+    ro.baidu.secure=0 \
+    ro.baidu.debuggable=1 \
+    ro.call.record=1 \
+    ro.camera.sound.forced=0 \
+    ro.baidu.asec.type=1
 
 # properties from cust.img
 override_property += \
@@ -153,6 +177,8 @@ override_property += \
     ro.product.only_2Gnetwork=false \
     ro.product.playreq.range=true \
     ro.product.streaming.custom=true \
+    ro.config.hw_glovemode_enabled=1 \
+    ro.config.callrecord.enabled=1 
 
 ##############################################################################
 # override_property: this property will override the build.prop
@@ -169,8 +195,11 @@ override_property += \
 # add this config just because sometimes apktool may failed to build framework-res after call custom_app.sh
 #-----------------------------------------------------------------------------
 NOT_CUSTOM_FRAMEWORK-RES := true
+# add for BaiduUpdate to reboot to recovery
+override_property += \
+    ro.baidu.reboot_recovery_cmd=reboot-recovery
 
-USE_FIVE_PARAM_FORMAT := true
+MASTER=p6
 
 include $(PORT_BUILD)/main.mk
 include $(PORT_BUILD)/autopatch.mk

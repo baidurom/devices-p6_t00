@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="?android:listPreferredItemHeight"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/soft_content_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/soft_content_textview_layout_marginRight" android:layout_marginTop="@dimen/soft_content_textview_layout_marginTop" android:layout_marginRight="@dimen/soft_content_textview_layout_marginLeft" android:layout_alignParentLeft="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/middle_linear_layout_marginLeft" android:layout_toLeftOf="@id/soft_icon_imageview">
+        <TextView android:textSize="@dimen/soft_title_textview_textSize" android:id="@id/soft_title_textview" android:layout_width="@dimen/soft_title_textview_layout_width" android:layout_height="wrap_content" android:layout_marginTop="@dimen/soft_title_textview_layout_marginTop" android:singleLine="true" />
+        <ProgressBar android:layout_gravity="fill_horizontal" android:id="@id/soft_progress_processbar" android:layout_width="@dimen/soft_progress_processbar_layout_width" android:layout_height="@dimen/soft_progress_processbar_layout_height" android:layout_marginTop="@dimen/soft_progress_processbar_layout_marginTop" android:max="@integer/soft_progress_processbar_max" style="?android:attr/progressBarStyleHorizontal" />
+    </LinearLayout>
+    <ImageView android:id="@id/soft_icon_imageview" android:layout_width="@dimen/soft_icon_imageview_layout_width" android:layout_height="@dimen/soft_icon_imageview_layout_height" android:layout_marginRight="@dimen/soft_icon_imageview_layout_marginLeft" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

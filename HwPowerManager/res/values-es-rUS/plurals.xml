@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="photo_saved_num">
+        <item quantity="other">Se cerraron %d aplicaciones que consumían demasiada energía.</item>
+        <item quantity="zero">Se cerraron %d aplicaciones que consumían demasiada energía.</item>
+        <item quantity="one">Se cerró una aplicación que consumía demasiada energía.</item>
+        <item quantity="two">Se cerraron %d aplicaciones que consumían demasiada energía.</item>
+        <item quantity="few">Se cerraron %d aplicaciones que consumían demasiada energía.</item>
+        <item quantity="many">Se cerraron %d aplicaciones que consumían demasiada energía.</item>
+    </plurals>
+</resources>

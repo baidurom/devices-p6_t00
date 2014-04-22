@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="64.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/soft_icon_imageview" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginLeft="7.299988dip" android:layout_marginTop="9.0dip" android:scaleType="centerInside" android:layout_rowSpan="3" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18.0dip" android:layout_weight="1.0">
+        <TextView android:textSize="17.0sp" android:id="@id/soft_title_textview" android:layout_width="198.69998dip" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:singleLine="true" />
+        <ProgressBar android:layout_gravity="fill_horizontal" android:id="@id/soft_progress_processbar" android:layout_width="fill_parent" android:layout_height="4.0dip" android:layout_marginTop="9.0dip" android:max="100" android:layout_columnSpan="2" style="?android:attr/progressBarStyleHorizontal" />
+    </LinearLayout>
+    <TextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/soft_content_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18.0dip" android:layout_marginTop="39.0dip" />
+</LinearLayout>

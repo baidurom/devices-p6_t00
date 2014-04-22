@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="photo_saved_num">
+        <item quantity="other">تم إغلاق %d تطبيق شديد الاستهلاك للطاقة.</item>
+        <item quantity="zero">تم إغلاق %d تطبيق شديد الاستهلاك للطاقة.</item>
+        <item quantity="one">تم إغلاق تطبيق 1 شديد الاستهلاك للطاقة.</item>
+        <item quantity="two">تم إغلاق %d تطبيق شديد الاستهلاك للطاقة.</item>
+        <item quantity="few">تم إغلاق %d تطبيق شديد الاستهلاك للطاقة.</item>
+        <item quantity="many">تم إغلاق %d تطبيق شديد الاستهلاك للطاقة.</item>
+    </plurals>
+</resources>

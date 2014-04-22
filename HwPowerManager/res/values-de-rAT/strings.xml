@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Energievw.</string>
+    <string name="enduration_time_title">Restliche Zeit:</string>
+    <string name="charging">Wird geladen</string>
+    <string name="lower_battery">Niedriger Akkustand</string>
+    <string name="normal_mode_msg">Das System reagiert auf Ereignisse zeitnah und effizient, der Akku ist jedoch schneller leer. Empfohlen, wenn Sie Anwendungen verwenden, die beträchtliche Systemressourcen benötigen, z. B. Spiele.</string>
+    <string name="smart_mode_msg">Sofern es keine Auswirkungen auf Ihre Aktivitäten hat, stellt das System die CPU-Nutzung und die Zugriffshäufigkeit auf das Anwendungsnetzwerk automatisch auf einen reduzierten Energieverbrauch ein. Empfohlen bei regelmäßiger Verwendung.</string>
+    <string name="super_mode_msg">Mit Ausnahme von Telefonaten, SMS/MMS und anderen Grundfunktionen, senkt das System die CPU-Nutzung und die Zugriffshäufigkeit auf das Anwendungsnetzwerk auf das Mindestniveau. Empfohlen, wenn die Akkukapazität unter 30 % ist.</string>
+    <string name="low_level_title">Akkustand unter 30 %</string>
+    <string name="low_level_msg">Berühren, um Energiesparplan zu ändern.</string>
+    <string name="alert_dialog_ok">Aktivieren</string>
+    <string name="alert_dialog_cancel">Abbr.</string>
+    <string name="normal_mode_title">Normal</string>
+    <string name="smart_mode_title">Intelligent</string>
+    <string name="super_mode_title">Höchstdauer</string>
+    <string name="scene_calling">Gesprächszeit</string>
+    <string name="scene_Surfacing_internet">Internetnutzung</string>
+    <string name="scene_watching_moving">Videowiedergabe</string>
+    <string name="scene_reading_book">Lesedauer</string>
+    <string name="scene_playing_music">Musikwiedergabe</string>
+    <string name="battery_activity_title">Akkuinfo</string>
+    <string name="capacitiy_identifier">Kapazität: %1$s mAH</string>
+    <string name="voltage_identifier">Spannung: %1$s V</string>
+    <string name="temperature_identifier">Temperatur: %1$s °C</string>
+    <string name="save_power_toast">Langzeitplan aktiviert.</string>
+    <string name="conversion_zero">0</string>
+    <string name="conversion_hour">h</string>
+    <string name="conversion_hour_short">h</string>
+    <string name="powermode_actionbar_titile">Energieplan</string>
+    <string name="process_mediaserver_label">Mediaserver</string>
+    <string name="android_os">System</string>
+    <string name="android_os_new">System</string>
+    <string name="power_other">Sonstiges</string>
+    <string name="percent_identifier">%</string>
+    <string name="forbid">löschen</string>
+    <string name="menu_title_select_all">Alle</string>
+    <string name="consume_detail_button">Verbrauch</string>
+    <string name="conversion_minute">min</string>
+    <string name="conversion_minute_short">min</string>
+    <string name="menu_title_invalid_all">Alle deaktivieren</string>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="photo_saved_num">
+        <item quantity="other">%d energeticky náročných aplikací bylo zavřeno.</item>
+        <item quantity="zero">%d energeticky náročných aplikací bylo zavřeno.</item>
+        <item quantity="one">1 energeticky náročná aplikace byla zavřena.</item>
+        <item quantity="two">%d energeticky náročné aplikace byly zavřeny.</item>
+        <item quantity="few">%d energeticky náročné aplikace byly zavřeny.</item>
+        <item quantity="many">%d energeticky náročných aplikací bylo zavřeno.</item>
+    </plurals>
+</resources>

@@ -75,13 +75,15 @@
 
 .field public static final text_select_popup_emui:I = 0x2070019
 
+.field public static final wifi_switch_to_pdp_layout:I = 0x207001e
+
 
 # direct methods
 .method public constructor <init>()V
     .locals 0
 
     .prologue
-    .line 713
+    .line 714
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="photo_saved_num">
+        <item quantity="other">%d nagy fogyasztású alkalmazás bezárva.</item>
+        <item quantity="zero">%d nagy fogyasztású alkalmazás bezárva.</item>
+        <item quantity="one">1 nagy fogyasztású alkalmazás bezárva.</item>
+        <item quantity="two">%d nagy fogyasztású alkalmazás bezárva.</item>
+        <item quantity="few">%d nagy fogyasztású alkalmazás bezárva.</item>
+        <item quantity="many">%d nagy fogyasztású alkalmazás bezárva.</item>
+    </plurals>
+</resources>

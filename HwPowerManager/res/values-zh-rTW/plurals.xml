@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="photo_saved_num">
+        <item quantity="other">已關閉 %d 個耗電的應用程式。</item>
+        <item quantity="zero">已關閉 %d 個耗電的應用程式。</item>
+        <item quantity="one">已關閉 1 個耗電的應用程式。</item>
+        <item quantity="two">已關閉 %d 個耗電的應用程式。</item>
+        <item quantity="few">已關閉 %d 個耗電的應用程式。</item>
+        <item quantity="many">已關閉 %d 個耗電的應用程式。</item>
+    </plurals>
+</resources>

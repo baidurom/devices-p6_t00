@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="processbar_layout_width">164.0dip</dimen>
+    <dimen name="processbar_layout_height">96.599976dip</dimen>
+    <dimen name="software_power_list_layout_height">64.0dip</dimen>
+    <dimen name="soft_icon_imageview_layout_width">48.0dip</dimen>
+    <dimen name="soft_icon_imageview_layout_height">48.0dip</dimen>
+    <dimen name="soft_icon_imageview_layout_marginLeft">7.299988dip</dimen>
+    <dimen name="soft_icon_imageview_layout_marginTop">9.0dip</dimen>
+    <dimen name="middle_linear_layout_marginLeft">18.0dip</dimen>
+    <dimen name="soft_title_textview_layout_width">198.69998dip</dimen>
+    <dimen name="soft_title_textview_layout_marginTop">15.0dip</dimen>
+    <dimen name="soft_title_textview_textSize">17.0sp</dimen>
+    <dimen name="soft_progress_processbar_layout_width">198.69998dip</dimen>
+    <dimen name="soft_progress_processbar_layout_height">4.0dip</dimen>
+    <dimen name="soft_progress_processbar_layout_marginTop">9.0dip</dimen>
+    <dimen name="soft_content_textview_layout_marginLeft">18.0dip</dimen>
+    <dimen name="soft_content_textview_layout_marginTop">37.0dip</dimen>
+    <dimen name="power_scene_list_layout_height">63.0dip</dimen>
+    <dimen name="scene_imageview_paddingLeft">6.6999817dip</dimen>
+    <dimen name="scene_title_textview_paddingLeft">15.0dip</dimen>
+    <dimen name="scene_title_textview_layout_width">200.0dip</dimen>
+    <dimen name="scene_title_textview_textSize">17.0sp</dimen>
+    <dimen name="scene_item_textview_paddingRight">14.5dip</dimen>
+    <dimen name="scene_item_textview_layout_width">130.0dip</dimen>
+    <dimen name="scene_item_textview_textSize">17.0sp</dimen>
+    <dimen name="save_mode_content_width">376.0dip</dimen>
+    <dimen name="mode_item_content_width">260.0dip</dimen>
+    <dimen name="main_activity_button_width">120.0dip</dimen>
+    <dimen name="main_activity_button_heght">60.0dip</dimen>
+    <dimen name="main_activity_bottom_line_height">1.0dip</dimen>
+</resources>

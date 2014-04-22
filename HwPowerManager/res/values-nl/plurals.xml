@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="photo_saved_num">
+        <item quantity="other">%d energie-intensive apps zijn gesloten.</item>
+        <item quantity="zero">%d energie-intensive apps zijn gesloten.</item>
+        <item quantity="one">1 energie-intensieve app is gesloten.</item>
+        <item quantity="two">%d energie-intensive apps zijn gesloten.</item>
+        <item quantity="few">%d energie-intensive apps zijn gesloten.</item>
+        <item quantity="many">%d energie-intensive apps zijn gesloten.</item>
+    </plurals>
+</resources>

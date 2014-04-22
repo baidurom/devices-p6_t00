@@ -468,82 +468,69 @@
 
     const/4 v1, 0x0
     
-    .line 186
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 97
+
     new-instance v0, Landroid/util/TypedValue;
 
     invoke-direct {v0}, Landroid/util/TypedValue;-><init>()V
 
     iput-object v0, p0, Landroid/content/res/Resources;->mTmpValue:Landroid/util/TypedValue;
 
-    .line 98
     new-instance v0, Landroid/content/res/Configuration;
 
     invoke-direct {v0}, Landroid/content/res/Configuration;-><init>()V
 
     iput-object v0, p0, Landroid/content/res/Resources;->mTmpConfig:Landroid/content/res/Configuration;
 
-    .line 101
     new-instance v0, Landroid/util/LongSparseArray;
 
     invoke-direct {v0}, Landroid/util/LongSparseArray;-><init>()V
 
     iput-object v0, p0, Landroid/content/res/Resources;->mDrawableCache:Landroid/util/LongSparseArray;
 
-    .line 103
     new-instance v0, Landroid/util/LongSparseArray;
 
     invoke-direct {v0}, Landroid/util/LongSparseArray;-><init>()V
 
     iput-object v0, p0, Landroid/content/res/Resources;->mColorStateListCache:Landroid/util/LongSparseArray;
 
-    .line 105
     new-instance v0, Landroid/util/LongSparseArray;
 
     invoke-direct {v0}, Landroid/util/LongSparseArray;-><init>()V
 
     iput-object v0, p0, Landroid/content/res/Resources;->mColorDrawableCache:Landroid/util/LongSparseArray;
 
-    .line 109
     iput-object v3, p0, Landroid/content/res/Resources;->mCachedStyledAttributes:Landroid/content/res/TypedArray;
 
-    .line 110
     iput-object v3, p0, Landroid/content/res/Resources;->mLastRetrievedAttrs:Ljava/lang/RuntimeException;
 
-    .line 112
     const/4 v0, -0x1
 
     iput v0, p0, Landroid/content/res/Resources;->mLastCachedXmlBlockIndex:I
 
-    .line 113
     new-array v0, v2, [I
 
     fill-array-data v0, :array_0
 
     iput-object v0, p0, Landroid/content/res/Resources;->mCachedXmlBlockIds:[I
 
-    .line 114
     new-array v0, v2, [Landroid/content/res/XmlBlock;
 
     iput-object v0, p0, Landroid/content/res/Resources;->mCachedXmlBlocks:[Landroid/content/res/XmlBlock;
 
-    .line 117
     new-instance v0, Landroid/content/res/Configuration;
 
     invoke-direct {v0}, Landroid/content/res/Configuration;-><init>()V
 
     iput-object v0, p0, Landroid/content/res/Resources;->mConfiguration:Landroid/content/res/Configuration;
 
-    .line 118
     new-instance v0, Landroid/util/DisplayMetrics;
 
     invoke-direct {v0}, Landroid/util/DisplayMetrics;-><init>()V
 
     iput-object v0, p0, Landroid/content/res/Resources;->mMetrics:Landroid/util/DisplayMetrics;
 
-    .line 2271
     const/4 v0, 0x0
 
     iput v0, p0, Landroid/content/res/Resources;->mConfigHwt:I
@@ -6974,17 +6961,15 @@
 
     iget-object v3, v0, Landroid/content/res/Resources;->mAssets:Landroid/content/res/AssetManager;
 
-    move-object/from16 v0, p1
-
-    iget v4, v0, Landroid/util/TypedValue;->assetCookie:I
-
     const/4 v7, 0x2
+
+    move-object/from16 v4, p1
 
     move/from16 v6, p2
 
     move/from16 v8, p3
 
-    invoke-virtual/range {v3 .. v8}, Landroid/content/res/AssetManager;->openNonAsset(ILjava/lang/String;IIZ)Ljava/io/InputStream;
+    invoke-virtual/range {v3 .. v8}, Landroid/content/res/AssetManager;->openNonAsset(Landroid/util/TypedValue;Ljava/lang/String;IIZ)Ljava/io/InputStream;
 
     move-result-object v14
 
@@ -8854,6 +8839,18 @@
     invoke-virtual/range {v2 .. v19}, Landroid/content/res/AssetManager;->setConfiguration(IILjava/lang/String;IIIIIIIIIIIIII)V
 
     .line 1928
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Landroid/content/res/Resources;->mAssets:Landroid/content/res/AssetManager;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Landroid/content/res/Resources;->mConfiguration:Landroid/content/res/Configuration;
+
+    iget v3, v3, Landroid/content/res/Configuration;->densityDpi:I
+
+    invoke-virtual {v2, v3}, Landroid/content/res/AssetManager;->setDensityDpi(I)V
+
     move-object/from16 v0, p0
 
     iget-object v2, v0, Landroid/content/res/Resources;->mDrawableCache:Landroid/util/LongSparseArray;

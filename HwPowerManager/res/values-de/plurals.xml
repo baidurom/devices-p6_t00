@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="photo_saved_num">
+        <item quantity="other">%d stromintensive Anwendungen wurden geschlossen.</item>
+        <item quantity="zero">%d stromintensive Anwendungen wurden geschlossen.</item>
+        <item quantity="one">1 stromintensive Anwendung wurde geschlossen.</item>
+        <item quantity="two">%d stromintensive Anwendungen wurden geschlossen.</item>
+        <item quantity="few">%d stromintensive Anwendungen wurden geschlossen.</item>
+        <item quantity="many">%d stromintensive Anwendungen wurden geschlossen.</item>
+    </plurals>
+</resources>

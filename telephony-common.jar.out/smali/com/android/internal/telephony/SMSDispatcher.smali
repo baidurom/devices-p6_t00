@@ -1016,63 +1016,71 @@
 .end method
 
 .method private prehandleMsg(Lcom/android/internal/telephony/SmsMessageBase;[[B)Z
-    .locals 3
+    .locals 6
     .parameter "sms"
     .parameter "pdus"
 
     .prologue
-    const/4 v0, 0x1
+    const/4 v1, 0x1
+
+    .line 1494
+    iget-object v2, p0, Lcom/android/internal/telephony/SMSDispatcher;->mContext:Landroid/content/Context;
+
+    invoke-static {v2, p1}, Lcom/baidu/internal/telephony/SMSPlugin;->baiduPrehandleMsg(Landroid/content/Context;Lcom/android/internal/telephony/SmsMessageBase;)Lcom/baidu/internal/telephony/DisturbPreventUtils$BlockResult;
+
+    move-result-object v0
 
     .line 1495
-    iget-object v1, p0, Lcom/android/internal/telephony/SMSDispatcher;->mContext:Landroid/content/Context;
+    .local v0, result:Lcom/baidu/internal/telephony/DisturbPreventUtils$BlockResult;
+    iget v2, v0, Lcom/baidu/internal/telephony/DisturbPreventUtils$BlockResult;->result:I
 
-    invoke-static {v1, p1}, Lcom/baidu/internal/telephony/SMSPlugin;->baiduPrehandleMsg(Landroid/content/Context;Lcom/android/internal/telephony/SmsMessageBase;)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_1
+    if-ne v2, v1, :cond_1
 
     .line 1496
-    iget-object v1, p0, Lcom/android/internal/telephony/SMSDispatcher;->mContext:Landroid/content/Context;
+    iget-object v2, p0, Lcom/android/internal/telephony/SMSDispatcher;->mContext:Landroid/content/Context;
 
     invoke-virtual {p0}, Lcom/android/internal/telephony/SMSDispatcher;->getFormat()Ljava/lang/String;
 
-    move-result-object v2
+    move-result-object v3
 
-    invoke-static {v1, p2, v2}, Lcom/baidu/internal/telephony/SMSPlugin;->dispatchDisturbSmsPdu(Landroid/content/Context;[[BLjava/lang/String;)V
+    iget v4, v0, Lcom/baidu/internal/telephony/DisturbPreventUtils$BlockResult;->reason:I
+
+    const/4 v5, -0x1
+
+    invoke-static {v2, p2, v3, v4, v5}, Lcom/baidu/internal/telephony/SMSPlugin;->dispatchDisturbSmsPdu(Landroid/content/Context;[[BLjava/lang/String;II)V
 
     .line 1508
     :cond_0
     :goto_0
-    return v0
+    return v1
 
     .line 1501
     :cond_1
-    iget-object v1, p0, Lcom/android/internal/telephony/SMSDispatcher;->mContext:Landroid/content/Context;
+    iget-object v2, p0, Lcom/android/internal/telephony/SMSDispatcher;->mContext:Landroid/content/Context;
 
-    invoke-static {v1, p1}, Lcom/baidu/internal/telephony/SMSPlugin;->shouldFilterForTrafficMonitor(Landroid/content/Context;Lcom/android/internal/telephony/SmsMessageBase;)Z
+    invoke-static {v2, p1}, Lcom/baidu/internal/telephony/SMSPlugin;->shouldFilterForTrafficMonitor(Landroid/content/Context;Lcom/android/internal/telephony/SmsMessageBase;)Z
 
-    move-result v1
+    move-result v2
 
-    if-eqz v1, :cond_2
+    if-eqz v2, :cond_2
 
     .line 1502
-    iget-object v1, p0, Lcom/android/internal/telephony/SMSDispatcher;->mContext:Landroid/content/Context;
+    iget-object v2, p0, Lcom/android/internal/telephony/SMSDispatcher;->mContext:Landroid/content/Context;
 
     invoke-virtual {p0}, Lcom/android/internal/telephony/SMSDispatcher;->getFormat()Ljava/lang/String;
 
-    move-result-object v2
+    move-result-object v3
 
-    invoke-static {v1, p2, v2}, Lcom/baidu/internal/telephony/SMSPlugin;->dispatchTrafficMonitorSmsPdu(Landroid/content/Context;[[BLjava/lang/String;)V
+    invoke-static {v2, p2, v3}, Lcom/baidu/internal/telephony/SMSPlugin;->dispatchTrafficMonitorSmsPdu(Landroid/content/Context;[[BLjava/lang/String;)V
 
     .line 1503
-    sget-boolean v1, Lcom/baidu/internal/telephony/SMSPlugin;->discard:Z
+    sget-boolean v2, Lcom/baidu/internal/telephony/SMSPlugin;->discard:Z
 
-    if-nez v1, :cond_0
+    if-nez v2, :cond_0
 
     .line 1508
     :cond_2
-    const/4 v0, 0x0
+    const/4 v1, 0x0
 
     goto :goto_0
 .end method

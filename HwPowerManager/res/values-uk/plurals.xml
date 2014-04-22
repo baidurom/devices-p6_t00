@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="photo_saved_num">
+        <item quantity="other">Закрито стільки енергоємних програм: %d.</item>
+        <item quantity="zero">Закрито стільки енергоємних програм: %d.</item>
+        <item quantity="one">Закрито 1 енергоємну програму.</item>
+        <item quantity="two">Закрито стільки енергоємних програм: %d.</item>
+        <item quantity="few">Закрито стільки енергоємних програм: %d.</item>
+        <item quantity="many">Закрито стільки енергоємних програм: %d.</item>
+    </plurals>
+</resources>

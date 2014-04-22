@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="photo_saved_num">
+        <item quantity="other">%d applicazioni ad alto consumo sono state chiuse.</item>
+        <item quantity="zero">%d applicazioni ad alto consumo sono state chiuse.</item>
+        <item quantity="one">1 applicazione ad alto consumo è stata chiusa.</item>
+        <item quantity="two">%d applicazioni ad alto consumo sono state chiuse.</item>
+        <item quantity="few">%d applicazioni ad alto consumo sono state chiuse.</item>
+        <item quantity="many">%d applicazioni ad alto consumo sono state chiuse.</item>
+    </plurals>
+</resources>

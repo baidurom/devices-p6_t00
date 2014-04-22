@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="photo_saved_num">
+        <item quantity="other">%d jaudu tērējošas lietojumprogrammas tika aizvērtas.</item>
+        <item quantity="zero">%d jaudu tērējošas lietojumprogrammas tika aizvērtas.</item>
+        <item quantity="one">1 jaudu tērējoša lietojumprogramma tika aizvērta.</item>
+        <item quantity="two">%d jaudu tērējošas lietojumprogrammas tika aizvērtas.</item>
+        <item quantity="few">%d jaudu tērējošas lietojumprogrammas tika aizvērtas.</item>
+        <item quantity="many">%d jaudu tērējošas lietojumprogrammas tika aizvērtas.</item>
+    </plurals>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="photo_saved_num">
+        <item quantity="other">"%d applications consommatrices d'énergie ont été fermées."</item>
+        <item quantity="zero">"%d application consommatrice d'énergie a été fermée."</item>
+        <item quantity="one">"1 application consommatrice d'énergie a été fermée."</item>
+        <item quantity="two">"%d applications consommatrices d'énergie ont été fermées."</item>
+        <item quantity="few">"%d applications consommatrices d'énergie ont été fermées."</item>
+        <item quantity="many">"%d applications consommatrices d'énergie ont été fermées."</item>
+    </plurals>
+</resources>

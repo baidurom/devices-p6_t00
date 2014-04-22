@@ -13,6 +13,10 @@
 
 
 # static fields
+.field private static final ASEC_EXTERNAL_SD:I = 0x1
+
+.field private static final ASEC_PRIMARY_VOLUME:I = 0x0
+
 .field private static final DATA_DIRECTORY:Ljava/io/File; = null
 
 .field public static DIRECTORY_ALARMS:Ljava/lang/String; = null
@@ -73,6 +77,8 @@
 
 .field private static final TAG:Ljava/lang/String; = "Environment"
 
+.field private static final mAsecVolumeType:I
+
 .field private static sCurrentUser:Landroid/os/Environment$UserEnvironment;
 
 .field private static sCurrentUserSd:Landroid/os/Environment$UserEnvironmentSD;
@@ -107,6 +113,16 @@
     move-result-object v0
 
     sput-object v0, Landroid/os/Environment;->ROOT_DIRECTORY:Ljava/io/File;
+
+    const-string v0, "ro.baidu.asec.type"
+
+    const/4 v1, 0x0
+
+    invoke-static {v0, v1}, Landroid/os/SystemProperties;->getInt(Ljava/lang/String;I)I
+
+    move-result v0
+
+    sput v0, Landroid/os/Environment;->mAsecVolumeType:I
 
     .line 56
     new-instance v0, Ljava/lang/Object;
@@ -1616,4 +1632,139 @@
     .line 818
     :cond_0
     return-void
+.end method
+
+.method public static getAsecVolumeDirectory()Ljava/io/File;
+    .locals 2
+
+    .prologue
+    sget v0, Landroid/os/Environment;->mAsecVolumeType:I
+
+    packed-switch v0, :pswitch_data_0
+
+    new-instance v0, Ljava/io/File;
+
+    invoke-static {}, Landroid/os/Environment;->getPrimaryVolume()Landroid/os/storage/StorageVolume;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Landroid/os/storage/StorageVolume;->getPath()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-direct {v0, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    :goto_0
+    return-object v0
+
+    :pswitch_0
+    invoke-static {}, Landroid/os/Environment;->getSDCardDirectory()Ljava/io/File;
+
+    move-result-object v0
+
+    goto :goto_0
+
+    :pswitch_data_0
+    .packed-switch 0x1
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method public static getAsecVolumeState()Ljava/lang/String;
+    .locals 3
+
+    .prologue
+    sget v2, Landroid/os/Environment;->mAsecVolumeType:I
+
+    packed-switch v2, :pswitch_data_0
+
+    :try_start_0
+    const-string v2, "mount"
+
+    invoke-static {v2}, Landroid/os/ServiceManager;->getService(Ljava/lang/String;)Landroid/os/IBinder;
+
+    move-result-object v2
+
+    invoke-static {v2}, Landroid/os/storage/IMountService$Stub;->asInterface(Landroid/os/IBinder;)Landroid/os/storage/IMountService;
+
+    move-result-object v0
+
+    .local v0, mountService:Landroid/os/storage/IMountService;
+    invoke-static {}, Landroid/os/Environment;->getPrimaryVolume()Landroid/os/storage/StorageVolume;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Landroid/os/storage/StorageVolume;->getPath()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-interface {v0, v2}, Landroid/os/storage/IMountService;->getVolumeState(Ljava/lang/String;)Ljava/lang/String;
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    move-result-object v2
+
+    :goto_0
+    return-object v2
+
+    .end local v0           #mountService:Landroid/os/storage/IMountService;
+    :pswitch_0
+    invoke-static {}, Landroid/os/Environment;->getSDCardState()Ljava/lang/String;
+
+    move-result-object v2
+
+    goto :goto_0
+
+    .restart local v0       #mountService:Landroid/os/storage/IMountService;
+    :catch_0
+    move-exception v1
+
+    .local v1, rex:Ljava/lang/Exception;
+    const-string v2, "removed"
+
+    goto :goto_0
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x1
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method public static isAsecVolumeAvailable()Z
+    .locals 2
+
+    .prologue
+    const/4 v0, 0x1
+
+    sget v1, Landroid/os/Environment;->mAsecVolumeType:I
+
+    packed-switch v1, :pswitch_data_0
+
+    invoke-static {}, Landroid/os/Environment;->getPrimaryVolume()Landroid/os/storage/StorageVolume;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Landroid/os/storage/StorageVolume;->isEmulated()Z
+
+    move-result v1
+
+    if-nez v1, :cond_0
+
+    :goto_0
+    :pswitch_0
+    return v0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    goto :goto_0
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x1
+        :pswitch_0
+    .end packed-switch
 .end method

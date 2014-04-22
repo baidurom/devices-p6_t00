@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="photo_saved_num">
+        <item quantity="other">%d power-intensive applications have been closed.</item>
+        <item quantity="zero">%d power-intensive applications have been closed.</item>
+        <item quantity="one">1 power-intensive application has been closed.</item>
+        <item quantity="two">%d power-intensive applications have been closed.</item>
+        <item quantity="few">%d power-intensive applications have been closed.</item>
+        <item quantity="many">%d power-intensive applications have been closed.</item>
+    </plurals>
+</resources>

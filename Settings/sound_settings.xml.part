@@ -1,3 +1,0 @@
-    <Preference android:title="@string/dolby_mobile_settings_title" android:key="dolby_mobile_settings">
-        <intent android:action="com.huawei.android.globaldolbyeffect.GlobalDolbyEffectActivity" />
-    </Preference>
